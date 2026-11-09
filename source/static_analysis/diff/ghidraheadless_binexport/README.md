@@ -1,0 +1,1 @@
+python3 my_auto_bindiff.py --binexport_dir='/root/FHFuzz/diff/Tenda_httpd' --output_dir='/root/FHFuzz/diff/ghidraheadless_binexport/result' --sample_functions='/root/FHFuzz/diff/ghidraheadless_binexport/ghidra_funcion_data'
