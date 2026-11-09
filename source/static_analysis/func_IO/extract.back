@@ -1,0 +1,536 @@
+#@category Analysis
+import sys
+import os
+import json
+from ghidra.app.plugin.core.analysis import ConstantPropagationAnalyzer
+from ghidra.program.util import SymbolicPropogator
+from ghidra.util.exception import CancelledException
+from ghidra.util.task import TaskMonitor
+from ghidra.util.classfinder import ClassSearcher
+from ghidra.program.model.pcode import PcodeOp
+from ghidra.app.decompiler import DecompInterface, DecompileOptions
+from collections import defaultdict
+
+def log(message):
+    """将日志消息打印到控制台"""
+    print(message)
+monitor = getMonitor()
+currentProgram = getCurrentProgram()
+analyzer = None
+syms = {}
+decompiler=None
+
+def setup_decompiler():
+    """设置反编译器"""
+    global decompiler
+    if decompiler is None:
+        decompiler = DecompInterface()
+        options = DecompileOptions()
+        decompiler.setOptions(options)
+        decompiler.openProgram(currentProgram)
+        log("反编译器初始化完成")
+    return decompiler
+
+
+def getAnalyzer():
+    global analyzer
+    for a in ClassSearcher.getInstances(ConstantPropagationAnalyzer):
+        if a.canAnalyze(currentProgram):
+            analyzer = a
+            break
+    else:
+        assert 0
+        
+def getRegister(addr, reg):
+    if analyzer is None:
+        getAnalyzer()
+
+    func = getFunctionContaining(addr)
+    if func is None:
+        return
+
+    if func in syms:
+        symEval = syms[func]
+    else:
+        symEval = SymbolicPropogator(currentProgram)
+        symEval.setParamRefCheck(True)
+        symEval.setReturnRefCheck(True)
+        symEval.setStoredRefCheck(True)
+        analyzer.flowConstants(currentProgram, func.getEntryPoint(), func.getBody(), symEval, monitor)
+        syms[func] = symEval
+
+    return symEval.getRegisterValue(addr, reg)
+
+def getCallingArgs(addr, pos):
+    if not 0 <= pos <= 3:
+        return
+    arch = str(currentProgram.language.processor)
+    if arch == 'ARM':
+        reg = currentProgram.getRegister('r%d' % pos)
+    elif arch == 'MIPS':
+        nextInst = getInstructionAt(addr).next
+        if len(nextInst.pcode):  # not NOP
+            addr = addr.add(8)
+        reg = currentProgram.getRegister('a%d' % pos)
+    else:
+        return
+    return getRegister(addr, reg)
+
+def getCallee(inst):
+    """
+    获取调用指令的目标函数（适用于 CALL 和 CALLIND）
+    """
+    if inst is None or not inst.getPcode():
+        return None
+
+    last_pcode = inst.getPcode()[-1]  # 获取最后一个 PCode 操作
+
+    # 直接调用 CALL func()
+    if last_pcode.getMnemonic() == 'CALL':
+        return getFunctionAt(inst.getOpObjects(0)[0])
+
+    # 间接调用 CALLIND (如 MIPS `jalr t9`)
+    elif last_pcode.getMnemonic() == 'CALLIND':
+        regval = getRegister(inst.getAddress(), inst.getOpObjects(0)[0])
+        if regval is not None:
+            try:
+                callee_addr = regval.getValue()  # 尝试获取值
+            except AttributeError:
+                callee_addr = regval.getScalar().getValue()  # 备用方法
+            return getFunctionAt(toAddr(callee_addr))
+
+    return None
+
+
+def find_function_references(func_name):
+    """
+    查找所有调用指定函数的位置，并返回调用点信息
+    """
+    funcs = getGlobalFunctions(func_name)
+    if not funcs:
+        log(f"未找到函数 {func_name}。")
+        return [], None
+    
+    target_func = funcs[0]
+    entry = target_func.getEntryPoint()
+    log(f"函数 {func_name} 位于地址: {entry}")
+    
+    ref_manager = currentProgram.getReferenceManager()
+    refs = list(ref_manager.getReferencesTo(entry))
+    
+    log(f"共找到 {len(refs)} 个调用点")
+    
+    # 使用字典来整合同一函数内的多次调用
+    caller_dict = {}
+    
+    for ref in refs:
+        from_addr = ref.getFromAddress()
+        call_inst = getInstructionAt(from_addr)
+        caller_func = getFunctionContaining(from_addr)
+        if caller_func:
+            #log(f"调用自函数：{caller_func.getName()}，调用地址：{from_addr}，指令：{call_inst}")
+            
+            # 获取函数名作为键
+            func_name = caller_func.getName()
+            func_addr = caller_func.getEntryPoint()
+            
+            # 如果这个函数已经在字典中，追加调用地址
+            if func_name in caller_dict:
+                caller_dict[func_name]["call_sites"].append("0x"+str(from_addr))
+            else:
+                caller_dict[func_name] = {
+                    "func": caller_func,
+                    "call_sites": ["0x"+str(from_addr)]
+                }
+    
+    # 将字典转换回列表格式
+    call_sites = []
+    for func_name, info in caller_dict.items():
+        call_sites.append((info["func"], info["call_sites"]))
+    
+    return call_sites, target_func
+
+def get_function_address(func_name):
+    """
+    获取函数的入口地址
+    """
+    funcs = getGlobalFunctions(func_name)
+    if not funcs:
+        log(f"未找到函数 {func_name}。")
+        return None
+    
+    target_func = funcs[0]
+    entry = target_func.getEntryPoint()
+    return str(entry), target_func
+def analyze_signature_for_param_count(signature_string):
+    """
+    分析 Ghidra 风格的函数签名字符串，返回参数的数量。
+
+    例如:
+    "undefined4 get_cgi(ACTION param_1);" -> 1
+    "void my_func(int a, char* b, long c);" -> 3
+    "int no_param_func(void);" -> 0
+    "int empty_param_func();" -> 0
+
+    Args:
+        signature_string (str): Ghidra 函数签名字符串。
+
+    Returns:
+        int: 参数的数量。如果解析失败或格式不正确，则返回 -1。
+    """
+    if not isinstance(signature_string, str) or not signature_string:
+        print("错误: 输入的签名不是有效的字符串。")
+        return -1
+
+    # 找到第一个开括号和最后一个闭括号
+    start_paren = signature_string.find('(')
+    end_paren = signature_string.rfind(')')
+
+    if start_paren == -1 or end_paren == -1 or start_paren >= end_paren:
+        print(f"错误: 签名 '{signature_string}' 格式不正确，未找到有效的括号对。")
+        return -1
+
+    # 提取括号内的参数部分
+    params_part = signature_string[start_paren + 1:end_paren].strip()
+
+    if not params_part:
+        # 括号内为空，例如 "func();"
+        return 0
+    
+    # 检查是否是 'void' 参数，例如 "func(void);"
+    if params_part.lower() == "void":
+        return 0
+
+    # 按逗号分割参数
+    parameters = params_part.split(',')
+
+    # 过滤掉空的字符串（例如，如果有额外的逗号或空格）
+    valid_params = [param.strip() for param in parameters if param.strip()]
+    
+    return len(valid_params)
+def get_function_parameter_count(func):
+    """
+    获取函数的参数数量
+    
+    Args:
+        func: Ghidra函数对象
+    
+    Returns:
+        int: 参数数量，如果无法确定则返回-1
+    """
+    if func is None:
+        return -1
+    
+    try:
+        decompiler = setup_decompiler()
+        result = decompiler.decompileFunction(func, 30, monitor)
+        if result.decompileCompleted():
+            decomp_func = result.getDecompiledFunction()
+            signature = decomp_func.getSignature()
+            print(f"分析函数 {func.getName()} 的签名: {signature}")
+            param_count = analyze_signature_for_param_count(signature)
+            return param_count
+        else:
+            param_count=func.getAutoParameterCount()
+            print(f"  函数 {func.getName()} 的参数数量: {param_count}")
+            return param_count
+        
+    except Exception as e:
+        log(f"  获取函数参数数量时出错: {str(e)}")
+        return -1
+
+def read_combined_handler_functions(filename):
+    """
+    读取combined_handler_functions.json文件
+    """
+    try:
+        with open(filename, "r") as f:
+            return json.load(f)
+    except Exception as e:
+        log(f"读取combined_handler_functions.json失败: {str(e)}")
+        return []
+
+def read_extract_config(filename="extract_ac6.json"):
+    """
+    从配置文件中读取需要提取的函数
+    """
+    try:
+        if os.path.isfile(filename):
+            config_path = filename
+        log(f"尝试读取配置文件: {config_path}")
+        
+        with open(config_path, "r") as f:
+            config = json.load(f)
+        
+        # 兼容键名不同的情况
+        if "extract_func" in config and "extract_funcs" not in config:
+            config["extract_funcs"] = config["extract_func"]
+            
+        if "remove_func" in config and "remove_funcs" not in config:
+            config["remove_funcs"] = config["remove_func"]
+            
+        return config
+    except Exception as e:
+        log(f"读取配置文件失败: {str(e)}")
+        # 默认配置
+        return {"extract_funcs": ["websGetVar"], "remove_funcs": []}
+
+def build_call_tree(handler_data, max_depth=2):
+    """
+    构建调用树，向下查询指定深度的子函数
+    返回: {handler_name: {level1: [func_names], level2: [func_names]}}
+    """
+    call_tree = {}
+    
+    for handler in handler_data:
+        handler_name = handler["name"]
+        call_tree[handler_name] = {"level1": [], "level2": []}
+        
+        # 第一层：直接子函数
+        level1_subcalls = []
+        for subcall in handler["subcalls"]:
+            subcall_name = subcall["name"]
+            level1_subcalls.append(subcall_name)
+        
+        call_tree[handler_name]["level1"] = level1_subcalls
+        
+        # 第二层：子函数的子函数
+        level2_subcalls = []
+        for level1_func_name in level1_subcalls:
+            # 在handler_data中查找这个函数的子函数
+            for h in handler_data:
+                if h["name"] == level1_func_name:
+                    for subcall in h["subcalls"]:
+                        subcall_name = subcall["name"]
+                        if subcall_name not in level2_subcalls:
+                            level2_subcalls.append(subcall_name)
+                    break
+        
+        call_tree[handler_name]["level2"] = level2_subcalls
+    
+    return call_tree
+
+def check_handler_needs_extraction(handler_name, call_tree, extract_funcs):
+    """
+    检查handler函数是否需要保留
+    """
+    if handler_name not in call_tree:
+        return False
+    
+    # 检查第一层调用
+    for func in call_tree[handler_name]["level1"]:
+        if func in extract_funcs:
+            return True
+    
+    # 检查第二层调用
+    for func in call_tree[handler_name]["level2"]:
+        if func in extract_funcs:
+            return True
+    
+    return False
+
+def find_handlers_with_extract_funcs(handler_data, extract_funcs):
+    """
+    找到需要保留的handler函数，优先保留最顶层的
+    """
+    call_tree = build_call_tree(handler_data)
+    log(f"构建了 {len(call_tree)} 个handler的调用树")
+    
+    # 找出所有涉及extract_func的handler
+    handlers_with_extract = {}
+    
+    for handler_name in call_tree:
+        if check_handler_needs_extraction(handler_name, call_tree, extract_funcs):
+            # 确定在哪一层发现了extract_func
+            level_found = None
+            extract_func_found = None
+            
+            # 先检查第一层
+            for func in call_tree[handler_name]["level1"]:
+                if func in extract_funcs:
+                    level_found = 1
+                    extract_func_found = func
+                    break
+            
+            # 如果第一层没找到，检查第二层
+            if level_found is None:
+                for func in call_tree[handler_name]["level2"]:
+                    if func in extract_funcs:
+                        level_found = 2
+                        extract_func_found = func
+                        break
+            
+            if level_found is not None:
+                handlers_with_extract[handler_name] = {
+                    "level": level_found,
+                    "extract_func": extract_func_found,
+                    "call_tree": call_tree[handler_name]
+                }
+    
+    log(f"找到 {len(handlers_with_extract)} 个涉及extract_func的handler")
+    
+    # 优先保留第一层的handler
+    final_handlers = {}
+    
+    # 按层级分组
+    level1_handlers = {k: v for k, v in handlers_with_extract.items() if v["level"] == 1}
+    level2_handlers = {k: v for k, v in handlers_with_extract.items() if v["level"] == 2}
+    
+    # 对于第二层的handler，检查是否有第一层的handler包含同样的extract_func
+    for handler_name, info in level2_handlers.items():
+        extract_func = info["extract_func"]
+        
+        # 检查是否有第一层handler包含同样的extract_func
+        has_level1_alternative = False
+        for l1_handler, l1_info in level1_handlers.items():
+            if l1_info["extract_func"] == extract_func:
+                has_level1_alternative = True
+                break
+        
+        # 如果没有第一层的替代，则保留第二层的
+        if not has_level1_alternative:
+            final_handlers[handler_name] = info
+    
+    # 添加所有第一层的handler
+    final_handlers.update(level1_handlers)
+    
+    return final_handlers
+            
+def main():
+    # 尝试获取Ghidra脚本参数
+    output_dir = os.getcwd()
+    if getScriptArgs():
+        args = getScriptArgs()
+        if len(args) > 0:
+            config_filename = args[0]
+            log(f"从命令行获取extract配置文件名: {config_filename}")
+        if len(args) > 1:
+            combined_handler_filename = args[1]
+            log(f"从命令行获取handler函数文件名: {combined_handler_filename}")
+        if len(args) > 2:
+            output_dir = args[2]
+            log(f"从命令行获取输出目录: {output_dir}")
+    
+    # 读取配置文件
+    config = read_extract_config(config_filename)
+    extract_funcs = config.get("extract_funcs", ["websGetVar"])
+    remove_funcs = config.get("remove_funcs", [])
+    
+    handler_data = read_combined_handler_functions(combined_handler_filename)
+    if not handler_data:
+        log("未找到有效的handler函数数据，退出")
+        return
+    
+    program_path=config.get("program_path", currentProgram.getExecutablePath())
+    program_arch = str(currentProgram.getLanguage().getProcessor())
+    language_id = str(currentProgram.getLanguageID())
+    print(f"当前程序: {currentProgram.getName()}, 路径: {program_path}, 架构: {program_arch}, 语言ID: {language_id}")
+    endianness = "unknown"
+    if "BE" in language_id.upper() or "BIG" in language_id.upper():
+        endianness = "big"
+    elif "LE" in language_id.upper() or "LITTLE" in language_id.upper():
+        endianness = "little"
+    else:
+        # 尝试从程序的字节序获取
+        if currentProgram.getMemory().isBigEndian():
+            endianness = "big"
+        else:
+            endianness = "little"
+    
+    # 构建完整的架构描述
+    if program_arch == "MIPS":
+        if endianness == "little":
+            arch_name = "MIPSEL"  # MIPS Little Endian
+        else:
+            arch_name = "MIPSEB"  # MIPS Big Endian
+    elif program_arch == "ARM":
+        if endianness == "little":
+            arch_name = "ARMEL"   # ARM Little Endian
+        else:
+            arch_name = "ARMEB"   # ARM Big Endian
+    else:
+        # 其他架构，保持原有格式
+        arch_name = program_arch
+        if endianness != "unknown":
+            arch_name += "_" + endianness.upper()
+    result = {
+        "program_name": currentProgram.getName(),
+        "program_path": program_path,
+        "program_arch": arch_name,
+        "extract_functions": [],
+        "remove_functions": []
+    }
+    
+    for extract_func_name in extract_funcs:
+        log(f"分析函数: {extract_func_name}")
+        
+        # 找到所有引用此函数的位置
+        call_sites, target_func = find_function_references(extract_func_name)
+        
+        if not target_func:
+            continue
+        param_count= get_function_parameter_count(target_func)
+        log(f"函数 {extract_func_name} 的参数数量: {param_count}")
+        
+        func_info = {
+            "name": extract_func_name,
+            "address": "0x"+str(target_func.getEntryPoint()),
+            "parameter_count": param_count,
+            "callers": []
+        }
+        
+        # 分析每个调用点
+        for caller_tuple in call_sites:
+            # 分析调用者函数中的所有子函数调用
+            caller_func, call_sites_list = caller_tuple
+            caller_info = {
+                "name": caller_func.getName(),
+                "address": "0x"+str(caller_func.getEntryPoint()),
+            }
+            
+            func_info["callers"].append(caller_info)
+        
+        result["extract_functions"].append(func_info)
+        # 处理需要移除的函数
+    for remove_func_item in remove_funcs:
+        # 兼容老格式字符串和新格式字典
+        if isinstance(remove_func_item, dict):
+            remove_func_name = remove_func_item.get("name")
+            return_value = remove_func_item.get("return_value", 0)
+        else:
+            remove_func_name = remove_func_item
+            return_value = 0
+
+        log(f"查找移除函数: {remove_func_name}")
+        address, func = get_function_address(remove_func_name)
+        
+        if address:
+            remove_info = {
+                "name": remove_func_name,
+                "address": "0x"+address,
+                "return_value": return_value
+            }
+            result["remove_functions"].append(remove_info)
+        else:
+            log(f"警告: 未找到移除函数 {remove_func_name}")
+    # 确保输出目录存在
+    try:
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir)
+            log(f"创建输出目录: {output_dir}")
+    except Exception as e:
+        log(f"创建输出目录失败: {str(e)}")
+        output_dir = os.getcwd()
+        log(f"回退使用当前工作目录: {output_dir}")
+    # 生成输出文件名，基于输入配置文件名
+    output_basename = os.path.splitext(os.path.basename(config_filename))[0]
+    output_file_path = os.path.join(output_dir, f"{output_basename}_results.json")
+    # 将结果写入JSON文件
+    with open(output_file_path, "w", encoding="utf-8") as f:
+        json.dump(result, f, indent=2)
+    
+    log(f"分析完成，结果已保存至 {output_file_path}")
+
+if __name__ == '__main__':
+    main()
+

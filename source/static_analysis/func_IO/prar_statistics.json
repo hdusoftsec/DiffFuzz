@@ -1,0 +1,3121 @@
+{
+    "bin_files": [
+        {
+            "file_name": "httpd",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/httpd"
+            ],
+            "prar_names": [
+                "<% CmoGetCfg(",
+                "AutoReconnect",
+                "Channel",
+                "DHCPServerEnabled",
+                "DeviceName",
+                "Enabled",
+                "ForwardedPorts",
+                "Gateway",
+                "GetConnectedDevicesResult",
+                "GetDeviceSettingsResult",
+                "GetMACFilters2Result",
+                "GetNetworkStatsResult",
+                "GetRouterLanSettingsResult",
+                "GetWLanSecurityResult",
+                "GetWLanSettings24Result",
+                "GetWanSettingsResult",
+                "IPAddress",
+                "IsAllowList",
+                "MacAddress",
+                "MaxIdleTime",
+                "Name",
+                "NetworkStats",
+                "Password",
+                "Primary",
+                "RadiusIP1",
+                "RadiusIP2",
+                "RadiusPort1",
+                "RadiusPort2",
+                "RouterIPAddress",
+                "RouterSubnetMask",
+                "SSID",
+                "SSIDBroadcast",
+                "Secondary",
+                "ServiceName",
+                "Stats",
+                "SubnetMask",
+                "Type",
+                "Username",
+                "WEPKeyBits",
+                "Wireless",
+                "access_control_00",
+                "access_control_01",
+                "access_control_02",
+                "access_control_03",
+                "access_control_04",
+                "access_control_05",
+                "access_control_06",
+                "access_control_07",
+                "access_control_08",
+                "access_control_09",
+                "access_control_10",
+                "access_control_11",
+                "access_control_12",
+                "access_control_13",
+                "access_control_14",
+                "access_control_filter_type",
+                "admin_password",
+                "alg_rtsp",
+                "alg_sip",
+                "anti_spoof_check",
+                "application_00",
+                "application_01",
+                "application_02",
+                "application_03",
+                "application_04",
+                "application_05",
+                "application_06",
+                "application_07",
+                "application_08",
+                "application_09",
+                "application_10",
+                "application_11",
+                "application_12",
+                "application_13",
+                "application_14",
+                "application_15",
+                "application_16",
+                "application_17",
+                "application_18",
+                "application_19",
+                "application_20",
+                "application_21",
+                "application_22",
+                "application_23",
+                "apply",
+                "asp_temp_00",
+                "asp_temp_01",
+                "asp_temp_02",
+                "asp_temp_03",
+                "asp_temp_04",
+                "asp_temp_05",
+                "asp_temp_06",
+                "asp_temp_07",
+                "asp_temp_08",
+                "asp_temp_09",
+                "asp_temp_10",
+                "asp_temp_11",
+                "asp_temp_12",
+                "asp_temp_13",
+                "asp_temp_14",
+                "asp_temp_15",
+                "asp_temp_16",
+                "asp_temp_17",
+                "asp_temp_18",
+                "asp_temp_19",
+                "asp_temp_20",
+                "asp_temp_21",
+                "asp_temp_22",
+                "asp_temp_23",
+                "asp_temp_24",
+                "asp_temp_25",
+                "asp_temp_26",
+                "asp_temp_27",
+                "asp_temp_28",
+                "asp_temp_29",
+                "asp_temp_30",
+                "asp_temp_31",
+                "asp_temp_32",
+                "asp_temp_33",
+                "asp_temp_34",
+                "asp_temp_35",
+                "asp_temp_36",
+                "asp_temp_37",
+                "asp_temp_38",
+                "asp_temp_39",
+                "asp_temp_40",
+                "asp_temp_41",
+                "asp_temp_42",
+                "asp_temp_45",
+                "asp_temp_46",
+                "asp_temp_47",
+                "asp_temp_48",
+                "asp_temp_49",
+                "asp_temp_50",
+                "asp_temp_52",
+                "asp_temp_53",
+                "asp_temp_54",
+                "asp_temp_55",
+                "asp_temp_56",
+                "asp_temp_57",
+                "asp_temp_58",
+                "asp_temp_59",
+                "asp_temp_60",
+                "asp_temp_61",
+                "asp_temp_62",
+                "asp_temp_63",
+                "asp_temp_64",
+                "asp_temp_65",
+                "asp_temp_66",
+                "asp_temp_67",
+                "asp_temp_68",
+                "asp_temp_69",
+                "asp_temp_70",
+                "asp_temp_71",
+                "asp_temp_72",
+                "auto_channel",
+                "auto_classification",
+                "auto_uplink",
+                "blank_state",
+                "blank_status",
+                "clear",
+                "current_page",
+                "d_enable",
+                "ddns_dyndns_kinds",
+                "ddns_enable",
+                "ddns_hostname",
+                "ddns_password",
+                "ddns_sync_interval",
+                "ddns_type",
+                "ddns_username",
+                "device",
+                "dhcp",
+                "dhcp_pd",
+                "dhcpc_connection_status",
+                "dhcpc_use_ucast",
+                "dhcpd_always_bcast",
+                "dhcpd_domain_name",
+                "dhcpd_enable",
+                "dhcpd_end",
+                "dhcpd_lease_time",
+                "dhcpd_list",
+                "dhcpd_netbios_enable",
+                "dhcpd_netbios_learn",
+                "dhcpd_reserve_00",
+                "dhcpd_reserve_01",
+                "dhcpd_reserve_02",
+                "dhcpd_reserve_03",
+                "dhcpd_reserve_04",
+                "dhcpd_reserve_05",
+                "dhcpd_reserve_06",
+                "dhcpd_reserve_07",
+                "dhcpd_reserve_08",
+                "dhcpd_reserve_09",
+                "dhcpd_reserve_10",
+                "dhcpd_reserve_11",
+                "dhcpd_reserve_12",
+                "dhcpd_reserve_13",
+                "dhcpd_reserve_14",
+                "dhcpd_reserve_15",
+                "dhcpd_reserve_16",
+                "dhcpd_reserve_17",
+                "dhcpd_reserve_18",
+                "dhcpd_reserve_19",
+                "dhcpd_reserve_20",
+                "dhcpd_reserve_21",
+                "dhcpd_reserve_22",
+                "dhcpd_reserve_23",
+                "dhcpd_reserve_24",
+                "dhcpd_start",
+                "dhcpd_static_node_type",
+                "dhcpd_static_scope",
+                "dhcpd_static_wins_server",
+                "disable_wps_pin",
+                "dmz_enable",
+                "dmz_ipaddr",
+                "dmz_schedule",
+                "dns_relay",
+                "dot11_mode",
+                "download",
+                "email",
+                "email_auth",
+                "email_enable",
+                "email_schedule",
+                "end_time",
+                "firewall_rule",
+                "firewall_rule_0",
+                "firewall_rule_00",
+                "firewall_rule_01",
+                "firewall_rule_02",
+                "firewall_rule_03",
+                "firewall_rule_04",
+                "firewall_rule_05",
+                "firewall_rule_06",
+                "firewall_rule_07",
+                "firewall_rule_08",
+                "firewall_rule_09",
+                "firewall_rule_1",
+                "firewall_rule_10",
+                "firewall_rule_100",
+                "firewall_rule_101",
+                "firewall_rule_102",
+                "firewall_rule_103",
+                "firewall_rule_104",
+                "firewall_rule_105",
+                "firewall_rule_106",
+                "firewall_rule_107",
+                "firewall_rule_108",
+                "firewall_rule_109",
+                "firewall_rule_11",
+                "firewall_rule_110",
+                "firewall_rule_111",
+                "firewall_rule_112",
+                "firewall_rule_113",
+                "firewall_rule_114",
+                "firewall_rule_115",
+                "firewall_rule_116",
+                "firewall_rule_117",
+                "firewall_rule_118",
+                "firewall_rule_119",
+                "firewall_rule_12",
+                "firewall_rule_13",
+                "firewall_rule_14",
+                "firewall_rule_15",
+                "firewall_rule_16",
+                "firewall_rule_17",
+                "firewall_rule_18",
+                "firewall_rule_19",
+                "firewall_rule_2",
+                "firewall_rule_20",
+                "firewall_rule_21",
+                "firewall_rule_22",
+                "firewall_rule_23",
+                "firewall_rule_24",
+                "firewall_rule_25",
+                "firewall_rule_26",
+                "firewall_rule_27",
+                "firewall_rule_28",
+                "firewall_rule_29",
+                "firewall_rule_3",
+                "firewall_rule_30",
+                "firewall_rule_31",
+                "firewall_rule_32",
+                "firewall_rule_33",
+                "firewall_rule_34",
+                "firewall_rule_35",
+                "firewall_rule_36",
+                "firewall_rule_37",
+                "firewall_rule_38",
+                "firewall_rule_39",
+                "firewall_rule_4",
+                "firewall_rule_40",
+                "firewall_rule_41",
+                "firewall_rule_42",
+                "firewall_rule_43",
+                "firewall_rule_44",
+                "firewall_rule_45",
+                "firewall_rule_46",
+                "firewall_rule_47",
+                "firewall_rule_48",
+                "firewall_rule_49",
+                "firewall_rule_5",
+                "firewall_rule_50",
+                "firewall_rule_51",
+                "firewall_rule_52",
+                "firewall_rule_53",
+                "firewall_rule_54",
+                "firewall_rule_55",
+                "firewall_rule_56",
+                "firewall_rule_57",
+                "firewall_rule_58",
+                "firewall_rule_59",
+                "firewall_rule_6",
+                "firewall_rule_60",
+                "firewall_rule_61",
+                "firewall_rule_62",
+                "firewall_rule_63",
+                "firewall_rule_64",
+                "firewall_rule_65",
+                "firewall_rule_66",
+                "firewall_rule_67",
+                "firewall_rule_68",
+                "firewall_rule_69",
+                "firewall_rule_7",
+                "firewall_rule_70",
+                "firewall_rule_71",
+                "firewall_rule_72",
+                "firewall_rule_73",
+                "firewall_rule_74",
+                "firewall_rule_75",
+                "firewall_rule_76",
+                "firewall_rule_77",
+                "firewall_rule_78",
+                "firewall_rule_79",
+                "firewall_rule_8",
+                "firewall_rule_80",
+                "firewall_rule_81",
+                "firewall_rule_82",
+                "firewall_rule_83",
+                "firewall_rule_84",
+                "firewall_rule_85",
+                "firewall_rule_86",
+                "firewall_rule_87",
+                "firewall_rule_88",
+                "firewall_rule_89",
+                "firewall_rule_9",
+                "firewall_rule_90",
+                "firewall_rule_91",
+                "firewall_rule_92",
+                "firewall_rule_93",
+                "firewall_rule_94",
+                "firewall_rule_95",
+                "firewall_rule_96",
+                "firewall_rule_97",
+                "firewall_rule_98",
+                "firewall_rule_99",
+                "generate_pin",
+                "graph_auth_enable",
+                "graph_code",
+                "graph_id",
+                "hostname",
+                "https_config",
+                "igmp_list",
+                "inbound_filter",
+                "inbound_filter_ip_00_A",
+                "inbound_filter_ip_00_B",
+                "inbound_filter_ip_01_A",
+                "inbound_filter_ip_01_B",
+                "inbound_filter_ip_02_A",
+                "inbound_filter_ip_02_B",
+                "inbound_filter_ip_03_A",
+                "inbound_filter_ip_03_B",
+                "inbound_filter_ip_04_A",
+                "inbound_filter_ip_04_B",
+                "inbound_filter_ip_05_A",
+                "inbound_filter_ip_05_B",
+                "inbound_filter_ip_06_A",
+                "inbound_filter_ip_06_B",
+                "inbound_filter_ip_07_A",
+                "inbound_filter_ip_07_B",
+                "inbound_filter_ip_08_A",
+                "inbound_filter_ip_08_B",
+                "inbound_filter_ip_09_A",
+                "inbound_filter_ip_09_B",
+                "inbound_filter_name_00",
+                "inbound_filter_name_01",
+                "inbound_filter_name_02",
+                "inbound_filter_name_03",
+                "inbound_filter_name_04",
+                "inbound_filter_name_05",
+                "inbound_filter_name_06",
+                "inbound_filter_name_07",
+                "inbound_filter_name_08",
+                "inbound_filter_name_09",
+                "internet_session_table",
+                "ipsec",
+                "ipsec_pass_through",
+                "ipv4_6in4_remote_ip",
+                "ipv4_6in4_wan_ip",
+                "ipv6_6in4_dns_enable",
+                "ipv6_6in4_lan_ip",
+                "ipv6_6in4_primary_dns",
+                "ipv6_6in4_remote_ip",
+                "ipv6_6in4_secondary_dns",
+                "ipv6_6in4_wan_ip",
+                "ipv6_6rd_dhcp",
+                "ipv6_6rd_ipv4_mask_length",
+                "ipv6_6rd_prefix",
+                "ipv6_6rd_prefix_length",
+                "ipv6_6rd_primary_dns",
+                "ipv6_6rd_relay",
+                "ipv6_6rd_secondary_dns",
+                "ipv6_6to4_lan_ip",
+                "ipv6_6to4_lan_ip_subnet",
+                "ipv6_6to4_primary_dns",
+                "ipv6_6to4_relay",
+                "ipv6_6to4_secondary_dns",
+                "ipv6_autoconfig",
+                "ipv6_autoconfig_dns_enable",
+                "ipv6_autoconfig_lan_ip",
+                "ipv6_autoconfig_primary_dns",
+                "ipv6_autoconfig_secondary_dns",
+                "ipv6_autoconfig_type",
+                "ipv6_autodetect_dns_enable",
+                "ipv6_autodetect_lan_ip",
+                "ipv6_autodetect_primary_dns",
+                "ipv6_autodetect_secondary_dns",
+                "ipv6_dhcp_pd_enable",
+                "ipv6_dhcp_pd_enable_l",
+                "ipv6_dhcpd_end",
+                "ipv6_dhcpd_lifetime",
+                "ipv6_dhcpd_start",
+                "ipv6_pppoe_connect_mode",
+                "ipv6_pppoe_dns_enable",
+                "ipv6_pppoe_dynamic",
+                "ipv6_pppoe_idle_time",
+                "ipv6_pppoe_ipaddr",
+                "ipv6_pppoe_lan_ip",
+                "ipv6_pppoe_mtu",
+                "ipv6_pppoe_password",
+                "ipv6_pppoe_primary_dns",
+                "ipv6_pppoe_secondary_dns",
+                "ipv6_pppoe_service",
+                "ipv6_pppoe_share",
+                "ipv6_pppoe_username",
+                "ipv6_ra_adv_prefer_lifetime_l_one",
+                "ipv6_ra_adv_valid_lifetime_l_one",
+                "ipv6_static_default_gw",
+                "ipv6_static_lan_ip",
+                "ipv6_static_prefix_length",
+                "ipv6_static_primary_dns",
+                "ipv6_static_secondary_dns",
+                "ipv6_static_wan_ip",
+                "ipv6_use_link_local",
+                "ipv6_wan_specify_dns",
+                "l2tp_connection_status",
+                "lan_device_name",
+                "lan_ipaddr",
+                "lan_netmask",
+                "lan_stats",
+                "link_local_ip_l",
+                "link_local_ip_w",
+                "load",
+                "loading",
+                "log_attacks",
+                "log_debug_information",
+                "log_dropped_packets",
+                "log_email_auth",
+                "log_email_enable",
+                "log_email_password",
+                "log_email_recipien",
+                "log_email_schedule",
+                "log_email_sender",
+                "log_email_server",
+                "log_email_server_port",
+                "log_email_username",
+                "log_notice",
+                "log_system_activity",
+                "login",
+                "login_n",
+                "login_name",
+                "login_pass",
+                "mac_clone_addr",
+                "mac_filter_00",
+                "mac_filter_01",
+                "mac_filter_02",
+                "mac_filter_03",
+                "mac_filter_04",
+                "mac_filter_05",
+                "mac_filter_06",
+                "mac_filter_07",
+                "mac_filter_08",
+                "mac_filter_09",
+                "mac_filter_10",
+                "mac_filter_11",
+                "mac_filter_12",
+                "mac_filter_13",
+                "mac_filter_14",
+                "mac_filter_15",
+                "mac_filter_16",
+                "mac_filter_17",
+                "mac_filter_18",
+                "mac_filter_19",
+                "mac_filter_20",
+                "mac_filter_21",
+                "mac_filter_22",
+                "mac_filter_23",
+                "mac_filter_type",
+                "manufacturer",
+                "method",
+                "multicast_stream_enable",
+                "name",
+                "netbios_learn",
+                "netusb_guest_zone",
+                "next",
+                "ntp_client_enable",
+                "ntp_server",
+                "password",
+                "ping",
+                "ping6_ipaddr",
+                "ping_ipaddr",
+                "please_wait",
+                "port_forward_both_0",
+                "port_forward_both_00",
+                "port_forward_both_01",
+                "port_forward_both_02",
+                "port_forward_both_03",
+                "port_forward_both_04",
+                "port_forward_both_05",
+                "port_forward_both_06",
+                "port_forward_both_07",
+                "port_forward_both_08",
+                "port_forward_both_09",
+                "port_forward_both_1",
+                "port_forward_both_10",
+                "port_forward_both_11",
+                "port_forward_both_12",
+                "port_forward_both_13",
+                "port_forward_both_14",
+                "port_forward_both_15",
+                "port_forward_both_16",
+                "port_forward_both_17",
+                "port_forward_both_18",
+                "port_forward_both_19",
+                "port_forward_both_2",
+                "port_forward_both_20",
+                "port_forward_both_21",
+                "port_forward_both_22",
+                "port_forward_both_23",
+                "port_forward_both_24",
+                "pppoe_00_connection_status",
+                "pptp",
+                "pptp_connection_status",
+                "pptp_pass_through",
+                "prev",
+                "qos_dyn_frag",
+                "qos_dyn_fragmentation",
+                "qos_enable",
+                "qos_rule_00",
+                "qos_rule_01",
+                "qos_rule_02",
+                "qos_rule_03",
+                "qos_rule_04",
+                "qos_rule_05",
+                "qos_rule_06",
+                "qos_rule_07",
+                "qos_rule_08",
+                "qos_rule_09",
+                "qos_uplink",
+                "remote_http_management_enable",
+                "remote_http_management_inbound_filter",
+                "remote_http_management_port",
+                "reset",
+                "restart",
+                "restore",
+                "revoke_ip",
+                "revoke_mac",
+                "routing_table",
+                "rtsp",
+                "russia_wan_phy_ipaddr",
+                "s_start",
+                "save",
+                "schedule",
+                "schedule_rule_0",
+                "schedule_rule_00",
+                "schedule_rule_01",
+                "schedule_rule_02",
+                "schedule_rule_03",
+                "schedule_rule_04",
+                "schedule_rule_05",
+                "schedule_rule_06",
+                "schedule_rule_07",
+                "schedule_rule_08",
+                "schedule_rule_09",
+                "schedule_rule_1",
+                "schedule_rule_10",
+                "schedule_rule_11",
+                "schedule_rule_12",
+                "schedule_rule_13",
+                "schedule_rule_14",
+                "schedule_rule_15",
+                "schedule_rule_16",
+                "schedule_rule_17",
+                "schedule_rule_18",
+                "schedule_rule_19",
+                "schedule_rule_2",
+                "schedule_rule_20",
+                "schedule_rule_21",
+                "schedule_rule_22",
+                "schedule_rule_23",
+                "schedule_rule_24",
+                "schedule_rule_25",
+                "schedule_rule_26",
+                "schedule_rule_27",
+                "schedule_rule_28",
+                "schedule_rule_29",
+                "schedule_rule_3",
+                "schedule_rule_30",
+                "schedule_rule_31",
+                "schedule_time_format",
+                "service",
+                "spi_enable",
+                "start_time",
+                "static_routing_00",
+                "static_routing_01",
+                "static_routing_02",
+                "static_routing_03",
+                "static_routing_04",
+                "static_routing_05",
+                "static_routing_06",
+                "static_routing_07",
+                "static_routing_08",
+                "static_routing_09",
+                "static_routing_10",
+                "static_routing_11",
+                "static_routing_12",
+                "static_routing_13",
+                "static_routing_14",
+                "static_routing_15",
+                "static_routing_16",
+                "static_routing_17",
+                "static_routing_18",
+                "static_routing_19",
+                "static_routing_20",
+                "static_routing_21",
+                "static_routing_22",
+                "static_routing_23",
+                "static_routing_24",
+                "static_routing_25",
+                "static_routing_26",
+                "static_routing_27",
+                "static_routing_28",
+                "static_routing_29",
+                "static_routing_30",
+                "static_routing_31",
+                "static_routing_32",
+                "static_routing_33",
+                "static_routing_34",
+                "static_routing_35",
+                "static_routing_36",
+                "static_routing_37",
+                "static_routing_38",
+                "static_routing_39",
+                "static_routing_40",
+                "static_routing_41",
+                "static_routing_42",
+                "static_routing_43",
+                "static_routing_44",
+                "static_routing_45",
+                "static_routing_46",
+                "static_routing_47",
+                "static_routing_48",
+                "static_routing_49",
+                "static_routing_ipv6_00",
+                "static_routing_ipv6_01",
+                "static_routing_ipv6_02",
+                "static_routing_ipv6_03",
+                "static_routing_ipv6_04",
+                "static_routing_ipv6_05",
+                "static_routing_ipv6_06",
+                "static_routing_ipv6_07",
+                "static_routing_ipv6_08",
+                "static_routing_ipv6_09",
+                "string",
+                "syslog_server",
+                "system_time",
+                "t_start",
+                "tcp_nat_type",
+                "time_daylight_saving_enable",
+                "time_daylight_saving_end_day_of_week",
+                "time_daylight_saving_end_month",
+                "time_daylight_saving_end_time",
+                "time_daylight_saving_end_week",
+                "time_daylight_saving_start_day_of_week",
+                "time_daylight_saving_start_month",
+                "time_daylight_saving_start_time",
+                "time_daylight_saving_start_week",
+                "time_format",
+                "time_zone",
+                "time_zone_area",
+                "total_page",
+                "traffic_shaping",
+                "type",
+                "tzone",
+                "udp_nat_type",
+                "upnp_enable",
+                "url_domain_filter_00",
+                "url_domain_filter_01",
+                "url_domain_filter_02",
+                "url_domain_filter_03",
+                "url_domain_filter_04",
+                "url_domain_filter_05",
+                "url_domain_filter_06",
+                "url_domain_filter_07",
+                "url_domain_filter_08",
+                "url_domain_filter_09",
+                "url_domain_filter_10",
+                "url_domain_filter_11",
+                "url_domain_filter_12",
+                "url_domain_filter_13",
+                "url_domain_filter_14",
+                "url_domain_filter_15",
+                "url_domain_filter_16",
+                "url_domain_filter_17",
+                "url_domain_filter_18",
+                "url_domain_filter_19",
+                "url_domain_filter_20",
+                "url_domain_filter_21",
+                "url_domain_filter_22",
+                "url_domain_filter_23",
+                "url_domain_filter_24",
+                "url_domain_filter_25",
+                "url_domain_filter_26",
+                "url_domain_filter_27",
+                "url_domain_filter_28",
+                "url_domain_filter_29",
+                "url_domain_filter_30",
+                "url_domain_filter_31",
+                "url_domain_filter_32",
+                "url_domain_filter_33",
+                "url_domain_filter_34",
+                "url_domain_filter_35",
+                "url_domain_filter_36",
+                "url_domain_filter_37",
+                "url_domain_filter_38",
+                "url_domain_filter_39",
+                "url_domain_filter_type",
+                "usb3g_apn_name",
+                "usb3g_auth",
+                "usb3g_country",
+                "usb3g_dial_num",
+                "usb3g_isp",
+                "usb3g_max_idle_time",
+                "usb3g_password",
+                "usb3g_reconnect_mode",
+                "usb3g_username",
+                "usb3g_wan_mtu",
+                "usb_type",
+                "user_password",
+                "vs_rule_0",
+                "vs_rule_00",
+                "vs_rule_01",
+                "vs_rule_02",
+                "vs_rule_03",
+                "vs_rule_04",
+                "vs_rule_05",
+                "vs_rule_06",
+                "vs_rule_07",
+                "vs_rule_08",
+                "vs_rule_09",
+                "vs_rule_1",
+                "vs_rule_10",
+                "vs_rule_11",
+                "vs_rule_12",
+                "vs_rule_13",
+                "vs_rule_14",
+                "vs_rule_15",
+                "vs_rule_16",
+                "vs_rule_17",
+                "vs_rule_18",
+                "vs_rule_19",
+                "vs_rule_2",
+                "vs_rule_20",
+                "vs_rule_21",
+                "vs_rule_22",
+                "vs_rule_23",
+                "wan_current_ipaddr",
+                "wan_ip",
+                "wan_l2tp_connect_mode",
+                "wan_l2tp_dynamic",
+                "wan_l2tp_gateway",
+                "wan_l2tp_ipaddr",
+                "wan_l2tp_max_idle_time",
+                "wan_l2tp_mtu",
+                "wan_l2tp_netmask",
+                "wan_l2tp_password",
+                "wan_l2tp_russia_enable",
+                "wan_l2tp_server_ip",
+                "wan_l2tp_username",
+                "wan_mac",
+                "wan_mtu",
+                "wan_port_ping_response_enable",
+                "wan_port_ping_response_inbound_filter",
+                "wan_port_speed",
+                "wan_pppoe_connect_mode_00",
+                "wan_pppoe_dynamic_00",
+                "wan_pppoe_ipaddr_00",
+                "wan_pppoe_max_idle_time_00",
+                "wan_pppoe_mtu",
+                "wan_pppoe_password_00",
+                "wan_pppoe_russia_dynamic",
+                "wan_pppoe_russia_gateway",
+                "wan_pppoe_russia_ipaddr",
+                "wan_pppoe_russia_netmask",
+                "wan_pppoe_russia_primary_dns",
+                "wan_pppoe_russia_secondary_dns",
+                "wan_pppoe_service_00",
+                "wan_pppoe_username_00",
+                "wan_pptp_connect_mode",
+                "wan_pptp_dynamic",
+                "wan_pptp_gateway",
+                "wan_pptp_ipaddr",
+                "wan_pptp_max_idle_time",
+                "wan_pptp_mtu",
+                "wan_pptp_netmask",
+                "wan_pptp_password",
+                "wan_pptp_server_ip",
+                "wan_pptp_username",
+                "wan_primary_dns",
+                "wan_secondary_dns",
+                "wan_specify_dns",
+                "wan_static_gateway",
+                "wan_static_ipaddr",
+                "wan_static_netmask",
+                "wan_stats",
+                "wireless1_station_list",
+                "wireless_station_list",
+                "wizard",
+                "wlan0_11b_txrate",
+                "wlan0_11bg_txrate",
+                "wlan0_11d_enable",
+                "wlan0_11g_txrate",
+                "wlan0_11n_protection",
+                "wlan0_auto_channel_enable",
+                "wlan0_auto_txrate",
+                "wlan0_beacon_interval",
+                "wlan0_channel",
+                "wlan0_dot11_mode",
+                "wlan0_dtim",
+                "wlan0_eap_mac_auth",
+                "wlan0_eap_radius_server_0",
+                "wlan0_eap_radius_server_1",
+                "wlan0_eap_reauth_period",
+                "wlan0_enable",
+                "wlan0_fragmentation",
+                "wlan0_gkey_rekey_time",
+                "wlan0_partition",
+                "wlan0_psk_cipher_type",
+                "wlan0_psk_pass_phrase",
+                "wlan0_rts_threshold",
+                "wlan0_schedule",
+                "wlan0_security",
+                "wlan0_short_gi",
+                "wlan0_ssid",
+                "wlan0_ssid_broadcast",
+                "wlan0_txpower",
+                "wlan0_vap1_eap_radius_server_0",
+                "wlan0_vap1_eap_radius_server_1",
+                "wlan0_vap1_eap_reauth_period",
+                "wlan0_vap1_enable",
+                "wlan0_vap1_gkey_rekey_time",
+                "wlan0_vap1_psk_cipher_type",
+                "wlan0_vap1_psk_pass_phrase",
+                "wlan0_vap1_schedule",
+                "wlan0_vap1_security",
+                "wlan0_vap1_ssid",
+                "wlan0_vap1_wep128_key_1",
+                "wlan0_vap1_wep128_key_2",
+                "wlan0_vap1_wep128_key_3",
+                "wlan0_vap1_wep128_key_4",
+                "wlan0_vap1_wep64_key_1",
+                "wlan0_vap1_wep64_key_2",
+                "wlan0_vap1_wep64_key_3",
+                "wlan0_vap1_wep64_key_4",
+                "wlan0_vap1_wep_default_key",
+                "wlan0_vap1_wep_display",
+                "wlan0_vap_guest_zone",
+                "wlan0_wep128_key_1",
+                "wlan0_wep128_key_2",
+                "wlan0_wep128_key_3",
+                "wlan0_wep128_key_4",
+                "wlan0_wep64_key_1",
+                "wlan0_wep64_key_2",
+                "wlan0_wep64_key_3",
+                "wlan0_wep64_key_4",
+                "wlan0_wep_default_key",
+                "wlan0_wep_display",
+                "wlan0_wmm_enable",
+                "wlan1_11b_txrate",
+                "wlan1_11bg_txrate",
+                "wlan1_11d_enable",
+                "wlan1_11g_txrate",
+                "wlan1_11n_protection",
+                "wlan1_auto_channel_enable",
+                "wlan1_auto_txrate",
+                "wlan1_beacon_interval",
+                "wlan1_channel",
+                "wlan1_dot11_mode",
+                "wlan1_dtim",
+                "wlan1_eap_mac_auth",
+                "wlan1_eap_radius_server_0",
+                "wlan1_eap_radius_server_1",
+                "wlan1_eap_reauth_period",
+                "wlan1_enable",
+                "wlan1_fragmentation",
+                "wlan1_gkey_rekey_time",
+                "wlan1_partition",
+                "wlan1_psk_cipher_type",
+                "wlan1_psk_pass_phrase",
+                "wlan1_rts_threshold",
+                "wlan1_schedule",
+                "wlan1_security",
+                "wlan1_short_gi",
+                "wlan1_ssid",
+                "wlan1_ssid_broadcast",
+                "wlan1_txpower",
+                "wlan1_vap1_eap_radius_server_0",
+                "wlan1_vap1_eap_radius_server_1",
+                "wlan1_vap1_eap_reauth_period",
+                "wlan1_vap1_enable",
+                "wlan1_vap1_gkey_rekey_time",
+                "wlan1_vap1_psk_cipher_type",
+                "wlan1_vap1_psk_pass_phrase",
+                "wlan1_vap1_schedule",
+                "wlan1_vap1_security",
+                "wlan1_vap1_ssid",
+                "wlan1_vap1_wep128_key_1",
+                "wlan1_vap1_wep128_key_2",
+                "wlan1_vap1_wep128_key_3",
+                "wlan1_vap1_wep128_key_4",
+                "wlan1_vap1_wep64_key_1",
+                "wlan1_vap1_wep64_key_2",
+                "wlan1_vap1_wep64_key_3",
+                "wlan1_vap1_wep64_key_4",
+                "wlan1_vap1_wep_default_key",
+                "wlan1_vap1_wep_display",
+                "wlan1_vap_guest_zone",
+                "wlan1_wep128_key_1",
+                "wlan1_wep128_key_2",
+                "wlan1_wep128_key_3",
+                "wlan1_wep128_key_4",
+                "wlan1_wep64_key_1",
+                "wlan1_wep64_key_2",
+                "wlan1_wep64_key_3",
+                "wlan1_wep64_key_4",
+                "wlan1_wep_default_key",
+                "wlan1_wep_display",
+                "wlan1_wmm_enable",
+                "wlan_stats",
+                "wps_configured_mode",
+                "wps_default_pin",
+                "wps_enable",
+                "wps_generate_pin",
+                "wps_lock",
+                "wps_pin",
+                "wps_sta_enrollee_pin"
+            ]
+        },
+        {
+            "file_name": "rc",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/rc"
+            ],
+            "prar_names": [
+                "Name",
+                "Wireless",
+                "access_control_filter_type",
+                "alg_rtsp",
+                "alg_sip",
+                "anti_spoof_check",
+                "apply",
+                "argument",
+                "auth_type",
+                "auto_channel",
+                "auto_classification",
+                "auto_uplink",
+                "clear",
+                "d_enable",
+                "ddns_dyndns_kinds",
+                "ddns_enable",
+                "ddns_hostname",
+                "ddns_password",
+                "ddns_sync_interval",
+                "ddns_type",
+                "ddns_username",
+                "device",
+                "dhcp",
+                "dhcp_pd",
+                "dhcpc_use_ucast",
+                "dhcpd_always_bcast",
+                "dhcpd_domain_name",
+                "dhcpd_enable",
+                "dhcpd_end",
+                "dhcpd_lease_time",
+                "dhcpd_netbios_enable",
+                "dhcpd_netbios_learn",
+                "dhcpd_start",
+                "dhcpd_static_node_type",
+                "dhcpd_static_scope",
+                "dhcpd_static_wins_server",
+                "disable_wps_pin",
+                "dmz_enable",
+                "dmz_ipaddr",
+                "dmz_schedule",
+                "dns_relay",
+                "dot11_mode",
+                "email",
+                "email_auth",
+                "email_enable",
+                "email_schedule",
+                "end_time",
+                "firewall_rule",
+                "generate_pin",
+                "hostname",
+                "https_config",
+                "inbound_filter",
+                "ipsec",
+                "ipsec_pass_through",
+                "ipv6_6rd_dhcp",
+                "ipv6_autoconfig",
+                "ipv6_dhcp_pd_enable",
+                "ipv6_pppoe_idle_time",
+                "ipv6_pppoe_share",
+                "ipv6_static_default_gw",
+                "ipv6_static_prefix_length",
+                "ipv6_static_wan_ip",
+                "ipv6_use_link_local",
+                "key1",
+                "key2",
+                "lan_device_name",
+                "lan_ipaddr",
+                "lan_netmask",
+                "load",
+                "log_email_auth",
+                "log_email_enable",
+                "log_email_password",
+                "log_email_recipien",
+                "log_email_schedule",
+                "log_email_sender",
+                "log_email_server",
+                "log_email_server_port",
+                "log_email_username",
+                "login",
+                "mac_filter_type",
+                "manufacturer",
+                "method",
+                "multicast_stream_enable",
+                "name",
+                "netbios_learn",
+                "netusb_guest_zone",
+                "ntp_client_enable",
+                "ntp_server",
+                "offset",
+                "password",
+                "ping",
+                "pptp",
+                "pptp_pass_through",
+                "qos_dyn_frag",
+                "qos_dyn_fragmentation",
+                "qos_enable",
+                "qos_uplink",
+                "remote_http_management_enable",
+                "remote_http_management_inbound_filter",
+                "remote_http_management_port",
+                "reset",
+                "restart",
+                "restore",
+                "rtsp",
+                "s_start",
+                "save",
+                "schedule",
+                "schedule_rule_0",
+                "schedule_rule_00",
+                "serial",
+                "service",
+                "spi_enable",
+                "start_time",
+                "string",
+                "syslog_server",
+                "system_time",
+                "tcp_nat_type",
+                "time_daylight_saving_enable",
+                "time_daylight_saving_end_day_of_week",
+                "time_daylight_saving_end_month",
+                "time_daylight_saving_end_time",
+                "time_daylight_saving_end_week",
+                "time_daylight_saving_start_day_of_week",
+                "time_daylight_saving_start_month",
+                "time_daylight_saving_start_time",
+                "time_daylight_saving_start_week",
+                "time_zone",
+                "traffic_shaping",
+                "type",
+                "tzone",
+                "udp_nat_type",
+                "upnp_enable",
+                "url_domain_filter_type",
+                "url_filter",
+                "usb3g_apn_name",
+                "usb3g_auth",
+                "usb3g_dial_num",
+                "usb3g_max_idle_time",
+                "usb3g_password",
+                "usb3g_reconnect_mode",
+                "usb3g_username",
+                "usb3g_wan_mtu",
+                "usb_type",
+                "wan_ip",
+                "wan_l2tp_connect_mode",
+                "wan_l2tp_dynamic",
+                "wan_l2tp_gateway",
+                "wan_l2tp_ipaddr",
+                "wan_l2tp_max_idle_time",
+                "wan_l2tp_netmask",
+                "wan_l2tp_password",
+                "wan_l2tp_russia_enable",
+                "wan_l2tp_server_ip",
+                "wan_l2tp_username",
+                "wan_mac",
+                "wan_mtu",
+                "wan_port_ping_response_enable",
+                "wan_port_ping_response_inbound_filter",
+                "wan_port_speed",
+                "wan_pppoe_connect_mode_00",
+                "wan_pppoe_max_idle_time_00",
+                "wan_pppoe_russia_dynamic",
+                "wan_pppoe_russia_gateway",
+                "wan_pppoe_russia_ipaddr",
+                "wan_pppoe_russia_netmask",
+                "wan_pppoe_russia_primary_dns",
+                "wan_pppoe_russia_secondary_dns",
+                "wan_pptp_connect_mode",
+                "wan_pptp_dynamic",
+                "wan_pptp_gateway",
+                "wan_pptp_ipaddr",
+                "wan_pptp_max_idle_time",
+                "wan_pptp_netmask",
+                "wan_pptp_password",
+                "wan_pptp_server_ip",
+                "wan_pptp_username",
+                "wan_primary_dns",
+                "wan_secondary_dns",
+                "wan_specify_dns",
+                "wan_static_gateway",
+                "wan_static_ipaddr",
+                "wan_static_netmask",
+                "wlan0_11n_protection",
+                "wlan0_auto_channel_enable",
+                "wlan0_beacon_interval",
+                "wlan0_channel",
+                "wlan0_dot11_mode",
+                "wlan0_dtim",
+                "wlan0_eap_mac_auth",
+                "wlan0_eap_radius_server_0",
+                "wlan0_eap_radius_server_1",
+                "wlan0_eap_reauth_period",
+                "wlan0_enable",
+                "wlan0_fragmentation",
+                "wlan0_gkey_rekey_time",
+                "wlan0_partition",
+                "wlan0_psk_cipher_type",
+                "wlan0_psk_pass_phrase",
+                "wlan0_rts_threshold",
+                "wlan0_security",
+                "wlan0_short_gi",
+                "wlan0_ssid",
+                "wlan0_ssid_broadcast",
+                "wlan0_txpower",
+                "wlan0_vap1_eap_radius_server_0",
+                "wlan0_vap1_eap_radius_server_1",
+                "wlan0_vap1_eap_reauth_period",
+                "wlan0_vap1_enable",
+                "wlan0_vap1_gkey_rekey_time",
+                "wlan0_vap1_psk_cipher_type",
+                "wlan0_vap1_psk_pass_phrase",
+                "wlan0_vap1_security",
+                "wlan0_vap1_ssid",
+                "wlan0_vap1_wep128_key_1",
+                "wlan0_vap1_wep128_key_2",
+                "wlan0_vap1_wep128_key_3",
+                "wlan0_vap1_wep128_key_4",
+                "wlan0_vap1_wep64_key_1",
+                "wlan0_vap1_wep64_key_2",
+                "wlan0_vap1_wep64_key_3",
+                "wlan0_vap1_wep64_key_4",
+                "wlan0_vap1_wep_default_key",
+                "wlan0_vap_guest_zone",
+                "wlan0_wep128_key_1",
+                "wlan0_wep128_key_2",
+                "wlan0_wep128_key_3",
+                "wlan0_wep128_key_4",
+                "wlan0_wep64_key_1",
+                "wlan0_wep64_key_2",
+                "wlan0_wep64_key_3",
+                "wlan0_wep64_key_4",
+                "wlan0_wep_default_key",
+                "wlan0_wep_display",
+                "wlan0_wmm_enable",
+                "wlan1_11n_protection",
+                "wlan1_auto_channel_enable",
+                "wlan1_beacon_interval",
+                "wlan1_channel",
+                "wlan1_dot11_mode",
+                "wlan1_dtim",
+                "wlan1_eap_mac_auth",
+                "wlan1_eap_radius_server_0",
+                "wlan1_eap_radius_server_1",
+                "wlan1_eap_reauth_period",
+                "wlan1_enable",
+                "wlan1_fragmentation",
+                "wlan1_gkey_rekey_time",
+                "wlan1_partition",
+                "wlan1_psk_cipher_type",
+                "wlan1_psk_pass_phrase",
+                "wlan1_rts_threshold",
+                "wlan1_security",
+                "wlan1_short_gi",
+                "wlan1_ssid",
+                "wlan1_ssid_broadcast",
+                "wlan1_txpower",
+                "wlan1_vap1_eap_radius_server_0",
+                "wlan1_vap1_eap_radius_server_1",
+                "wlan1_vap1_eap_reauth_period",
+                "wlan1_vap1_enable",
+                "wlan1_vap1_gkey_rekey_time",
+                "wlan1_vap1_psk_cipher_type",
+                "wlan1_vap1_psk_pass_phrase",
+                "wlan1_vap1_security",
+                "wlan1_vap1_ssid",
+                "wlan1_vap1_wep128_key_1",
+                "wlan1_vap1_wep128_key_2",
+                "wlan1_vap1_wep128_key_3",
+                "wlan1_vap1_wep128_key_4",
+                "wlan1_vap1_wep64_key_1",
+                "wlan1_vap1_wep64_key_2",
+                "wlan1_vap1_wep64_key_3",
+                "wlan1_vap1_wep64_key_4",
+                "wlan1_vap1_wep_default_key",
+                "wlan1_vap_guest_zone",
+                "wlan1_wep128_key_1",
+                "wlan1_wep128_key_2",
+                "wlan1_wep128_key_3",
+                "wlan1_wep128_key_4",
+                "wlan1_wep64_key_1",
+                "wlan1_wep64_key_2",
+                "wlan1_wep64_key_3",
+                "wlan1_wep64_key_4",
+                "wlan1_wep_default_key",
+                "wlan1_wmm_enable",
+                "wps_configured_mode",
+                "wps_default_pin",
+                "wps_disable",
+                "wps_enable",
+                "wps_pin"
+            ]
+        },
+        {
+            "file_name": "cli",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/bin/cli"
+            ],
+            "prar_names": [
+                "argument",
+                "cancel",
+                "clear",
+                "d_enable",
+                "dhcp",
+                "dhcp_pd",
+                "dhcpd_end",
+                "dhcpd_start",
+                "firewall_rule",
+                "ipv4_6in4_remote_ip",
+                "ipv4_6in4_wan_ip",
+                "ipv6_6in4_lan_ip",
+                "ipv6_6in4_remote_ip",
+                "ipv6_6in4_wan_ip",
+                "ipv6_6rd_dhcp",
+                "ipv6_6rd_ipv4_mask_length",
+                "ipv6_6rd_prefix",
+                "ipv6_6rd_prefix_length",
+                "ipv6_6rd_relay",
+                "ipv6_6to4_lan_ip",
+                "ipv6_6to4_relay",
+                "ipv6_autoconfig",
+                "ipv6_autoconfig_dns_enable",
+                "ipv6_autoconfig_lan_ip",
+                "ipv6_autoconfig_type",
+                "ipv6_autodetect_lan_ip",
+                "ipv6_dhcp_pd_enable",
+                "ipv6_dhcp_pd_enable_l",
+                "ipv6_dhcpd_end",
+                "ipv6_dhcpd_lifetime",
+                "ipv6_dhcpd_start",
+                "ipv6_pppoe_connect_mode",
+                "ipv6_pppoe_dns_enable",
+                "ipv6_pppoe_dynamic",
+                "ipv6_pppoe_lan_ip",
+                "ipv6_pppoe_mtu",
+                "ipv6_pppoe_password",
+                "ipv6_pppoe_service",
+                "ipv6_pppoe_share",
+                "ipv6_pppoe_username",
+                "ipv6_ra_adv_prefer_lifetime_l_one",
+                "ipv6_ra_adv_valid_lifetime_l_one",
+                "ipv6_static_default_gw",
+                "ipv6_static_lan_ip",
+                "ipv6_static_prefix_length",
+                "ipv6_static_wan_ip",
+                "ipv6_use_link_local",
+                "ipv6_wan_specify_dns",
+                "login",
+                "name",
+                "password",
+                "pptp",
+                "restore",
+                "s_start",
+                "save",
+                "schedule",
+                "schedule_rule_0",
+                "schedule_rule_00",
+                "service",
+                "string",
+                "type",
+                "wan_ip",
+                "wan_l2tp_mtu",
+                "wan_mac",
+                "wan_mtu",
+                "wan_pppoe_mtu",
+                "wan_pppoe_password_00",
+                "wan_pppoe_service_00",
+                "wan_pppoe_username_00",
+                "wan_pptp_mtu",
+                "wan_specify_dns",
+                "wizard"
+            ]
+        },
+        {
+            "file_name": "hostapd",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/hostapd"
+            ],
+            "prar_names": [
+                "Button",
+                "Channel",
+                "Enabled",
+                "Name",
+                "Password",
+                "Primary",
+                "SSID",
+                "Stats",
+                "Type",
+                "Wireless",
+                "apply",
+                "argument",
+                "argumentList",
+                "auth_type",
+                "cancel",
+                "clear",
+                "detail",
+                "device",
+                "disable_wps_pin",
+                "edit",
+                "friendlyName",
+                "key1",
+                "key2",
+                "load",
+                "loading",
+                "manufacturer",
+                "manufacturerURL",
+                "method",
+                "modelDescription",
+                "modelName",
+                "modelNumber",
+                "modelURL",
+                "name",
+                "next",
+                "password",
+                "ping",
+                "prev",
+                "restart",
+                "s_start",
+                "save",
+                "serial",
+                "serialNumber",
+                "service",
+                "serviceList",
+                "step",
+                "string",
+                "type",
+                "upnp_enable",
+                "user_password",
+                "wep_key_len",
+                "wlan0_psk_cipher_type",
+                "wlan0_psk_pass_phrase",
+                "wlan0_security",
+                "wlan0_ssid",
+                "wlan0_wep128_key_1",
+                "wlan0_wep64_key_1",
+                "wlan1_psk_cipher_type",
+                "wlan1_psk_pass_phrase",
+                "wlan1_security",
+                "wlan1_ssid",
+                "wlan1_wep128_key_1",
+                "wlan1_wep64_key_1",
+                "wps_configured_mode",
+                "wps_default_pin",
+                "wps_disable",
+                "wps_enable",
+                "wps_pin"
+            ]
+        },
+        {
+            "file_name": "dcc",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/dcc"
+            ],
+            "prar_names": [
+                "Type",
+                "admin_password",
+                "asp_temp_37",
+                "asp_temp_53",
+                "auto_channel",
+                "dhcp",
+                "disable_wps_pin",
+                "dot11_mode",
+                "hostname",
+                "name",
+                "password",
+                "pptp",
+                "s_start",
+                "type",
+                "wan_l2tp_dynamic",
+                "wan_l2tp_gateway",
+                "wan_l2tp_ipaddr",
+                "wan_l2tp_netmask",
+                "wan_l2tp_password",
+                "wan_l2tp_server_ip",
+                "wan_l2tp_username",
+                "wan_mac",
+                "wan_mtu",
+                "wan_pppoe_dynamic_00",
+                "wan_pppoe_ipaddr_00",
+                "wan_pppoe_password_00",
+                "wan_pppoe_username_00",
+                "wan_pptp_dynamic",
+                "wan_pptp_gateway",
+                "wan_pptp_ipaddr",
+                "wan_pptp_netmask",
+                "wan_pptp_password",
+                "wan_pptp_server_ip",
+                "wan_pptp_username",
+                "wan_primary_dns",
+                "wan_secondary_dns",
+                "wan_specify_dns",
+                "wan_static_gateway",
+                "wan_static_ipaddr",
+                "wan_static_netmask",
+                "wlan0_11n_protection",
+                "wlan0_auto_channel_enable",
+                "wlan0_channel",
+                "wlan0_dot11_mode",
+                "wlan0_enable",
+                "wlan0_psk_cipher_type",
+                "wlan0_psk_pass_phrase",
+                "wlan0_security",
+                "wlan0_ssid",
+                "wlan0_wep64_key_1",
+                "wlan1_11n_protection",
+                "wlan1_auto_channel_enable",
+                "wlan1_channel",
+                "wlan1_dot11_mode",
+                "wlan1_enable",
+                "wlan1_psk_cipher_type",
+                "wlan1_psk_pass_phrase",
+                "wlan1_security",
+                "wlan1_ssid",
+                "wlan1_wep64_key_1",
+                "wps_configured_mode",
+                "wps_pin"
+            ]
+        },
+        {
+            "file_name": "miniupnpd",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/miniupnpd"
+            ],
+            "prar_names": [
+                "BytesReceived",
+                "BytesSent",
+                "Enabled",
+                "Gateway",
+                "IPAddress",
+                "Name",
+                "PacketsReceived",
+                "PacketsSent",
+                "SCPDURL",
+                "Type",
+                "allowedValue",
+                "allowedValueList",
+                "argument",
+                "argumentList",
+                "controlURL",
+                "defaultValue",
+                "device",
+                "deviceList",
+                "deviceType",
+                "direction",
+                "eventSubURL",
+                "friendlyName",
+                "hostname",
+                "manufacturer",
+                "manufacturerURL",
+                "modelDescription",
+                "modelName",
+                "modelNumber",
+                "modelURL",
+                "name",
+                "next",
+                "ping",
+                "restart",
+                "s_start",
+                "serial",
+                "serialNumber",
+                "service",
+                "serviceId",
+                "serviceList",
+                "serviceType",
+                "string",
+                "type",
+                "wps_disable",
+                "wps_enable"
+            ]
+        },
+        {
+            "file_name": "libcrypto.so.0.9.8",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/libcrypto.so.0.9.8"
+            ],
+            "prar_names": [
+                "Name",
+                "Password",
+                "Type",
+                "argument",
+                "c_type",
+                "cancel",
+                "clear",
+                "continue",
+                "detail",
+                "device",
+                "email",
+                "friendlyName",
+                "hostname",
+                "ipsec",
+                "load",
+                "loading",
+                "login",
+                "maximum",
+                "method",
+                "minimum",
+                "name",
+                "next",
+                "offset",
+                "password",
+                "ping",
+                "prev",
+                "reset",
+                "restore",
+                "s_end",
+                "s_start",
+                "save",
+                "serial",
+                "serialNumber",
+                "service",
+                "string",
+                "t_end",
+                "t_start",
+                "table1",
+                "type"
+            ]
+        },
+        {
+            "file_name": "timer",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/timer"
+            ],
+            "prar_names": [
+                "Name",
+                "ddns_dyndns_kinds",
+                "ddns_enable",
+                "ddns_hostname",
+                "ddns_password",
+                "ddns_sync_interval",
+                "ddns_type",
+                "ddns_username",
+                "dhcp",
+                "dhcpd_end",
+                "dhcpd_start",
+                "edit",
+                "end_time",
+                "hostname",
+                "lan_ipaddr",
+                "method",
+                "name",
+                "ntp_client_enable",
+                "ntp_server",
+                "password",
+                "ping",
+                "s_start",
+                "schedule",
+                "start_time",
+                "system_time",
+                "time_daylight_saving_enable",
+                "time_zone",
+                "type",
+                "wan_ip",
+                "wlan0_enable",
+                "wlan0_schedule",
+                "wlan0_vap1_enable",
+                "wlan0_vap1_schedule",
+                "wlan1_enable",
+                "wlan1_schedule",
+                "wlan1_vap1_enable",
+                "wlan1_vap1_schedule",
+                "year"
+            ]
+        },
+        {
+            "file_name": "wcnd",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/wcnd"
+            ],
+            "prar_names": [
+                "Enabled",
+                "Name",
+                "Type",
+                "asp_temp_37",
+                "asp_temp_53",
+                "auto_channel",
+                "device",
+                "deviceType",
+                "disable_wps_pin",
+                "manufacturer",
+                "modelName",
+                "name",
+                "s_start",
+                "serial",
+                "serialNumber",
+                "type",
+                "wlan0_auto_channel_enable",
+                "wlan0_channel",
+                "wlan0_psk_cipher_type",
+                "wlan0_psk_pass_phrase",
+                "wlan0_security",
+                "wlan0_ssid",
+                "wlan0_wep_default_key",
+                "wlan0_wep_display",
+                "wlan1_auto_channel_enable",
+                "wlan1_channel",
+                "wlan1_psk_cipher_type",
+                "wlan1_psk_pass_phrase",
+                "wlan1_security",
+                "wlan1_ssid",
+                "wlan1_wep_display",
+                "wps_configured_mode",
+                "wps_enable",
+                "wps_pin"
+            ]
+        },
+        {
+            "file_name": "pppd",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/pppd"
+            ],
+            "prar_names": [
+                "Gateway",
+                "Name",
+                "Password",
+                "Type",
+                "argument",
+                "c_type",
+                "continue",
+                "d_enable",
+                "detail",
+                "device",
+                "dhcp",
+                "dhcp_pd",
+                "direction",
+                "hostname",
+                "hour",
+                "ipv6_dhcp_pd_enable",
+                "ipv6_pppoe_dynamic",
+                "ipv6_pppoe_ipaddr",
+                "ipv6_pppoe_share",
+                "load",
+                "login",
+                "maximum",
+                "method",
+                "name",
+                "password",
+                "reset",
+                "restart",
+                "restore",
+                "s_start",
+                "serial",
+                "string",
+                "type"
+            ]
+        },
+        {
+            "file_name": "libproject.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/libproject.so"
+            ],
+            "prar_names": [
+                "Channel",
+                "email",
+                "email_auth",
+                "generate_pin",
+                "ipv6_pppoe_share",
+                "log_email_auth",
+                "log_email_password",
+                "log_email_recipien",
+                "log_email_sender",
+                "log_email_server",
+                "log_email_server_port",
+                "log_email_username",
+                "login",
+                "name",
+                "password",
+                "pptp",
+                "s_start",
+                "save",
+                "string",
+                "type",
+                "usb_type",
+                "wan_l2tp_max_idle_time",
+                "wan_l2tp_mtu",
+                "wan_l2tp_russia_enable",
+                "wan_l2tp_username",
+                "wan_pppoe_mtu",
+                "wan_pptp_max_idle_time",
+                "wan_pptp_mtu",
+                "wan_pptp_username",
+                "wan_specify_dns",
+                "wlan1_11n_protection"
+            ]
+        },
+        {
+            "file_name": "libuClibc-0.9.28.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/libuClibc-0.9.28.so"
+            ],
+            "prar_names": [
+                "Channel",
+                "Name",
+                "argument",
+                "cancel",
+                "clear",
+                "device",
+                "hostname",
+                "load",
+                "login",
+                "maximum",
+                "name",
+                "password",
+                "prev",
+                "reset",
+                "restart",
+                "s_start",
+                "save",
+                "schedule",
+                "serial",
+                "service",
+                "string",
+                "type"
+            ]
+        },
+        {
+            "file_name": "tc",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/tc"
+            ],
+            "prar_names": [
+                "SSID",
+                "Type",
+                "argument",
+                "clear",
+                "continue",
+                "detail",
+                "device",
+                "dhcp",
+                "edit",
+                "key1",
+                "load",
+                "maximum",
+                "minimum",
+                "name",
+                "next",
+                "offset",
+                "ping",
+                "restart",
+                "s_start",
+                "string",
+                "t_end",
+                "type"
+            ]
+        },
+        {
+            "file_name": "dhcp6c",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/dhcp6c"
+            ],
+            "prar_names": [
+                "cancel",
+                "clear",
+                "dhcp",
+                "ip_list",
+                "load",
+                "maximum",
+                "method",
+                "name",
+                "next",
+                "ntp_server",
+                "offset",
+                "ping",
+                "prev",
+                "refresh",
+                "reset",
+                "restart",
+                "s_start",
+                "save",
+                "string",
+                "type"
+            ]
+        },
+        {
+            "file_name": "rp-pppoe.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/pppd/2.4.3/rp-pppoe.so"
+            ],
+            "prar_names": [
+                "Name",
+                "ServiceName",
+                "Type",
+                "device",
+                "hour",
+                "load",
+                "m_end",
+                "m_start",
+                "method",
+                "name",
+                "next",
+                "reset",
+                "restart",
+                "s_start",
+                "serial",
+                "service",
+                "string",
+                "type",
+                "year"
+            ]
+        },
+        {
+            "file_name": "dhcp6s",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/dhcp6s"
+            ],
+            "prar_names": [
+                "clear",
+                "device",
+                "dhcp",
+                "ip_list",
+                "load",
+                "maximum",
+                "method",
+                "name",
+                "next",
+                "offset",
+                "prev",
+                "refresh",
+                "reset",
+                "restart",
+                "s_start",
+                "save",
+                "string",
+                "type"
+            ]
+        },
+        {
+            "file_name": "libwpa_common.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/libwpa_common.so"
+            ],
+            "prar_names": [
+                "Name",
+                "Type",
+                "cancel",
+                "edit",
+                "hour",
+                "load",
+                "name",
+                "next",
+                "offset",
+                "password",
+                "prev",
+                "s_start",
+                "serial",
+                "serialNumber",
+                "string",
+                "type",
+                "year"
+            ]
+        },
+        {
+            "file_name": "msmtp",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/msmtp"
+            ],
+            "prar_names": [
+                "Name",
+                "argument",
+                "edit",
+                "email",
+                "hostname",
+                "load",
+                "login",
+                "method",
+                "name",
+                "next",
+                "password",
+                "ping",
+                "s_start",
+                "string",
+                "type"
+            ]
+        },
+        {
+            "file_name": "tftpd",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/tftpd"
+            ],
+            "prar_names": [
+                "name",
+                "restart",
+                "restore",
+                "s_start",
+                "t_start",
+                "wan_mac",
+                "wlan0_enable",
+                "wlan0_psk_pass_phrase",
+                "wlan0_security",
+                "wlan0_ssid",
+                "wlan1_psk_pass_phrase",
+                "wlan1_security",
+                "wlan1_ssid",
+                "wps_default_pin",
+                "wps_enable"
+            ]
+        },
+        {
+            "file_name": "mailosd",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/mailosd"
+            ],
+            "prar_names": [
+                "email",
+                "email_auth",
+                "end_time",
+                "log_email_auth",
+                "log_email_password",
+                "log_email_recipien",
+                "log_email_sender",
+                "log_email_server",
+                "log_email_server_port",
+                "log_email_username",
+                "name",
+                "password",
+                "s_start",
+                "start_time"
+            ]
+        },
+        {
+            "file_name": "udhcpd",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/udhcpd"
+            ],
+            "prar_names": [
+                "Name",
+                "clear",
+                "device",
+                "dhcp",
+                "hostname",
+                "load",
+                "loading",
+                "mac_filter_type",
+                "name",
+                "ping",
+                "s_start",
+                "string",
+                "type"
+            ]
+        },
+        {
+            "file_name": "lld2d",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/lld2d"
+            ],
+            "prar_names": [
+                "Stats",
+                "argument",
+                "cancel",
+                "clear",
+                "load",
+                "name",
+                "next",
+                "ping",
+                "restart",
+                "s_start",
+                "service",
+                "string",
+                "type"
+            ]
+        },
+        {
+            "file_name": "libssl.so.0.9.8",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/libssl.so.0.9.8"
+            ],
+            "prar_names": [
+                "argument",
+                "cancel",
+                "clear",
+                "load",
+                "method",
+                "name",
+                "next",
+                "ping",
+                "prev",
+                "reset",
+                "s_start",
+                "string",
+                "type"
+            ]
+        },
+        {
+            "file_name": "udhcpc",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/bin/udhcpc"
+            ],
+            "prar_names": [
+                "SSID",
+                "d_enable",
+                "dhcp",
+                "dhcpd_netbios_enable",
+                "hostname",
+                "hour",
+                "name",
+                "pptp",
+                "restart",
+                "s_start",
+                "string",
+                "type"
+            ]
+        },
+        {
+            "file_name": "ip",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/ip"
+            ],
+            "prar_names": [
+                "argument",
+                "detail",
+                "device",
+                "dhcp",
+                "ipsec",
+                "name",
+                "next",
+                "reset",
+                "restart",
+                "s_start",
+                "t_end",
+                "type"
+            ]
+        },
+        {
+            "file_name": "l2tpd",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/l2tpd"
+            ],
+            "prar_names": [
+                "Channel",
+                "Name",
+                "Type",
+                "hostname",
+                "load",
+                "name",
+                "next",
+                "ping",
+                "s_start",
+                "schedule",
+                "type"
+            ]
+        },
+        {
+            "file_name": "radvd",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/radvd"
+            ],
+            "prar_names": [
+                "clear",
+                "device",
+                "load",
+                "method",
+                "name",
+                "next",
+                "reset",
+                "restart",
+                "s_start",
+                "schedule",
+                "type"
+            ]
+        },
+        {
+            "file_name": "dnsmasq",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/dnsmasq"
+            ],
+            "prar_names": [
+                "clear",
+                "dhcp",
+                "hostname",
+                "load",
+                "loading",
+                "name",
+                "offset",
+                "ping",
+                "s_start",
+                "string",
+                "type"
+            ]
+        },
+        {
+            "file_name": "libiw.so.28",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/libiw.so.28"
+            ],
+            "prar_names": [
+                "Channel",
+                "SSID",
+                "Secondary",
+                "Wireless",
+                "device",
+                "login",
+                "name",
+                "ping",
+                "s_start",
+                "type"
+            ]
+        },
+        {
+            "file_name": "noip2",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/noip2"
+            ],
+            "prar_names": [
+                "Name",
+                "Type",
+                "ddns_type",
+                "edit",
+                "hostname",
+                "name",
+                "password",
+                "s_start",
+                "save",
+                "type"
+            ]
+        },
+        {
+            "file_name": "ntpclient",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/ntpclient"
+            ],
+            "prar_names": [
+                "end_time",
+                "hostname",
+                "name",
+                "next",
+                "reset",
+                "s_start",
+                "save",
+                "start_time",
+                "time_zone",
+                "year"
+            ]
+        },
+        {
+            "file_name": "cmd.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/l2tp/plugins/cmd.so"
+            ],
+            "prar_names": [
+                "hostname",
+                "load",
+                "name",
+                "next",
+                "offset",
+                "ping",
+                "prev",
+                "s_start",
+                "string",
+                "type"
+            ]
+        },
+        {
+            "file_name": "iptables-restore",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/iptables-restore"
+            ],
+            "prar_names": [
+                "argument",
+                "clear",
+                "load",
+                "name",
+                "next",
+                "restore",
+                "s_start",
+                "string",
+                "type"
+            ]
+        },
+        {
+            "file_name": "iptables-save",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/iptables-save"
+            ],
+            "prar_names": [
+                "argument",
+                "clear",
+                "load",
+                "name",
+                "next",
+                "s_start",
+                "save",
+                "string",
+                "type"
+            ]
+        },
+        {
+            "file_name": "sync-pppd.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/l2tp/plugins/sync-pppd.so"
+            ],
+            "prar_names": [
+                "hostname",
+                "load",
+                "name",
+                "next",
+                "offset",
+                "ping",
+                "prev",
+                "s_start",
+                "type"
+            ]
+        },
+        {
+            "file_name": "igmpproxy",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/igmpproxy"
+            ],
+            "prar_names": [
+                "Active",
+                "Name",
+                "clear",
+                "load",
+                "name",
+                "next",
+                "s_start",
+                "type"
+            ]
+        },
+        {
+            "file_name": "mbandwidth",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/mbandwidth"
+            ],
+            "prar_names": [
+                "Gateway",
+                "dhcp",
+                "manufacturer",
+                "ping",
+                "routing_table",
+                "s_start",
+                "type",
+                "wan_mtu"
+            ]
+        },
+        {
+            "file_name": "libnvram.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/libnvram.so"
+            ],
+            "prar_names": [
+                "admin_password",
+                "password",
+                "reset",
+                "restore",
+                "s_start",
+                "save",
+                "user_password",
+                "wan_mac"
+            ]
+        },
+        {
+            "file_name": "iptables",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/iptables"
+            ],
+            "prar_names": [
+                "argument",
+                "clear",
+                "load",
+                "name",
+                "next",
+                "s_start",
+                "string",
+                "type"
+            ]
+        },
+        {
+            "file_name": "libpthread-0.9.28.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/libpthread-0.9.28.so"
+            ],
+            "prar_names": [
+                "cancel",
+                "offset",
+                "reset",
+                "restart",
+                "restore",
+                "s_start",
+                "schedule",
+                "type"
+            ]
+        },
+        {
+            "file_name": "chat",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/chat"
+            ],
+            "prar_names": [
+                "clear",
+                "name",
+                "next",
+                "restore",
+                "s_start",
+                "save",
+                "string",
+                "type"
+            ]
+        },
+        {
+            "file_name": "pppoe-relay",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/pppoe-relay"
+            ],
+            "prar_names": [
+                "Active",
+                "Name",
+                "Type",
+                "argument",
+                "name",
+                "s_start",
+                "type"
+            ]
+        },
+        {
+            "file_name": "iwlist",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/iwlist"
+            ],
+            "prar_names": [
+                "Channel",
+                "SSID",
+                "Wireless",
+                "argument",
+                "device",
+                "s_start",
+                "type"
+            ]
+        },
+        {
+            "file_name": "pptp.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/pptp.so"
+            ],
+            "prar_names": [
+                "Channel",
+                "name",
+                "pptp",
+                "pptp_type",
+                "s_start",
+                "string",
+                "type"
+            ]
+        },
+        {
+            "file_name": "libipt_icmp.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_icmp.so"
+            ],
+            "prar_names": [
+                "Type",
+                "name",
+                "ping",
+                "s_start",
+                "save",
+                "string",
+                "type"
+            ]
+        },
+        {
+            "file_name": "wpatalk",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/wpatalk"
+            ],
+            "prar_names": [
+                "argument",
+                "cancel",
+                "device",
+                "name",
+                "prev",
+                "s_start",
+                "type"
+            ]
+        },
+        {
+            "file_name": "libusb-0.1.so.4",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/libusb-0.1.so.4"
+            ],
+            "prar_names": [
+                "clear",
+                "device",
+                "ping",
+                "reset",
+                "s_start",
+                "string",
+                "type"
+            ]
+        },
+        {
+            "file_name": "iwconfig",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/iwconfig"
+            ],
+            "prar_names": [
+                "SSID",
+                "argument",
+                "detail",
+                "device",
+                "name",
+                "s_start"
+            ]
+        },
+        {
+            "file_name": "arpping",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/arpping"
+            ],
+            "prar_names": [
+                "device",
+                "hostname",
+                "name",
+                "ping",
+                "s_start",
+                "save"
+            ]
+        },
+        {
+            "file_name": "gpio",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/gpio"
+            ],
+            "prar_names": [
+                "Name",
+                "name",
+                "restore",
+                "s_start",
+                "type"
+            ]
+        },
+        {
+            "file_name": "libartblock.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/libartblock.so"
+            ],
+            "prar_names": [
+                "Name",
+                "clear",
+                "name",
+                "s_start",
+                "wan_mac"
+            ]
+        },
+        {
+            "file_name": "artblock_cmd",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/bin/artblock_cmd"
+            ],
+            "prar_names": [
+                "Name",
+                "clear",
+                "name",
+                "s_start",
+                "wan_mac"
+            ]
+        },
+        {
+            "file_name": "ld-uClibc-0.9.28.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/ld-uClibc-0.9.28.so"
+            ],
+            "prar_names": [
+                "apply",
+                "load",
+                "name",
+                "s_start",
+                "type"
+            ]
+        },
+        {
+            "file_name": "libipt_time.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_time.so"
+            ],
+            "prar_names": [
+                "apply",
+                "hour",
+                "s_start",
+                "save",
+                "string"
+            ]
+        },
+        {
+            "file_name": "llmnr",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/llmnr"
+            ],
+            "prar_names": [
+                "hostname",
+                "name",
+                "s_start",
+                "string",
+                "type"
+            ]
+        },
+        {
+            "file_name": "crowdcontrol",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/crowdcontrol"
+            ],
+            "prar_names": [
+                "load",
+                "name",
+                "s_start",
+                "schedule",
+                "type"
+            ]
+        },
+        {
+            "file_name": "libipt_conntrack.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_conntrack.so"
+            ],
+            "prar_names": [
+                "name",
+                "s_start",
+                "save",
+                "string",
+                "type"
+            ]
+        },
+        {
+            "file_name": "wlanconfig",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/wlanconfig"
+            ],
+            "prar_names": [
+                "Channel",
+                "SSID",
+                "device",
+                "s_start"
+            ]
+        },
+        {
+            "file_name": "libipt_TOS.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_TOS.so"
+            ],
+            "prar_names": [
+                "Type",
+                "s_start",
+                "save",
+                "string"
+            ]
+        },
+        {
+            "file_name": "libipt_tos.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_tos.so"
+            ],
+            "prar_names": [
+                "Type",
+                "s_start",
+                "save",
+                "string"
+            ]
+        },
+        {
+            "file_name": "iwpriv",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/iwpriv"
+            ],
+            "prar_names": [
+                "argument",
+                "device",
+                "s_start",
+                "type"
+            ]
+        },
+        {
+            "file_name": "libipt_limit.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_limit.so"
+            ],
+            "prar_names": [
+                "hour",
+                "s_start",
+                "save",
+                "string"
+            ]
+        },
+        {
+            "file_name": "libipv6.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/libipv6.so"
+            ],
+            "prar_names": [
+                "ipv6_6in4_remote_ip",
+                "ipv6_static_default_gw",
+                "name",
+                "s_start"
+            ]
+        },
+        {
+            "file_name": "rdnssd",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/rdnssd"
+            ],
+            "prar_names": [
+                "ipv6_wan_specify_dns",
+                "name",
+                "s_start",
+                "wan_specify_dns"
+            ]
+        },
+        {
+            "file_name": "libipt_tcp.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_tcp.so"
+            ],
+            "prar_names": [
+                "name",
+                "s_start",
+                "save",
+                "string"
+            ]
+        },
+        {
+            "file_name": "libipt_mport.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_mport.so"
+            ],
+            "prar_names": [
+                "name",
+                "s_start",
+                "save",
+                "string"
+            ]
+        },
+        {
+            "file_name": "nvram",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/bin/nvram"
+            ],
+            "prar_names": [
+                "name",
+                "restore",
+                "s_start",
+                "save"
+            ]
+        },
+        {
+            "file_name": "libipt_udp.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_udp.so"
+            ],
+            "prar_names": [
+                "name",
+                "s_start",
+                "save",
+                "string"
+            ]
+        },
+        {
+            "file_name": "libipt_LOG.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_LOG.so"
+            ],
+            "prar_names": [
+                "name",
+                "s_start",
+                "save",
+                "string"
+            ]
+        },
+        {
+            "file_name": "libipt_REJECT.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_REJECT.so"
+            ],
+            "prar_names": [
+                "reset",
+                "s_start",
+                "save",
+                "type"
+            ]
+        },
+        {
+            "file_name": "libsutil.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/libsutil.so"
+            ],
+            "prar_names": [
+                "Name",
+                "s_start",
+                "save"
+            ]
+        },
+        {
+            "file_name": "libthread_db-0.9.28.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/libthread_db-0.9.28.so"
+            ],
+            "prar_names": [
+                "clear",
+                "reset",
+                "s_start"
+            ]
+        },
+        {
+            "file_name": "libdl-0.9.28.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/libdl-0.9.28.so"
+            ],
+            "prar_names": [
+                "load",
+                "s_start",
+                "type"
+            ]
+        },
+        {
+            "file_name": "fwqd",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/fwqd"
+            ],
+            "prar_names": [
+                "load",
+                "name",
+                "s_start"
+            ]
+        },
+        {
+            "file_name": "libutil-0.9.28.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/libutil-0.9.28.so"
+            ],
+            "prar_names": [
+                "login",
+                "name",
+                "s_start"
+            ]
+        },
+        {
+            "file_name": "libipt_SAME.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_SAME.so"
+            ],
+            "prar_names": [
+                "maximum",
+                "s_start",
+                "save"
+            ]
+        },
+        {
+            "file_name": "libipt_TCPMSS.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_TCPMSS.so"
+            ],
+            "prar_names": [
+                "s_start",
+                "save",
+                "string"
+            ]
+        },
+        {
+            "file_name": "libipt_helper.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_helper.so"
+            ],
+            "prar_names": [
+                "s_start",
+                "save",
+                "string"
+            ]
+        },
+        {
+            "file_name": "libipt_NATTYPE.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_NATTYPE.so"
+            ],
+            "prar_names": [
+                "s_start",
+                "save",
+                "type"
+            ]
+        },
+        {
+            "file_name": "libipt_ttl.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_ttl.so"
+            ],
+            "prar_names": [
+                "s_start",
+                "save",
+                "string"
+            ]
+        },
+        {
+            "file_name": "libipt_MARK.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_MARK.so"
+            ],
+            "prar_names": [
+                "s_start",
+                "save",
+                "string"
+            ]
+        },
+        {
+            "file_name": "libipt_length.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_length.so"
+            ],
+            "prar_names": [
+                "s_start",
+                "save",
+                "string"
+            ]
+        },
+        {
+            "file_name": "libipt_mark.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_mark.so"
+            ],
+            "prar_names": [
+                "s_start",
+                "save",
+                "string"
+            ]
+        },
+        {
+            "file_name": "libipt_tcpmss.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_tcpmss.so"
+            ],
+            "prar_names": [
+                "s_start",
+                "save",
+                "string"
+            ]
+        },
+        {
+            "file_name": "tracegw",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/tracegw"
+            ],
+            "prar_names": [
+                "name",
+                "s_start"
+            ]
+        },
+        {
+            "file_name": "libm-0.9.28.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/libm-0.9.28.so"
+            ],
+            "prar_names": [
+                "next",
+                "s_start"
+            ]
+        },
+        {
+            "file_name": "libipt_urlfilter.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_urlfilter.so"
+            ],
+            "prar_names": [
+                "s_start",
+                "save"
+            ]
+        },
+        {
+            "file_name": "libipt_PORTTRIGGER.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_PORTTRIGGER.so"
+            ],
+            "prar_names": [
+                "s_start",
+                "save"
+            ]
+        },
+        {
+            "file_name": "libipt_iprange.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_iprange.so"
+            ],
+            "prar_names": [
+                "s_start",
+                "save"
+            ]
+        },
+        {
+            "file_name": "libipt_mac.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_mac.so"
+            ],
+            "prar_names": [
+                "s_start",
+                "save"
+            ]
+        },
+        {
+            "file_name": "libipt_state.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_state.so"
+            ],
+            "prar_names": [
+                "s_start",
+                "save"
+            ]
+        },
+        {
+            "file_name": "libipt_REDIRECT.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_REDIRECT.so"
+            ],
+            "prar_names": [
+                "s_start",
+                "save"
+            ]
+        },
+        {
+            "file_name": "libipt_MASQUERADE.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_MASQUERADE.so"
+            ],
+            "prar_names": [
+                "s_start",
+                "save"
+            ]
+        },
+        {
+            "file_name": "libipt_standard.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_standard.so"
+            ],
+            "prar_names": [
+                "s_start",
+                "save"
+            ]
+        },
+        {
+            "file_name": "libipt_DNAT.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_DNAT.so"
+            ],
+            "prar_names": [
+                "s_start",
+                "save"
+            ]
+        },
+        {
+            "file_name": "libipt_SNAT.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/iptables/libipt_SNAT.so"
+            ],
+            "prar_names": [
+                "s_start",
+                "save"
+            ]
+        },
+        {
+            "file_name": "libgcc_s.so.1",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/libgcc_s.so.1"
+            ],
+            "prar_names": [
+                "clear"
+            ]
+        },
+        {
+            "file_name": "l2tp-control",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/l2tp-control"
+            ],
+            "prar_names": [
+                "s_start"
+            ]
+        },
+        {
+            "file_name": "libresolv-0.9.28.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/libresolv-0.9.28.so"
+            ],
+            "prar_names": [
+                "s_start"
+            ]
+        },
+        {
+            "file_name": "nmbd",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/nmbd"
+            ],
+            "prar_names": [
+                "s_start"
+            ]
+        },
+        {
+            "file_name": "libwpa_ctrl.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/libwpa_ctrl.so"
+            ],
+            "prar_names": [
+                "s_start"
+            ]
+        },
+        {
+            "file_name": "wakeOnLanProxy",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/sbin/wakeOnLanProxy"
+            ],
+            "prar_names": [
+                "s_start"
+            ]
+        },
+        {
+            "file_name": "libcrypt-0.9.28.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/libcrypt-0.9.28.so"
+            ],
+            "prar_names": [
+                "s_start"
+            ]
+        },
+        {
+            "file_name": "libnsl-0.9.28.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/libnsl-0.9.28.so"
+            ],
+            "prar_names": [
+                "s_start"
+            ]
+        },
+        {
+            "file_name": "librt-0.9.28.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/librt-0.9.28.so"
+            ],
+            "prar_names": [
+                "s_start"
+            ]
+        },
+        {
+            "file_name": "libvct.so",
+            "bin_paths": [
+                "/root/FHFuzz/firmware_SaTC/D-Link/DIR-825/_DIR825B1_FW206WWB05.bin.extracted/squashfs-root/lib/libvct.so"
+            ],
+            "prar_names": [
+                "s_start"
+            ]
+        }
+    ]
+}

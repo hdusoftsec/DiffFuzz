@@ -1,0 +1,1 @@
+python3 ./func_hook/generated.py ./static_analysis/func_IO/extract_ac6_results.json ./firmware_SaTC/Tenda/AC6/_US_AC6V2.0RTL_V15.03.06.23_multi_TD01.bin.extracted/squashfs-root/result_test

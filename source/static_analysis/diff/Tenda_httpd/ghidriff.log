@@ -1,0 +1,576 @@
+2025-04-23 14:40:58,318 ghidriff INFO     Engine File Log:  ghidriff.log INFO
+2025-04-23 14:41:18,734 ghidriff INFO     Engine File Log:  ghidriff.log INFO
+2025-04-23 15:05:18,972 ghidriff INFO     Engine File Log:  ghidriff.log INFO
+2025-04-23 15:05:18,973 ghidriff INFO     Starting Ghidra...
+2025-04-23 15:05:20 INFO  (LoggingInitialization) Using log config file: jar:file:/root/ghidra_11.3.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2025-04-23 15:05:20 INFO  (LoggingInitialization) Using log file: /root/FHFuzz/diff/Tenda_httpd/ghidriff.log  
+2025-04-23 15:05:20 INFO  (Preferences) Loading user preferences: /root/.config/ghidra/ghidra_11.3.2_PUBLIC/preferences  
+2025-04-23 15:05:20 INFO  (Preferences) Loading previous preferences: /root/.ghidra/.ghidra_9.1.2_PUBLIC/preferences  
+2025-04-23 15:05:20 INFO  (ClassSearcher) Searching for classes...  
+2025-04-23 15:05:20 INFO  (ClassSearcher) Class search complete (557 ms)  
+2025-04-23 15:05:20 INFO  (SSLContextInitializer) Initializing SSL Context  
+2025-04-23 15:05:21 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2025-04-23 15:05:21 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2025-04-23 15:05:21 INFO  (ApplicationTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2025-04-23 15:05:21,049 ghidriff INFO     GHIDRA_INSTALL_DIR: /root/ghidra_11.3.2_PUBLIC
+2025-04-23 15:05:21,052 ghidriff INFO     GHIDRA 11.3.2  Build Date: 2025-Apr-15 1250 EDT Release: PUBLIC
+2025-04-23 15:05:21,052 ghidriff INFO     Engine Args:
+2025-04-23 15:05:21,052 ghidriff INFO     	old:                ['./AC6_httpd']
+2025-04-23 15:05:21,052 ghidriff INFO     	new:                [['./AC9_httpd']]
+2025-04-23 15:05:21,052 ghidriff INFO     	engine:             VersionTrackingDiff
+2025-04-23 15:05:21,052 ghidriff INFO     	output_path:        .
+2025-04-23 15:05:21,052 ghidriff INFO     	summary:            False
+2025-04-23 15:05:21,052 ghidriff INFO     	project_location:   ghidra_projects
+2025-04-23 15:05:21,053 ghidriff INFO     	project_name:       ghidriff
+2025-04-23 15:05:21,053 ghidriff INFO     	symbols_path:       symbols
+2025-04-23 15:05:21,053 ghidriff INFO     	threaded:           True
+2025-04-23 15:05:21,053 ghidriff INFO     	force_analysis:     False
+2025-04-23 15:05:21,053 ghidriff INFO     	force_diff:         False
+2025-04-23 15:05:21,053 ghidriff INFO     	no_symbols:         False
+2025-04-23 15:05:21,053 ghidriff INFO     	log_level:          INFO
+2025-04-23 15:05:21,053 ghidriff INFO     	file_log_level:     INFO
+2025-04-23 15:05:21,053 ghidriff INFO     	log_path:           ghidriff.log
+2025-04-23 15:05:21,053 ghidriff INFO     	va:                 False
+2025-04-23 15:05:21,053 ghidriff INFO     	min_func_len:       10
+2025-04-23 15:05:21,053 ghidriff INFO     	use_calling_counts: False
+2025-04-23 15:05:21,053 ghidriff INFO     	gdt:                []
+2025-04-23 15:05:21,053 ghidriff INFO     	bsim:               True
+2025-04-23 15:05:21,053 ghidriff INFO     	bsim_full:          False
+2025-04-23 15:05:21,053 ghidriff INFO     	max_ram_percent:    60.0
+2025-04-23 15:05:21,053 ghidriff INFO     	print_flags:        False
+2025-04-23 15:05:21,053 ghidriff INFO     	jvm_args:           None
+2025-04-23 15:05:21,053 ghidriff INFO     	side_by_side:       False
+2025-04-23 15:05:21,053 ghidriff INFO     	max_section_funcs:  200
+2025-04-23 15:05:21,053 ghidriff INFO     	md_title:           None
+2025-04-23 15:05:21,068 ghidriff INFO     Setting Up Ghidra Project...
+2025-04-23 15:05:21 INFO  (DefaultProject) Creating project: /root/FHFuzz/diff/Tenda_httpd/ghidra_projects/ghidriff-AC6_httpd-AC9_httpd/ghidriff-AC6_httpd-AC9_httpd  
+2025-04-23 15:05:21,177 ghidriff INFO     Created project: ghidriff-AC6_httpd-AC9_httpd
+2025-04-23 15:05:21,178 ghidriff INFO     Project Location: /root/FHFuzz/diff/Tenda_httpd/ghidra_projects/ghidriff-AC6_httpd-AC9_httpd/
+2025-04-23 15:05:21,200 ghidriff INFO     Importing AC6_httpd as AC6_httpd-65fcfd
+2025-04-23 15:05:21 INFO  (FileCacheMaintenanceDaemon) Starting cache cleanup: /var/tmp/root-ghidra/fscache2  
+2025-04-23 15:05:21 INFO  (FileCacheMaintenanceDaemon) Finished cache cleanup, estimated storage used: 0  
+2025-04-23 15:05:21 INFO  (AutoImporter) Using Loader: Executable and Linking Format (ELF)  
+2025-04-23 15:05:21 INFO  (AutoImporter) Using Language/Compiler: MIPS:LE:32:default:default  
+2025-04-23 15:05:21 INFO  (AutoImporter) Using Library Search Path: [., /bin, /lib, /lib64, /lib/x86_64-linux-gnu, /lib/aarch64-linux-gnu, /usr/bin, /usr/lib, /usr/X11R6/bin, /usr/X11R6/lib, /usr/java/packages/lib, /usr/lib/x86_64-linux-gnu/jni, /usr/lib/x86_64-linux-gnu, /usr/lib/jni]  
+2025-04-23 15:05:21 DEBUG (ElfHeader) Elf symbol table section .dynsym linked to string table section .dynstr  
+2025-04-23 15:05:21 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2025-04-23 15:05:21 DEBUG (ElfHeader) Elf relocation table section .rel.dyn linked to symbol table section .dynsym affecting PT_LOAD  
+2025-04-23 15:05:21 DEBUG (ElfHeader) Elf relocation table section .rel.plt linked to symbol table section .dynsym affecting .plt  
+2025-04-23 15:05:21 DEBUG (ElfProgramBuilder) Discarding 12-byte alignment/filler segment_9.6 at 00533244  
+2025-04-23 15:05:21 DEBUG (ElfProgramBuilder) Discarding 12-byte alignment/filler segment_9.10 at 0053ee34  
+2025-04-23 15:05:21 DEBUG (ElfProgramBuilder) Discarding 2-byte alignment/filler segment_5.9 at 0040bf66  
+2025-04-23 15:05:21 DEBUG (ElfProgramBuilder) Discarding 8-byte alignment/filler segment_5.14 at 0040bff8  
+2025-04-23 15:05:21 DEBUG (ElfProgramBuilder) Discarding 8-byte alignment/filler segment_5.19 at 00505248  
+2025-04-23 15:05:22 INFO  (AutoImporter) Additional info:
+Loading file:///root/FHFuzz/diff/Tenda_httpd/AC6_httpd?MD5=6bbbe9d79eed77c2b21108d6bc60e46a...
+Skipping section [.mdebug.abi32] with invalid size 0x0
+Unable to place symbol due to non-loaded section: .mdebug.abi32 - value=0x0, section=.mdebug.abi32
+_mips_gp0_value=0x546e30
+------------------------------------------------
+
+Linking the External Programs of 'AC6_httpd' to imported libraries...
+  [libCfm.so] -> not found in project
+  [libcommon.so] -> not found in project
+  [libChipApi.so] -> not found in project
+  [libvos_util.so] -> not found in project
+  [libz.so] -> not found in project
+  [libpthread.so.0] -> not found in project
+  [libapmib.so] -> not found in project
+  [librtlWifiSrc.so] -> not found in project
+  [libtpi.so] -> not found in project
+  [libm.so.0] -> not found in project
+  [libucapi.so] -> not found in project
+  [libgcc_s.so.1] -> not found in project
+  [libc.so.0] -> not found in project
+------------------------------------------------
+
+Resolving External Symbols of [/AC6_httpd] - 280 unresolved symbols, no external libraries configured - skipping
+  
+2025-04-23 15:05:23,043 ghidriff INFO     Loaded AC6_httpd - .ProgramDB
+2025-04-23 15:05:23,044 ghidriff INFO     Importing AC9_httpd as AC9_httpd-5ea835
+2025-04-23 15:05:23 INFO  (AutoImporter) Using Loader: Executable and Linking Format (ELF)  
+2025-04-23 15:05:23 INFO  (AutoImporter) Using Language/Compiler: MIPS:LE:32:default:default  
+2025-04-23 15:05:23 INFO  (AutoImporter) Using Library Search Path: [., /bin, /lib, /lib64, /lib/x86_64-linux-gnu, /lib/aarch64-linux-gnu, /usr/bin, /usr/lib, /usr/X11R6/bin, /usr/X11R6/lib, /usr/java/packages/lib, /usr/lib/x86_64-linux-gnu/jni, /usr/lib/x86_64-linux-gnu, /usr/lib/jni]  
+2025-04-23 15:05:23 DEBUG (ElfHeader) Elf symbol table section .dynsym linked to string table section .dynstr  
+2025-04-23 15:05:23 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2025-04-23 15:05:23 DEBUG (ElfHeader) Elf relocation table section .rel.dyn linked to symbol table section .dynsym affecting PT_LOAD  
+2025-04-23 15:05:23 DEBUG (ElfHeader) Elf relocation table section .rel.plt linked to symbol table section .dynsym affecting .plt  
+2025-04-23 15:05:23 DEBUG (ElfProgramBuilder) Discarding 12-byte alignment/filler segment_4.6 at 00536244  
+2025-04-23 15:05:23 DEBUG (ElfProgramBuilder) Discarding 12-byte alignment/filler segment_4.10 at 00541e34  
+2025-04-23 15:05:23 DEBUG (ElfProgramBuilder) Discarding 2-byte alignment/filler segment_3.9 at 0040c16a  
+2025-04-23 15:05:23 DEBUG (ElfProgramBuilder) Discarding 4-byte alignment/filler segment_3.14 at 0040c1fc  
+2025-04-23 15:05:23 DEBUG (ElfProgramBuilder) Discarding 8-byte alignment/filler segment_3.19 at 00507988  
+2025-04-23 15:05:23 INFO  (AutoImporter) Additional info:
+Loading file:///root/FHFuzz/diff/Tenda_httpd/AC9_httpd?MD5=8bcc3eee1768591e050db8ff4eff7da1...
+Skipping section [.mdebug.abi32] with invalid size 0x0
+Unable to place symbol due to non-loaded section: .mdebug.abi32 - value=0x0, section=.mdebug.abi32
+_mips_gp0_value=0x549e30
+------------------------------------------------
+
+Linking the External Programs of 'AC9_httpd' to imported libraries...
+  [libCfm.so] -> not found in project
+  [libcommon.so] -> not found in project
+  [libChipApi.so] -> not found in project
+  [libvos_util.so] -> not found in project
+  [libz.so] -> not found in project
+  [libpthread.so.0] -> not found in project
+  [libapmib.so] -> not found in project
+  [librtlWifiSrc.so] -> not found in project
+  [libtpi.so] -> not found in project
+  [libm.so.0] -> not found in project
+  [libucapi.so] -> not found in project
+  [libgcc_s.so.1] -> not found in project
+  [libc.so.0] -> not found in project
+------------------------------------------------
+
+Resolving External Symbols of [/AC9_httpd] - 284 unresolved symbols, no external libraries configured - skipping
+  
+2025-04-23 15:05:23,572 ghidriff INFO     Loaded AC9_httpd - .ProgramDB
+2025-04-23 15:05:23,572 ghidriff INFO     Project Files:
+2025-04-23 15:05:23,575 ghidriff INFO     ghidriff-AC6_httpd-AC9_httpd:/AC9_httpd-5ea835
+2025-04-23 15:05:23,575 ghidriff INFO     ghidriff-AC6_httpd-AC9_httpd:/AC6_httpd-65fcfd
+2025-04-23 15:05:23,581 ghidriff INFO     Setting up Symbol Server for symbols...
+2025-04-23 15:05:23,581 ghidriff INFO     path: symbols level: 0
+2025-04-23 15:05:23,603 ghidriff INFO     Symbol Server Configured path: SymbolServerService:
+	symbolStore: LocalSymbolStore: [ rootDir: /root/FHFuzz/diff/Tenda_httpd/symbols, storageLevel: -1],
+	symbolServers:
+		HttpSymbolServer: [ url: https://msdl.microsoft.com/download/symbols/, trusted: false, storageLevel: -1]
+		HttpSymbolServer: [ url: https://chromium-browser-symsrv.commondatastorage.googleapis.com/, trusted: false, storageLevel: -1]
+		HttpSymbolServer: [ url: https://symbols.mozilla.org/, trusted: false, storageLevel: -1]
+2025-04-23 15:05:23,614 ghidriff WARNING  PDB not found for AC6_httpd!
+2025-04-23 15:05:23,624 ghidriff WARNING  PDB not found for AC9_httpd!
+2025-04-23 15:05:23,626 ghidriff INFO     Program: AC6_httpd-65fcfd imported: True has_pdb: False pdb_loaded: False analyzed False
+2025-04-23 15:05:23,626 ghidriff INFO     Program: AC9_httpd-5ea835 imported: True has_pdb: False pdb_loaded: False analyzed False
+2025-04-23 15:05:23,626 ghidriff INFO     Starting analysis for 2 binaries
+2025-04-23 15:05:23,687 ghidriff INFO     Analyzing: AC9_httpd - .ProgramDB
+2025-04-23 15:05:23,719 ghidriff INFO     Analyzing: AC6_httpd - .ProgramDB
+2025-04-23 15:05:23,723 ghidriff WARNING  Turning off 'Shared Return Calls' for AC6_httpd - .ProgramDB
+2025-04-23 15:05:23,724 ghidriff INFO     Starting Ghidra analysis of AC6_httpd - .ProgramDB...
+2025-04-23 15:05:23 WARN  (DWARFAbbreviation) Mismatched DWARF Attribute and Form: DW_AT_upper_bound->DW_FORM_block1  
+2025-04-23 15:05:23 WARN  (DWARFAbbreviation) Mismatched DWARF Attribute and Form: DW_AT_upper_bound->DW_FORM_block1  
+2025-04-23 15:05:23,916 ghidriff WARNING  Turning off 'Shared Return Calls' for AC9_httpd - .ProgramDB
+2025-04-23 15:05:23,916 ghidriff INFO     Starting Ghidra analysis of AC9_httpd - .ProgramDB...
+2025-04-23 15:05:23 WARN  (DWARFAbbreviation) Mismatched DWARF Attribute and Form: DW_AT_upper_bound->DW_FORM_block1  
+2025-04-23 15:05:23 WARN  (DWARFAbbreviation) Mismatched DWARF Attribute and Form: DW_AT_upper_bound->DW_FORM_block1  
+2025-04-23 15:05:25 INFO  (DWARFImporter) Added 27823 source map entries  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF ver[2], 102 compUnits, 28904 DIES, import - total elapsed: 1413ms  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF data type import - elapsed: 230ms  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF func & symbol import - elapsed: 776ms  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF types imported: 724  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compile dirs: [/home/work/workspace/AC6V2.0/prod/httpd/httpd/src]  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF producers: [GNU C 4.4.7]  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF source languages: [DW_LANG_C89]  
+2025-04-23 15:05:25 INFO  (DWARFImporter) Added 27538 source map entries  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: asp.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF ver[2], 101 compUnits, 28383 DIES, import - total elapsed: 1520ms  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF data type import - elapsed: 311ms  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: balloc.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF func & symbol import - elapsed: 798ms  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: base64.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: cgi.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF types imported: 719  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: default.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compile dirs: [/home/work/workspace/AC6V2.0/prod/httpd/httpd/src]  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: ejlex.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF producers: [GNU C 4.4.7]  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: ejparse.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF source languages: [DW_LANG_C89]  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: form.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: h.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: asp.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: balloc.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: base64.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: handler.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: mime.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: misc.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: page.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: ringq.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: cgi.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: rom.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: default.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: sock.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: ejlex.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: sockGen.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: sslSocket.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: ejparse.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: matrix_ssl.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: form.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: security.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: h.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: sym.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: handler.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: uemf.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: url.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: mime.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: misc.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: value.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: md5c.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: page.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: um.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: umui.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: ringq.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: websda.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: rom.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: emfdb.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: webs.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: sock.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: websuemf.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: sockGen.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: main.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: sslSocket.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: ../../../../infra/pal/pal.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: matrix_ssl.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: security.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: sym.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: uemf.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/sysCurrentInfor.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: url.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/controlCfm.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: value.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/networkCfm.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/sysSafe.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: md5c.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/Dhcp.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/upload.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/cJSON.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: um.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/Form_define.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: umui.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: websda.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/system_reboot.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/mtenda.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: emfdb.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/password_error.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: webs.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/Form_public.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: websuemf.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/index.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: main.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/wizard.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/lan.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: ../../../../infra/pal/pal.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/status_inf.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/sysCurrentInfor.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/fast_setting.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/usb_cgi.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/controlCfm.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/networkCfm.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/sysSafe.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/tenda_rtl_ate.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/Dhcp.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/webip_lan.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/upload.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/wan_policy.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/cJSON.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/multiWan_setting.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/Form_define.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/webip_wan.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/system_reboot.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/nat_dmz.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/mtenda.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/arp.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/password_error.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/nat_virtualser.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/Form_public.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/nat_static.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/index.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/nat_set.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/wizard.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/ddns_config.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/routing_table.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/lan.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/routing_static.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/status_inf.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/system_log.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/fast_setting.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/log_addsetting.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/usb_cgi.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/policy_upgrade.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/tenda_rtl_ate.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/system_restore.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/webip_lan.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/system_password.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/wan_policy.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/system_baseuser.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/system_upgrade.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/cmd.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/utf_gbl_encode.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/multiWan_setting.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/qos_rule.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/webip_wan.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/auto_qos_cgi.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/nat_dmz.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/cgi_utils.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/arp.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/nat_virtualser.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/pacontrol.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/nat_static.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/upnp_config.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/nat_set.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/ddns_config.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/routing_table.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/routing_static.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/lan_dhcps.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/system_log.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/lan_dhcp_clients.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/log_addsetting.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/system_hostname.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/dns_safesecond.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/sched_wifi_check.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/policy_upgrade.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/sched_led_check.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/system_restore.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/electronic_bulletin.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/system_password.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/switch_portVLAN.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/system_baseuser.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/wifi.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/system_upgrade.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/usb.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/cmd.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/behaviormanager_demo.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/utf_gbl_encode.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/qos_rule.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/auto_qos_cgi.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/cgi_utils.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/pacontrol.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/upnp_config.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/lan_dhcps.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/lan_dhcp_clients.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/system_hostname.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/safe_demo.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/dns_safesecond.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/ucloud_v2.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/sched_wifi_check.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/alischedule.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/apclient.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/sched_led_check.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/iptv.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/electronic_bulletin.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/reboot_timer.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/switch_portVLAN.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/wifi.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/smart_power_management_cgi.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/behaviormanager_demo.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/guest_ip_confilct.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/safe_demo.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/vpn.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/ucloud_v2.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/alischedule.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/wan_err_info.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/apclient.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/cgi_common.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/cgi_mac_filter.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/iptv.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/reboot_timer.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/cgi_advertisement.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/smart_power_management_cgi.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/guest_ip_confilct.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/vpn.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/wan_err_info.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/cgi_common.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/cgi_mac_filter.c  
+2025-04-23 15:05:25 INFO  (DWARFImportSummary) DWARF compUnit: /home/work/workspace/AC6V2.0/prod/httpd/11ac/cgi/cgi_advertisement.c  
+2025-04-23 15:05:43 INFO  (PackedDatabaseCache) Packed database cache: /var/tmp/root-ghidra/packed-db-cache  
+2025-04-23 15:05:43 DEBUG (PackedDatabaseCache) Caching packed database: /root/ghidra_11.3.2_PUBLIC/Ghidra/Features/Base/data/typeinfo/generic/generic_clib.gdt  
+2025-04-23 15:05:43 DEBUG (PackedDatabase) Unpacking database /root/ghidra_11.3.2_PUBLIC/Ghidra/Features/Base/data/typeinfo/generic/generic_clib.gdt -> /var/tmp/root-ghidra/packed-db-cache/pdbDC00DD85/db.1.gbf  
+2025-04-23 15:05:43 DEBUG (PackedDatabaseCache) Cache update completed: /root/ghidra_11.3.2_PUBLIC/Ghidra/Features/Base/data/typeinfo/generic/generic_clib.gdt  
+2025-04-23 15:05:44 DEBUG (PackedDatabaseCache) Using cached packed database: /root/ghidra_11.3.2_PUBLIC/Ghidra/Features/Base/data/typeinfo/generic/generic_clib.gdt  
+2025-04-23 15:05:44 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2025-04-23 15:05:44 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2025-04-23 15:05:44 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2025-04-23 15:05:44 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2025-04-23 15:05:45 INFO  (ExternalSymbolResolverAnalyzer) Resolving External Symbols of [/AC6_httpd-65fcfd] - 280 unresolved symbols, no external libraries configured - skipping  
+2025-04-23 15:05:45 INFO  (ExternalSymbolResolverAnalyzer) Resolving External Symbols of [/AC9_httpd-5ea835] - 284 unresolved symbols, no external libraries configured - skipping  
+2025-04-23 15:05:55 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    ASCII Strings                              0.247 secs
+    Apply Data Archives                        0.604 secs
+    Call Convention ID                         1.068 secs
+    Call-Fixup Installer                       0.010 secs
+    Create Address Tables                      0.119 secs
+    Create Address Tables - One Time           0.046 secs
+    Create Function                            0.000 secs
+    DWARF                                      1.687 secs
+    Data Reference                             0.221 secs
+    Decompiler Parameter ID                    5.157 secs
+    Decompiler Switch Analysis                 7.282 secs
+    Demangler GNU                              0.181 secs
+    Disassemble Entry Points                   1.993 secs
+    Embedded Media                             0.035 secs
+    External Entry References                  0.006 secs
+    External Symbol Resolver                   0.001 secs
+    Function Start Search                      0.076 secs
+    GCC Exception Handlers                     0.300 secs
+    MIPS Constant Reference Analyzer           7.862 secs
+    MIPS Symbol                                0.034 secs
+    MIPS UnAlligned Instruction Fix            0.107 secs
+    Non-Returning Functions - Discovered       0.014 secs
+    Non-Returning Functions - Known            0.009 secs
+    Reference                                  0.286 secs
+    Shared Return Calls                        0.061 secs
+    Stack                                      4.700 secs
+    Subroutine References                      0.028 secs
+    Subroutine References - One Time           0.000 secs
+-----------------------------------------------------
+     Total Time   32 secs
+-----------------------------------------------------
+  
+2025-04-23 15:05:55 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    ASCII Strings                              0.257 secs
+    Apply Data Archives                        0.122 secs
+    Call Convention ID                         1.067 secs
+    Call-Fixup Installer                       0.011 secs
+    Create Address Tables                      0.114 secs
+    Create Address Tables - One Time           0.040 secs
+    Create Function                            0.000 secs
+    DWARF                                      1.501 secs
+    Data Reference                             0.265 secs
+    Decompiler Parameter ID                    5.151 secs
+    Decompiler Switch Analysis                 7.687 secs
+    Demangler GNU                              0.180 secs
+    Disassemble Entry Points                   1.990 secs
+    Embedded Media                             0.034 secs
+    External Entry References                  0.005 secs
+    External Symbol Resolver                   0.001 secs
+    Function Start Search                      0.071 secs
+    GCC Exception Handlers                     0.303 secs
+    MIPS Constant Reference Analyzer           7.920 secs
+    MIPS Symbol                                0.035 secs
+    MIPS UnAlligned Instruction Fix            0.099 secs
+    Non-Returning Functions - Discovered       0.014 secs
+    Non-Returning Functions - Known            0.004 secs
+    Reference                                  0.276 secs
+    Shared Return Calls                        0.061 secs
+    Stack                                      4.708 secs
+    Subroutine References                      0.027 secs
+    Subroutine References - One Time           0.000 secs
+-----------------------------------------------------
+     Total Time   31 secs
+-----------------------------------------------------
+  
+2025-04-23 15:05:56,008 ghidriff INFO     Analysis for ghidriff-AC6_httpd-AC9_httpd:/AC6_httpd-65fcfd complete
+2025-04-23 15:05:56,008 ghidriff INFO     Analysis for ghidriff-AC6_httpd-AC9_httpd:/AC9_httpd-5ea835 complete
+2025-04-23 15:05:56,008 ghidriff INFO     Diffing bins: AC6_httpd - AC9_httpd
+2025-04-23 15:06:09,369 ghidriff INFO     Setup 64 decompliers
+2025-04-23 15:06:09,369 ghidriff INFO     Loaded old program: AC6_httpd
+2025-04-23 15:06:09,369 ghidriff INFO     Loaded new program: AC9_httpd
+2025-04-23 15:06:09,642 ghidriff INFO     p1 sym count: reported: 19610 analyzed: 2337
+2025-04-23 15:06:09,902 ghidriff INFO     p2 sym count: reported: 19797 analyzed: 2367
+2025-04-23 15:06:09,903 ghidriff INFO     Found unmatched: 150 matched: 2277 symbols
+2025-04-23 15:06:09 INFO  (ConsoleTaskMonitor) Hashing symbols in AC6_httpd  
+2025-04-23 15:06:09 INFO  (ConsoleTaskMonitor) Hashing symbols in AC9_httpd  
+2025-04-23 15:06:10 INFO  (ConsoleTaskMonitor) Eliminate non-unique matches  
+2025-04-23 15:06:10 INFO  (ConsoleTaskMonitor) Finding symbol matches  
+2025-04-23 15:06:10,108 ghidriff INFO     Exec time: 0.0590 secs
+2025-04-23 15:06:10,108 ghidriff INFO     Match count 4745
+2025-04-23 15:06:10,109 ghidriff INFO     Counter({('SymbolsHash',): 1672})
+2025-04-23 15:06:10,109 ghidriff INFO     Running correlator: ExactBytesFunctionHasher
+2025-04-23 15:06:10,109 ghidriff INFO     name: ExactBytesFunctionHasher one_to_one: True one_to_many: False
+2025-04-23 15:06:10 INFO  (ConsoleTaskMonitor) Hashing functions in AC6_httpd  
+2025-04-23 15:06:10 INFO  (ConsoleTaskMonitor) Hashing functions in AC9_httpd  
+2025-04-23 15:06:10 INFO  (ConsoleTaskMonitor) Finding function matches  
+2025-04-23 15:06:10,121 ghidriff INFO     Match count: 0
+2025-04-23 15:06:10,122 ghidriff INFO     ExactBytesFunctionHasher Exec time: 0.0125 secs
+2025-04-23 15:06:10,123 ghidriff INFO     Running correlator: ExactInstructionsFunctionHasher
+2025-04-23 15:06:10,123 ghidriff INFO     name: ExactInstructionsFunctionHasher one_to_one: True one_to_many: False
+2025-04-23 15:06:10,131 ghidriff INFO     Match count: 4
+2025-04-23 15:06:10,131 ghidriff INFO     ExactInstructionsFunctionHasher Exec time: 0.0078 secs
+2025-04-23 15:06:10,131 ghidriff INFO     Running correlator: StructuralGraphExactHash
+2025-04-23 15:06:10,131 ghidriff INFO     name: StructuralGraphExactHash one_to_one: True one_to_many: False
+2025-04-23 15:06:10,178 ghidriff INFO     Match count: 0
+2025-04-23 15:06:10,178 ghidriff INFO     StructuralGraphExactHash Exec time: 0.0465 secs
+2025-04-23 15:06:10,178 ghidriff INFO     Running correlator: ExactMnemonicsFunctionHasher
+2025-04-23 15:06:10,178 ghidriff INFO     name: ExactMnemonicsFunctionHasher one_to_one: True one_to_many: False
+2025-04-23 15:06:10,185 ghidriff INFO     Match count: 0
+2025-04-23 15:06:10,185 ghidriff INFO     ExactMnemonicsFunctionHasher Exec time: 0.0064 secs
+2025-04-23 15:06:10,185 ghidriff INFO     Running correlator: BSIM
+2025-04-23 15:06:10,185 ghidriff INFO     name: BSIM one_to_one: True one_to_many: False
+2025-04-23 15:06:10,235 ghidriff INFO     Starting BSIM correlator
+2025-04-23 15:06:10,436 ghidriff INFO     Match Set 0 - 1676 matches [Correlator=Manual Match]
+2025-04-23 15:06:10,436 ghidriff INFO     Match Set -1 - 0 matches [Correlator=Implied Match]
+2025-04-23 15:06:14 INFO  (BSimProgramCorrelator) BSim Program Correlator could not find any seeds  
+2025-04-23 15:06:14,900 ghidriff INFO     Match Set 1 - 0 matches [Correlator=BSim Function Matching]
+2025-04-23 15:06:14,901 ghidriff INFO     BSIM Exec time: 4.7155 secs
+2025-04-23 15:06:14,901 ghidriff INFO     Running correlator: BulkInstructionHash
+2025-04-23 15:06:14,901 ghidriff INFO     name: BulkInstructionHash one_to_one: True one_to_many: False
+2025-04-23 15:06:14,919 ghidriff INFO     Match count: 0
+2025-04-23 15:06:14,919 ghidriff INFO     BulkInstructionHash Exec time: 0.0177 secs
+2025-04-23 15:06:14,919 ghidriff INFO     Running correlator: SigCallingCalledHasher
+2025-04-23 15:06:14,919 ghidriff INFO     name: SigCallingCalledHasher one_to_one: True one_to_many: False
+2025-04-23 15:06:14,935 ghidriff INFO     Match count: 2
+2025-04-23 15:06:14,935 ghidriff INFO     SigCallingCalledHasher Exec time: 0.0156 secs
+2025-04-23 15:06:14,935 ghidriff INFO     Running correlator: StringsRefsHasher
+2025-04-23 15:06:14,935 ghidriff INFO     name: StringsRefsHasher one_to_one: True one_to_many: False
+2025-04-23 15:06:15,870 ghidriff INFO     Match count: 0
+2025-04-23 15:06:15,870 ghidriff INFO     StringsRefsHasher Exec time: 0.9347 secs
+2025-04-23 15:06:15,870 ghidriff INFO     Running correlator: StrUniqueFuncRefsHasher
+2025-04-23 15:06:15,870 ghidriff INFO     name: StrUniqueFuncRefsHasher one_to_one: True one_to_many: False
+2025-04-23 15:06:15,875 ghidriff INFO     Match count: 2
+2025-04-23 15:06:15,876 ghidriff INFO     StrUniqueFuncRefsHasher Exec time: 0.0054 secs
+2025-04-23 15:06:15,876 ghidriff INFO     Running correlator: SwitchSigHasher
+2025-04-23 15:06:15,876 ghidriff INFO     name: SwitchSigHasher one_to_one: True one_to_many: False
+2025-04-23 15:06:16,183 ghidriff INFO     Match count: 0
+2025-04-23 15:06:16,183 ghidriff INFO     SwitchSigHasher Exec time: 0.3069 secs
+2025-04-23 15:06:16,183 ghidriff INFO     Running correlator: StructuralGraphHash
+2025-04-23 15:06:16,183 ghidriff INFO     name: StructuralGraphHash one_to_one: True one_to_many: True
+2025-04-23 15:06:16,216 ghidriff INFO     Match count: 12
+2025-04-23 15:06:16,217 ghidriff INFO     StructuralGraphHash Exec time: 0.0335 secs
+2025-04-23 15:06:16,217 ghidriff INFO     Running correlator: BulkBasicBlockMnemonicHash
+2025-04-23 15:06:16,217 ghidriff INFO     name: BulkBasicBlockMnemonicHash one_to_one: True one_to_many: True
+2025-04-23 15:06:16,233 ghidriff INFO     Match count: 0
+2025-04-23 15:06:16,233 ghidriff INFO     BulkBasicBlockMnemonicHash Exec time: 0.0160 secs
+2025-04-23 15:06:16,233 ghidriff INFO     Running correlator: SigCallingCalledHasher
+2025-04-23 15:06:16,233 ghidriff INFO     name: SigCallingCalledHasher one_to_one: True one_to_many: False
+2025-04-23 15:06:16,240 ghidriff INFO     Match count: 0
+2025-04-23 15:06:16,240 ghidriff INFO     SigCallingCalledHasher Exec time: 0.0071 secs
+2025-04-23 15:06:16,240 ghidriff INFO     Running correlator: StringsRefsHasher
+2025-04-23 15:06:16,241 ghidriff INFO     name: StringsRefsHasher one_to_one: True one_to_many: False
+2025-04-23 15:06:16,245 ghidriff INFO     Match count: 0
+2025-04-23 15:06:16,245 ghidriff INFO     StringsRefsHasher Exec time: 0.0042 secs
+2025-04-23 15:06:16,245 ghidriff INFO     Running correlator: StrUniqueFuncRefsHasher
+2025-04-23 15:06:16,245 ghidriff INFO     name: StrUniqueFuncRefsHasher one_to_one: True one_to_many: False
+2025-04-23 15:06:16,249 ghidriff INFO     Match count: 0
+2025-04-23 15:06:16,249 ghidriff INFO     StrUniqueFuncRefsHasher Exec time: 0.0042 secs
+2025-04-23 15:06:16,249 ghidriff INFO     Running correlator: SwitchSigHasher
+2025-04-23 15:06:16,249 ghidriff INFO     name: SwitchSigHasher one_to_one: True one_to_many: False
+2025-04-23 15:06:16,254 ghidriff INFO     Match count: 0
+2025-04-23 15:06:16,254 ghidriff INFO     SwitchSigHasher Exec time: 0.0043 secs
+2025-04-23 15:06:16,255 ghidriff INFO     Counter({('SymbolsHash',): 1672, ('StructuralGraphHash',): 12, ('ExactInstructionsFunctionHasher',): 4, ('SigCallingCalledHasher',): 2, ('StrUniqueFuncRefsHasher',): 2})
+2025-04-23 15:06:16,261 ghidriff INFO     Running correlator: Implied matches on p1:0 p2:0
+2025-04-23 15:06:28,809 ghidriff INFO     p1 missing = 0
+2025-04-23 15:06:28,809 ghidriff INFO     p2 missing = 13
+2025-04-23 15:06:28,811 ghidriff INFO     Externs - deleted: 0 added: 4 matched:280
+2025-04-23 15:06:28,927 ghidriff INFO     Generating matches json...
+2025-04-23 15:06:28,938 ghidriff INFO     Deduping symbols and functions...
+2025-04-23 15:06:28,942 ghidriff INFO     Sorting symbols and strings...
+2025-04-23 15:06:28,944 ghidriff INFO     Sorting functions...
+2025-04-23 15:06:29,075 ghidriff INFO     Starting esym lookups for 130 symbols using 32 threads
+2025-04-23 15:06:29,121 ghidriff INFO     Completed 7 at 5%
+2025-04-23 15:06:29,124 ghidriff INFO     Completed 14 at 10%
+2025-04-23 15:06:29,129 ghidriff INFO     Completed 21 at 16%
+2025-04-23 15:06:29,133 ghidriff INFO     Completed 28 at 21%
+2025-04-23 15:06:29,135 ghidriff INFO     Completed 35 at 26%
+2025-04-23 15:06:29,146 ghidriff INFO     Completed 42 at 32%
+2025-04-23 15:06:29,304 ghidriff INFO     Completed 49 at 37%
+2025-04-23 15:06:29,410 ghidriff INFO     Completed 56 at 43%
+2025-04-23 15:06:29,553 ghidriff INFO     Completed 63 at 48%
+2025-04-23 15:06:29,610 ghidriff INFO     Completed 70 at 53%
+2025-04-23 15:06:29,803 ghidriff INFO     Completed 77 at 59%
+2025-04-23 15:06:30,016 ghidriff INFO     Completed 84 at 64%
+2025-04-23 15:06:30,134 ghidriff INFO     Completed 91 at 70%
+2025-04-23 15:06:30,412 ghidriff INFO     Completed 98 at 75%
+2025-04-23 15:06:30,690 ghidriff INFO     Completed 105 at 80%
+2025-04-23 15:06:30,894 ghidriff INFO     Completed 112 at 86%
+2025-04-23 15:06:31,655 ghidriff INFO     Completed 119 at 91%
+2025-04-23 15:06:32,382 ghidriff INFO     Completed 126 at 96%
+2025-04-23 15:06:32,920 ghidriff INFO     Finished diffing old program: AC6_httpd
+2025-04-23 15:06:32,920 ghidriff INFO     Finished diffing program: AC9_httpd
+2025-04-23 15:06:32,946 ghidriff INFO     Writing md diff...
+2025-04-23 15:06:32,946 ghidriff INFO     Generating markdown from {'added_funcs_len': 17, 'deleted_funcs_len': 0, 'modified_funcs_len': 28, 'added_symbols_len': 55, 'deleted_symbols_len': 55, 'diff_time': 36.87617087364197, 'deleted_strings_len': 5, 'added_strings_len': 35, 'match_types': Counter({'SymbolsHash': 1672, 'ExternalsName': 280, 'StructuralGraphHash': 12, 'ExactInstructionsFunctionHasher': 4, 'SigCallingCalledHasher': 2, 'StrUniqueFuncRefsHasher': 2}), 'items_to_process': 155, 'diff_types': Counter({'address': 28, 'refcount': 15, 'calling': 14, 'code': 13, 'length': 13, 'called': 7}), 'unmatched_funcs_len': 17, 'total_funcs_len': 3953, 'matched_funcs_len': 3936, 'matched_funcs_with_code_changes_len': 13, 'matched_funcs_with_non_code_changes_len': 15, 'matched_funcs_no_changes_len': 3908, 'match_func_similarity_percent': '99.2886%', 'func_match_overall_percent': '99.5699%', 'first_matches': Counter({'SymbolsHash': 1672, 'StructuralGraphHash': 12, 'ExactInstructionsFunctionHasher': 4, 'SigCallingCalledHasher': 2, 'StrUniqueFuncRefsHasher': 2})}
+2025-04-23 15:06:32,947 ghidriff INFO     Known Command line: ghidriff --project-location ghidra_projects --project-name ghidriff --symbols-path symbols --threaded --log-level INFO --file-log-level INFO --log-path ghidriff.log --min-func-len 10 --gdt [] --bsim --max-ram-percent 60.0 --max-section-funcs 200 AC6_httpd AC9_httpd
+2025-04-23 15:06:32,947 ghidriff INFO     Extra Command line: --engine VersionTrackingDiff --output-path .
+2025-04-23 15:06:32,950 ghidriff INFO     Writing pdiff json...
+2025-04-23 15:06:32,964 ghidriff INFO     Writing matches json...
+2025-04-23 15:06:32,974 ghidriff INFO     Wrote AC6_httpd-AC9_httpd.ghidriff.md (size: 289K)
+2025-04-23 15:06:32,974 ghidriff INFO     Wrote json/AC6_httpd-AC9_httpd.ghidriff.json (size: 1158K)
+2025-04-23 15:06:32,974 ghidriff INFO     Wrote json/AC6_httpd-AC9_httpd.ghidriff.matches.json (size: 405K)

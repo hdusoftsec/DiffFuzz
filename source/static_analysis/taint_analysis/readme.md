@@ -1,0 +1,1 @@
+python3 ./static_analysis/taint_analysis/taint_mulit.py ./static_analysis/taint_analysis/extract_ac6_results.json -o ./result -t 8 >log_ac6

@@ -1,0 +1,9 @@
+save=
+name0=
+msgname=
+msgtype=
+value0=
+funcname=save_list_data
+funcpara1=aaaaaaaaaaaa
+name1=
+funcpara2=aaaaaaaaaaa

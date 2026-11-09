@@ -1,0 +1,347 @@
+2025-04-23 21:41:05,006 ghidriff INFO     Engine File Log:  diff_result/ghidriff.log INFO
+2025-04-23 21:41:13,752 ghidriff INFO     Engine File Log:  diff_result/ghidriff.log INFO
+2025-04-23 21:41:13,753 ghidriff INFO     Starting Ghidra...
+2025-04-23 21:41:15 INFO  (LoggingInitialization) Using log config file: jar:file:/root/ghidra_11.3.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2025-04-23 21:41:15 INFO  (LoggingInitialization) Using log file: /root/FHFuzz/diff/Tenda_httpd/diff_result/ghidriff.log  
+2025-04-23 21:41:15 INFO  (Preferences) Loading user preferences: /root/.config/ghidra/ghidra_11.3.2_PUBLIC/preferences  
+2025-04-23 21:41:15 INFO  (Preferences) Loading previous preferences: /root/.ghidra/.ghidra_9.1.2_PUBLIC/preferences  
+2025-04-23 21:41:15 INFO  (ClassSearcher) Searching for classes...  
+2025-04-23 21:41:15 INFO  (ClassSearcher) Class search complete (576 ms)  
+2025-04-23 21:41:16 INFO  (SSLContextInitializer) Initializing SSL Context  
+2025-04-23 21:41:16 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2025-04-23 21:41:16 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2025-04-23 21:41:16 INFO  (ApplicationTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2025-04-23 21:41:16,140 ghidriff INFO     GHIDRA_INSTALL_DIR: /root/ghidra_11.3.2_PUBLIC
+2025-04-23 21:41:16,143 ghidriff INFO     GHIDRA 11.3.2  Build Date: 2025-Apr-15 1250 EDT Release: PUBLIC
+2025-04-23 21:41:16,143 ghidriff INFO     Engine Args:
+2025-04-23 21:41:16,143 ghidriff INFO     	old:                ['./AC15_httpd']
+2025-04-23 21:41:16,143 ghidriff INFO     	new:                [['./AC18_httpd']]
+2025-04-23 21:41:16,143 ghidriff INFO     	engine:             VersionTrackingDiff
+2025-04-23 21:41:16,143 ghidriff INFO     	output_path:        ./diff_result
+2025-04-23 21:41:16,143 ghidriff INFO     	summary:            False
+2025-04-23 21:41:16,143 ghidriff INFO     	project_location:   ghidra_projects
+2025-04-23 21:41:16,143 ghidriff INFO     	project_name:       ghidriff
+2025-04-23 21:41:16,143 ghidriff INFO     	symbols_path:       symbols
+2025-04-23 21:41:16,143 ghidriff INFO     	threaded:           True
+2025-04-23 21:41:16,143 ghidriff INFO     	force_analysis:     False
+2025-04-23 21:41:16,144 ghidriff INFO     	force_diff:         False
+2025-04-23 21:41:16,144 ghidriff INFO     	no_symbols:         False
+2025-04-23 21:41:16,144 ghidriff INFO     	log_level:          INFO
+2025-04-23 21:41:16,144 ghidriff INFO     	file_log_level:     INFO
+2025-04-23 21:41:16,144 ghidriff INFO     	log_path:           ghidriff.log
+2025-04-23 21:41:16,144 ghidriff INFO     	va:                 False
+2025-04-23 21:41:16,144 ghidriff INFO     	min_func_len:       10
+2025-04-23 21:41:16,144 ghidriff INFO     	use_calling_counts: False
+2025-04-23 21:41:16,144 ghidriff INFO     	gdt:                []
+2025-04-23 21:41:16,144 ghidriff INFO     	bsim:               True
+2025-04-23 21:41:16,144 ghidriff INFO     	bsim_full:          False
+2025-04-23 21:41:16,144 ghidriff INFO     	max_ram_percent:    60.0
+2025-04-23 21:41:16,144 ghidriff INFO     	print_flags:        False
+2025-04-23 21:41:16,144 ghidriff INFO     	jvm_args:           None
+2025-04-23 21:41:16,144 ghidriff INFO     	side_by_side:       False
+2025-04-23 21:41:16,144 ghidriff INFO     	max_section_funcs:  200
+2025-04-23 21:41:16,144 ghidriff INFO     	md_title:           None
+2025-04-23 21:41:16,160 ghidriff INFO     Setting Up Ghidra Project...
+2025-04-23 21:41:16 INFO  (DefaultProject) Creating project: /root/FHFuzz/diff/Tenda_httpd/diff_result/ghidra_projects/ghidriff-AC15_httpd-AC18_httpd/ghidriff-AC15_httpd-AC18_httpd  
+2025-04-23 21:41:16,284 ghidriff INFO     Created project: ghidriff-AC15_httpd-AC18_httpd
+2025-04-23 21:41:16,317 ghidriff INFO     Project Location: /root/FHFuzz/diff/Tenda_httpd/diff_result/ghidra_projects/ghidriff-AC15_httpd-AC18_httpd/
+2025-04-23 21:41:16,331 ghidriff INFO     Importing AC15_httpd as AC15_httpd-6a17a4
+2025-04-23 21:41:16 DEBUG (ElfHeader) Elf symbol table section .dynsym linked to string table section .dynstr  
+2025-04-23 21:41:16 DEBUG (ElfHeader) Elf relocation table section .rel.dyn linked to symbol table section .dynsym affecting PT_LOAD  
+2025-04-23 21:41:16 DEBUG (ElfHeader) Elf relocation table section .rel.plt linked to symbol table section .dynsym affecting .plt  
+2025-04-23 21:41:16 INFO  (AutoImporter) Using Loader: Executable and Linking Format (ELF)  
+2025-04-23 21:41:16 INFO  (AutoImporter) Using Language/Compiler: ARM:LE:32:v8:default  
+2025-04-23 21:41:16 INFO  (AutoImporter) Using Library Search Path: [., /bin, /lib, /lib64, /lib/x86_64-linux-gnu, /lib/aarch64-linux-gnu, /usr/bin, /usr/lib, /usr/X11R6/bin, /usr/X11R6/lib, /usr/java/packages/lib, /usr/lib/x86_64-linux-gnu/jni, /usr/lib/x86_64-linux-gnu, /usr/lib/jni]  
+2025-04-23 21:41:17 DEBUG (ElfHeader) Elf symbol table section .dynsym linked to string table section .dynstr  
+2025-04-23 21:41:17 DEBUG (ElfHeader) Elf relocation table section .rel.dyn linked to symbol table section .dynsym affecting PT_LOAD  
+2025-04-23 21:41:17 DEBUG (ElfHeader) Elf relocation table section .rel.plt linked to symbol table section .dynsym affecting .plt  
+2025-04-23 21:41:17 DEBUG (ElfProgramBuilder) Discarding 1-byte alignment/filler segment_3.6 at 0000d691  
+2025-04-23 21:41:17 DEBUG (ElfProgramBuilder) Discarding 2-byte alignment/filler segment_3.8 at 0000db12  
+2025-04-23 21:41:17 INFO  (AutoImporter) Additional info:
+Loading file:///root/FHFuzz/diff/Tenda_httpd/AC15_httpd?MD5=2d40f37630b5a46c27254c06dee90580...
+------------------------------------------------
+
+Linking the External Programs of 'AC15_httpd' to imported libraries...
+  [libCfm.so] -> not found in project
+  [libcommon.so] -> not found in project
+  [libChipApi.so] -> not found in project
+  [libvos_util.so] -> not found in project
+  [libz.so] -> not found in project
+  [libpthread.so.0] -> not found in project
+  [libnvram.so] -> not found in project
+  [libshared.so] -> not found in project
+  [libtpi.so] -> not found in project
+  [libm.so.0] -> not found in project
+  [libucapi.so] -> not found in project
+  [libgcc_s.so.1] -> not found in project
+  [libc.so.0] -> not found in project
+------------------------------------------------
+
+Resolving External Symbols of [/AC15_httpd] - 283 unresolved symbols, no external libraries configured - skipping
+  
+2025-04-23 21:41:18,277 ghidriff INFO     Loaded AC15_httpd - .ProgramDB
+2025-04-23 21:41:18,278 ghidriff INFO     Importing AC18_httpd as AC18_httpd-42a14c
+2025-04-23 21:41:18 DEBUG (ElfHeader) Elf symbol table section .dynsym linked to string table section .dynstr  
+2025-04-23 21:41:18 DEBUG (ElfHeader) Elf relocation table section .rel.dyn linked to symbol table section .dynsym affecting PT_LOAD  
+2025-04-23 21:41:18 DEBUG (ElfHeader) Elf relocation table section .rel.plt linked to symbol table section .dynsym affecting .plt  
+2025-04-23 21:41:18 INFO  (AutoImporter) Using Loader: Executable and Linking Format (ELF)  
+2025-04-23 21:41:18 INFO  (AutoImporter) Using Language/Compiler: ARM:LE:32:v8:default  
+2025-04-23 21:41:18 INFO  (AutoImporter) Using Library Search Path: [., /bin, /lib, /lib64, /lib/x86_64-linux-gnu, /lib/aarch64-linux-gnu, /usr/bin, /usr/lib, /usr/X11R6/bin, /usr/X11R6/lib, /usr/java/packages/lib, /usr/lib/x86_64-linux-gnu/jni, /usr/lib/x86_64-linux-gnu, /usr/lib/jni]  
+2025-04-23 21:41:18 DEBUG (ElfHeader) Elf symbol table section .dynsym linked to string table section .dynstr  
+2025-04-23 21:41:18 DEBUG (ElfHeader) Elf relocation table section .rel.dyn linked to symbol table section .dynsym affecting PT_LOAD  
+2025-04-23 21:41:18 DEBUG (ElfHeader) Elf relocation table section .rel.plt linked to symbol table section .dynsym affecting .plt  
+2025-04-23 21:41:18 DEBUG (ElfProgramBuilder) Discarding 1-byte alignment/filler segment_3.6 at 0000d691  
+2025-04-23 21:41:18 DEBUG (ElfProgramBuilder) Discarding 2-byte alignment/filler segment_3.8 at 0000db12  
+2025-04-23 21:41:18 INFO  (AutoImporter) Additional info:
+Loading file:///root/FHFuzz/diff/Tenda_httpd/AC18_httpd?MD5=d269834479e53d21111b401558040a6e...
+------------------------------------------------
+
+Linking the External Programs of 'AC18_httpd' to imported libraries...
+  [libCfm.so] -> not found in project
+  [libcommon.so] -> not found in project
+  [libChipApi.so] -> not found in project
+  [libvos_util.so] -> not found in project
+  [libz.so] -> not found in project
+  [libpthread.so.0] -> not found in project
+  [libnvram.so] -> not found in project
+  [libshared.so] -> not found in project
+  [libtpi.so] -> not found in project
+  [libm.so.0] -> not found in project
+  [libucapi.so] -> not found in project
+  [libgcc_s.so.1] -> not found in project
+  [libc.so.0] -> not found in project
+------------------------------------------------
+
+Resolving External Symbols of [/AC18_httpd] - 283 unresolved symbols, no external libraries configured - skipping
+  
+2025-04-23 21:41:18,612 ghidriff INFO     Loaded AC18_httpd - .ProgramDB
+2025-04-23 21:41:18,613 ghidriff INFO     Project Files:
+2025-04-23 21:41:18,615 ghidriff INFO     ghidriff-AC15_httpd-AC18_httpd:/AC15_httpd-6a17a4
+2025-04-23 21:41:18,615 ghidriff INFO     ghidriff-AC15_httpd-AC18_httpd:/AC18_httpd-42a14c
+2025-04-23 21:41:18,621 ghidriff INFO     Setting up Symbol Server for symbols...
+2025-04-23 21:41:18,621 ghidriff INFO     path: diff_result/symbols level: 0
+2025-04-23 21:41:18,642 ghidriff INFO     Symbol Server Configured path: SymbolServerService:
+	symbolStore: LocalSymbolStore: [ rootDir: /root/FHFuzz/diff/Tenda_httpd/diff_result/symbols, storageLevel: -1],
+	symbolServers:
+		HttpSymbolServer: [ url: https://msdl.microsoft.com/download/symbols/, trusted: false, storageLevel: -1]
+		HttpSymbolServer: [ url: https://chromium-browser-symsrv.commondatastorage.googleapis.com/, trusted: false, storageLevel: -1]
+		HttpSymbolServer: [ url: https://symbols.mozilla.org/, trusted: false, storageLevel: -1]
+2025-04-23 21:41:18,654 ghidriff WARNING  PDB not found for AC15_httpd!
+2025-04-23 21:41:18,662 ghidriff WARNING  PDB not found for AC18_httpd!
+2025-04-23 21:41:18,663 ghidriff INFO     Program: AC15_httpd-6a17a4 imported: True has_pdb: False pdb_loaded: False analyzed False
+2025-04-23 21:41:18,663 ghidriff INFO     Program: AC18_httpd-42a14c imported: True has_pdb: False pdb_loaded: False analyzed False
+2025-04-23 21:41:18,663 ghidriff INFO     Starting analysis for 2 binaries
+2025-04-23 21:41:18,835 ghidriff INFO     Analyzing: AC18_httpd - .ProgramDB
+2025-04-23 21:41:18,981 ghidriff INFO     Analyzing: AC15_httpd - .ProgramDB
+2025-04-23 21:41:18,985 ghidriff INFO     Starting Ghidra analysis of AC15_httpd - .ProgramDB...
+2025-04-23 21:41:18 INFO  (ExternalDebugFileSectionProvider) DWARF external debug information found: ExternalDebugInfo [filename=httpd.debug, crc=7dcbeb3d, hash=null]  
+2025-04-23 21:41:18 INFO  (DWARFAnalyzer) Unable to find DWARF information, skipping DWARF analysis  
+2025-04-23 21:41:19,143 ghidriff INFO     Starting Ghidra analysis of AC18_httpd - .ProgramDB...
+2025-04-23 21:41:19 INFO  (ExternalDebugFileSectionProvider) DWARF external debug information found: ExternalDebugInfo [filename=httpd.debug, crc=110a6f9e, hash=null]  
+2025-04-23 21:41:19 INFO  (DWARFAnalyzer) Unable to find DWARF information, skipping DWARF analysis  
+2025-04-23 21:41:20 INFO  (DecompilerSwitchAnalyzer) hit non-returning function, restarting decompiler switch analyzer later  
+2025-04-23 21:41:20 INFO  (DecompilerSwitchAnalyzer) hit non-returning function, restarting decompiler switch analyzer later  
+2025-04-23 21:41:35 INFO  (PackedDatabaseCache) Packed database cache: /var/tmp/root-ghidra/packed-db-cache  
+2025-04-23 21:41:35 DEBUG (PackedDatabaseCache) Using cached packed database: /root/ghidra_11.3.2_PUBLIC/Ghidra/Features/Base/data/typeinfo/generic/generic_clib.gdt  
+2025-04-23 21:41:35 DEBUG (PackedDatabaseCache) Using cached packed database: /root/ghidra_11.3.2_PUBLIC/Ghidra/Features/Base/data/typeinfo/generic/generic_clib.gdt  
+2025-04-23 21:41:36 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2025-04-23 21:41:36 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2025-04-23 21:41:36 INFO  (ExternalSymbolResolverAnalyzer) Resolving External Symbols of [/AC18_httpd-42a14c] - 283 unresolved symbols, no external libraries configured - skipping  
+2025-04-23 21:41:36 INFO  (ExternalSymbolResolverAnalyzer) Resolving External Symbols of [/AC15_httpd-6a17a4] - 283 unresolved symbols, no external libraries configured - skipping  
+2025-04-23 21:41:53 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    ARM Constant Reference Analyzer            4.812 secs
+    ARM Symbol                                 0.001 secs
+    ASCII Strings                              0.184 secs
+    Apply Data Archives                        0.171 secs
+    Call Convention ID                         0.435 secs
+    Call-Fixup Installer                       0.010 secs
+    Create Address Tables                      0.100 secs
+    Create Address Tables - One Time           0.012 secs
+    Create Function                            0.215 secs
+    DWARF                                      0.004 secs
+    Data Reference                             0.154 secs
+    Decompiler Parameter ID                   12.031 secs
+    Decompiler Switch Analysis                 6.421 secs
+    Decompiler Switch Analysis - One Time      2.648 secs
+    Demangler GNU                              0.046 secs
+    Disassemble                                0.591 secs
+    Disassemble Entry Points                   1.374 secs
+    Embedded Media                             0.057 secs
+    External Entry References                  0.003 secs
+    External Symbol Resolver                   0.001 secs
+    Function Start Pre Search                  0.026 secs
+    Function Start Search                      0.166 secs
+    Function Start Search After Code           0.175 secs
+    Function Start Search After Data           0.196 secs
+    Function Start Search delayed - One Time   0.009 secs
+    GCC Exception Handlers                     0.012 secs
+    Non-Returning Functions - Discovered       0.134 secs
+    Non-Returning Functions - Known            0.004 secs
+    Reference                                  0.259 secs
+    Shared Return Calls                        0.038 secs
+    Stack                                      3.813 secs
+    Subroutine References                      0.085 secs
+-----------------------------------------------------
+     Total Time   34 secs
+-----------------------------------------------------
+  
+2025-04-23 21:41:53 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    ARM Constant Reference Analyzer            4.867 secs
+    ARM Symbol                                 0.001 secs
+    ASCII Strings                              0.200 secs
+    Apply Data Archives                        0.299 secs
+    Call Convention ID                         0.434 secs
+    Call-Fixup Installer                       0.005 secs
+    Create Address Tables                      0.104 secs
+    Create Address Tables - One Time           0.012 secs
+    Create Function                            0.207 secs
+    DWARF                                      0.001 secs
+    Data Reference                             0.143 secs
+    Decompiler Parameter ID                   12.094 secs
+    Decompiler Switch Analysis                 6.257 secs
+    Decompiler Switch Analysis - One Time      2.666 secs
+    Demangler GNU                              0.044 secs
+    Disassemble                                0.628 secs
+    Disassemble Entry Points                   1.233 secs
+    Embedded Media                             0.057 secs
+    External Entry References                  0.003 secs
+    External Symbol Resolver                   0.001 secs
+    Function Start Pre Search                  0.025 secs
+    Function Start Search                      0.125 secs
+    Function Start Search After Code           0.176 secs
+    Function Start Search After Data           0.192 secs
+    Function Start Search delayed - One Time   0.010 secs
+    GCC Exception Handlers                     0.000 secs
+    Non-Returning Functions - Discovered       0.128 secs
+    Non-Returning Functions - Known            0.002 secs
+    Reference                                  0.261 secs
+    Shared Return Calls                        0.039 secs
+    Stack                                      3.732 secs
+    Subroutine References                      0.081 secs
+-----------------------------------------------------
+     Total Time   34 secs
+-----------------------------------------------------
+  
+2025-04-23 21:41:53,247 ghidriff INFO     Analysis for ghidriff-AC15_httpd-AC18_httpd:/AC15_httpd-6a17a4 complete
+2025-04-23 21:41:53,250 ghidriff INFO     Analysis for ghidriff-AC15_httpd-AC18_httpd:/AC18_httpd-42a14c complete
+2025-04-23 21:41:53,250 ghidriff INFO     Diffing bins: AC15_httpd - AC18_httpd
+2025-04-23 21:42:07,119 ghidriff INFO     Setup 64 decompliers
+2025-04-23 21:42:07,119 ghidriff INFO     Loaded old program: AC15_httpd
+2025-04-23 21:42:07,119 ghidriff INFO     Loaded new program: AC18_httpd
+2025-04-23 21:42:07,489 ghidriff INFO     p1 sym count: reported: 17654 analyzed: 3068
+2025-04-23 21:42:07,828 ghidriff INFO     p2 sym count: reported: 17645 analyzed: 3068
+2025-04-23 21:42:07,829 ghidriff INFO     Found unmatched: 10 matched: 3063 symbols
+2025-04-23 21:42:07 INFO  (ConsoleTaskMonitor) Hashing symbols in AC15_httpd  
+2025-04-23 21:42:07 INFO  (ConsoleTaskMonitor) Hashing symbols in AC18_httpd  
+2025-04-23 21:42:07 INFO  (ConsoleTaskMonitor) Eliminate non-unique matches  
+2025-04-23 21:42:07 INFO  (ConsoleTaskMonitor) Finding symbol matches  
+2025-04-23 21:42:08,001 ghidriff INFO     Exec time: 0.0251 secs
+2025-04-23 21:42:08,001 ghidriff INFO     Match count 2996
+2025-04-23 21:42:08,001 ghidriff INFO     Counter({('SymbolsHash',): 515})
+2025-04-23 21:42:08,001 ghidriff INFO     Running correlator: ExactBytesFunctionHasher
+2025-04-23 21:42:08,001 ghidriff INFO     name: ExactBytesFunctionHasher one_to_one: True one_to_many: False
+2025-04-23 21:42:08 INFO  (ConsoleTaskMonitor) Hashing functions in AC15_httpd  
+2025-04-23 21:42:08 INFO  (ConsoleTaskMonitor) Hashing functions in AC18_httpd  
+2025-04-23 21:42:08 INFO  (ConsoleTaskMonitor) Finding function matches  
+2025-04-23 21:42:08,165 ghidriff INFO     Match count: 569
+2025-04-23 21:42:08,165 ghidriff INFO     ExactBytesFunctionHasher Exec time: 0.1644 secs
+2025-04-23 21:42:08,167 ghidriff INFO     Running correlator: ExactInstructionsFunctionHasher
+2025-04-23 21:42:08,167 ghidriff INFO     name: ExactInstructionsFunctionHasher one_to_one: True one_to_many: False
+2025-04-23 21:42:08,268 ghidriff INFO     Match count: 503
+2025-04-23 21:42:08,269 ghidriff INFO     ExactInstructionsFunctionHasher Exec time: 0.1020 secs
+2025-04-23 21:42:08,269 ghidriff INFO     Running correlator: StructuralGraphExactHash
+2025-04-23 21:42:08,269 ghidriff INFO     name: StructuralGraphExactHash one_to_one: True one_to_many: False
+2025-04-23 21:42:08,346 ghidriff INFO     Match count: 1
+2025-04-23 21:42:08,347 ghidriff INFO     StructuralGraphExactHash Exec time: 0.0775 secs
+2025-04-23 21:42:08,347 ghidriff INFO     Running correlator: ExactMnemonicsFunctionHasher
+2025-04-23 21:42:08,347 ghidriff INFO     name: ExactMnemonicsFunctionHasher one_to_one: True one_to_many: False
+2025-04-23 21:42:08,355 ghidriff INFO     Match count: 0
+2025-04-23 21:42:08,355 ghidriff INFO     ExactMnemonicsFunctionHasher Exec time: 0.0078 secs
+2025-04-23 21:42:08,355 ghidriff INFO     Running correlator: BSIM
+2025-04-23 21:42:08,355 ghidriff INFO     name: BSIM one_to_one: True one_to_many: False
+2025-04-23 21:42:08,372 ghidriff INFO     Starting BSIM correlator
+2025-04-23 21:42:08,539 ghidriff INFO     Match Set 0 - 1587 matches [Correlator=Manual Match]
+2025-04-23 21:42:08,539 ghidriff INFO     Match Set -1 - 0 matches [Correlator=Implied Match]
+2025-04-23 21:42:13,172 ghidriff INFO     Match Set 1 - 17 matches [Correlator=BSim Function Matching]
+2025-04-23 21:42:13,173 ghidriff INFO     BSIM Exec time: 4.8177 secs
+2025-04-23 21:42:13,173 ghidriff INFO     Running correlator: BulkInstructionHash
+2025-04-23 21:42:13,173 ghidriff INFO     name: BulkInstructionHash one_to_one: True one_to_many: False
+2025-04-23 21:42:13,193 ghidriff INFO     Match count: 4
+2025-04-23 21:42:13,193 ghidriff INFO     BulkInstructionHash Exec time: 0.0195 secs
+2025-04-23 21:42:13,193 ghidriff INFO     Running correlator: SigCallingCalledHasher
+2025-04-23 21:42:13,193 ghidriff INFO     name: SigCallingCalledHasher one_to_one: True one_to_many: False
+2025-04-23 21:42:13,210 ghidriff INFO     Match count: 8
+2025-04-23 21:42:13,211 ghidriff INFO     SigCallingCalledHasher Exec time: 0.0174 secs
+2025-04-23 21:42:13,211 ghidriff INFO     Running correlator: StringsRefsHasher
+2025-04-23 21:42:13,211 ghidriff INFO     name: StringsRefsHasher one_to_one: True one_to_many: False
+2025-04-23 21:42:14,201 ghidriff INFO     Match count: 11
+2025-04-23 21:42:14,201 ghidriff INFO     StringsRefsHasher Exec time: 0.9900 secs
+2025-04-23 21:42:14,201 ghidriff INFO     Running correlator: StrUniqueFuncRefsHasher
+2025-04-23 21:42:14,201 ghidriff INFO     name: StrUniqueFuncRefsHasher one_to_one: True one_to_many: False
+2025-04-23 21:42:14,206 ghidriff INFO     Match count: 1
+2025-04-23 21:42:14,206 ghidriff INFO     StrUniqueFuncRefsHasher Exec time: 0.0051 secs
+2025-04-23 21:42:14,206 ghidriff INFO     Running correlator: SwitchSigHasher
+2025-04-23 21:42:14,206 ghidriff INFO     name: SwitchSigHasher one_to_one: True one_to_many: False
+2025-04-23 21:42:14,547 ghidriff INFO     Match count: 0
+2025-04-23 21:42:14,547 ghidriff INFO     SwitchSigHasher Exec time: 0.3407 secs
+2025-04-23 21:42:14,547 ghidriff INFO     Running correlator: StructuralGraphHash
+2025-04-23 21:42:14,547 ghidriff INFO     name: StructuralGraphHash one_to_one: True one_to_many: True
+2025-04-23 21:42:14,568 ghidriff INFO     Match count: 42
+2025-04-23 21:42:14,569 ghidriff INFO     StructuralGraphHash Exec time: 0.0208 secs
+2025-04-23 21:42:14,569 ghidriff INFO     Running correlator: BulkBasicBlockMnemonicHash
+2025-04-23 21:42:14,569 ghidriff INFO     name: BulkBasicBlockMnemonicHash one_to_one: True one_to_many: True
+2025-04-23 21:42:14,572 ghidriff INFO     Match count: 0
+2025-04-23 21:42:14,572 ghidriff INFO     BulkBasicBlockMnemonicHash Exec time: 0.0033 secs
+2025-04-23 21:42:14,572 ghidriff INFO     Running correlator: SigCallingCalledHasher
+2025-04-23 21:42:14,572 ghidriff INFO     name: SigCallingCalledHasher one_to_one: True one_to_many: False
+2025-04-23 21:42:14,575 ghidriff INFO     Match count: 0
+2025-04-23 21:42:14,576 ghidriff INFO     SigCallingCalledHasher Exec time: 0.0033 secs
+2025-04-23 21:42:14,576 ghidriff INFO     Running correlator: StringsRefsHasher
+2025-04-23 21:42:14,576 ghidriff INFO     name: StringsRefsHasher one_to_one: True one_to_many: False
+2025-04-23 21:42:14,579 ghidriff INFO     Match count: 0
+2025-04-23 21:42:14,579 ghidriff INFO     StringsRefsHasher Exec time: 0.0033 secs
+2025-04-23 21:42:14,579 ghidriff INFO     Running correlator: StrUniqueFuncRefsHasher
+2025-04-23 21:42:14,579 ghidriff INFO     name: StrUniqueFuncRefsHasher one_to_one: True one_to_many: False
+2025-04-23 21:42:14,583 ghidriff INFO     Match count: 0
+2025-04-23 21:42:14,583 ghidriff INFO     StrUniqueFuncRefsHasher Exec time: 0.0033 secs
+2025-04-23 21:42:14,583 ghidriff INFO     Running correlator: SwitchSigHasher
+2025-04-23 21:42:14,583 ghidriff INFO     name: SwitchSigHasher one_to_one: True one_to_many: False
+2025-04-23 21:42:14,586 ghidriff INFO     Match count: 0
+2025-04-23 21:42:14,586 ghidriff INFO     SwitchSigHasher Exec time: 0.0032 secs
+2025-04-23 21:42:14,588 ghidriff INFO     Counter({('ExactBytesFunctionHasher',): 569, ('SymbolsHash',): 505, ('ExactInstructionsFunctionHasher',): 503, ('StructuralGraphHash',): 42, ('StringsRefsHasher',): 11, ('SymbolsHash', 'BSIM'): 10, ('SigCallingCalledHasher',): 8, ('BSIM',): 7, ('BulkInstructionHash',): 4, ('StructuralGraphExactHash',): 1, ('StrUniqueFuncRefsHasher',): 1})
+2025-04-23 21:42:14,592 ghidriff INFO     Running correlator: Implied matches on p1:0 p2:0
+2025-04-23 21:42:14,602 ghidriff INFO     p1 missing = 0
+2025-04-23 21:42:14,602 ghidriff INFO     p2 missing = 0
+2025-04-23 21:42:14,604 ghidriff INFO     Externs - deleted: 0 added: 0 matched:283
+2025-04-23 21:42:14,702 ghidriff INFO     Generating matches json...
+2025-04-23 21:42:14,713 ghidriff INFO     Deduping symbols and functions...
+2025-04-23 21:42:14,713 ghidriff INFO     Sorting symbols and strings...
+2025-04-23 21:42:14,715 ghidriff INFO     Sorting functions...
+2025-04-23 21:42:14,814 ghidriff INFO     Starting esym lookups for 16 symbols using 32 threads
+2025-04-23 21:42:14,853 ghidriff INFO     Completed 1 at 6%
+2025-04-23 21:42:14,854 ghidriff INFO     Completed 2 at 12%
+2025-04-23 21:42:14,854 ghidriff INFO     Completed 3 at 18%
+2025-04-23 21:42:14,855 ghidriff INFO     Completed 4 at 25%
+2025-04-23 21:42:14,857 ghidriff INFO     Completed 5 at 31%
+2025-04-23 21:42:14,857 ghidriff INFO     Completed 6 at 37%
+2025-04-23 21:42:14,857 ghidriff INFO     Completed 7 at 43%
+2025-04-23 21:42:14,859 ghidriff INFO     Completed 8 at 50%
+2025-04-23 21:42:14,860 ghidriff INFO     Completed 9 at 56%
+2025-04-23 21:42:14,861 ghidriff INFO     Completed 10 at 62%
+2025-04-23 21:42:14,966 ghidriff INFO     Completed 11 at 68%
+2025-04-23 21:42:14,968 ghidriff INFO     Completed 12 at 75%
+2025-04-23 21:42:15,176 ghidriff INFO     Completed 13 at 81%
+2025-04-23 21:42:15,186 ghidriff INFO     Completed 14 at 87%
+2025-04-23 21:42:15,258 ghidriff INFO     Completed 15 at 93%
+2025-04-23 21:42:15,290 ghidriff INFO     Completed 16 at 100%
+2025-04-23 21:42:15,397 ghidriff INFO     Finished diffing old program: AC15_httpd
+2025-04-23 21:42:15,397 ghidriff INFO     Finished diffing program: AC18_httpd
+2025-04-23 21:42:15,406 ghidriff INFO     Writing md diff...
+2025-04-23 21:42:15,406 ghidriff INFO     Generating markdown from {'added_funcs_len': 0, 'deleted_funcs_len': 0, 'modified_funcs_len': 3, 'added_symbols_len': 0, 'deleted_symbols_len': 0, 'diff_time': 22.127716064453125, 'deleted_strings_len': 5, 'added_strings_len': 5, 'match_types': Counter({'ExactBytesFunctionHasher': 569, 'SymbolsHash': 515, 'ExactInstructionsFunctionHasher': 503, 'ExternalsName': 283, 'StructuralGraphHash': 42, 'BSIM': 17, 'StringsRefsHasher': 11, 'SigCallingCalledHasher': 8, 'BulkInstructionHash': 4, 'StructuralGraphExactHash': 1, 'StrUniqueFuncRefsHasher': 1}), 'items_to_process': 3, 'diff_types': Counter({'code': 2, 'length': 2, 'called': 2, 'refcount': 1, 'calling': 1, 'name': 1, 'fullname': 1, 'sig': 1, 'address': 1}), 'unmatched_funcs_len': 0, 'total_funcs_len': 3856, 'matched_funcs_len': 3856, 'matched_funcs_with_code_changes_len': 2, 'matched_funcs_with_non_code_changes_len': 1, 'matched_funcs_no_changes_len': 3853, 'match_func_similarity_percent': '99.9222%', 'func_match_overall_percent': '100.0000%', 'first_matches': Counter({'ExactBytesFunctionHasher': 569, 'SymbolsHash': 515, 'ExactInstructionsFunctionHasher': 503, 'StructuralGraphHash': 42, 'StringsRefsHasher': 11, 'SigCallingCalledHasher': 8, 'BSIM': 7, 'BulkInstructionHash': 4, 'StructuralGraphExactHash': 1, 'StrUniqueFuncRefsHasher': 1})}
+2025-04-23 21:42:15,407 ghidriff INFO     Known Command line: ghidriff --project-location ghidra_projects --project-name ghidriff --symbols-path symbols --threaded --log-level INFO --file-log-level INFO --log-path ghidriff.log --min-func-len 10 --gdt [] --bsim --max-ram-percent 60.0 --max-section-funcs 200 AC15_httpd AC18_httpd
+2025-04-23 21:42:15,407 ghidriff INFO     Extra Command line: --engine VersionTrackingDiff --output-path ./diff_result
+2025-04-23 21:42:15,408 ghidriff INFO     Writing pdiff json...
+2025-04-23 21:42:15,418 ghidriff INFO     Writing matches json...
+2025-04-23 21:42:15,427 ghidriff INFO     Wrote diff_result/AC15_httpd-AC18_httpd.ghidriff.md (size: 49K)
+2025-04-23 21:42:15,427 ghidriff INFO     Wrote diff_result/json/AC15_httpd-AC18_httpd.ghidriff.json (size: 580K)
+2025-04-23 21:42:15,427 ghidriff INFO     Wrote diff_result/json/AC15_httpd-AC18_httpd.ghidriff.matches.json (size: 426K)

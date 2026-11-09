@@ -1,0 +1,283 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include <unistd.h>
+#include <ctype.h>
+#include "custom_mutator_helpers.h"
+
+typedef struct key_value_pair {
+    char *key;
+    char *value;
+    bool is_key_var;  // 标记是否为关键变量
+    struct key_value_pair *next;
+} key_value_pair_t;
+
+typedef struct my_mutator {
+    afl_state_t *afl;
+    
+    // 解析后的键值对链表
+    key_value_pair_t *kv_pairs;
+    
+    // 关键变量集合
+    char **key_vars;
+    size_t key_vars_count;
+    
+    // 原始数据和变异后的数据
+    uint8_t *mutated_out;
+    size_t mutated_size;
+    size_t mutated_alloc_size;
+    
+    // AFL++ 内部变异器
+    void *afl_mutator;
+    
+    // 临时缓冲区
+    uint8_t *tmp_buf;
+    size_t tmp_size;
+} my_mutator_t;
+
+// 释放键值对链表
+void free_kv_pairs(key_value_pair_t *pairs) {
+    key_value_pair_t *current = pairs;
+    key_value_pair_t *next;
+    
+    while (current != NULL) {
+        next = current->next;
+        if (current->key) free(current->key);
+        if (current->value) free(current->value);
+        free(current);
+        current = next;
+    }
+}
+
+// 加载关键变量配置
+bool load_key_vars(my_mutator_t *m, const char *config_path) {
+    FILE *f = fopen(config_path, "r");
+    if (!f) {
+        fprintf(stderr, "Error: Cannot open config file %s\n", config_path);
+        return false;
+    }
+    
+    char line[4096];
+    if (fgets(line, sizeof(line), f) == NULL) {
+        fclose(f);
+        return false;
+    }
+    
+    // 解析 key={var1},{var2},...
+    char *key_str = strtok(line, "=");
+    char *vars_str = strtok(NULL, "\n");
+    
+    if (!key_str || !vars_str || strncmp(key_str, "key", 3) != 0) {
+        fclose(f);
+        return false;
+    }
+    
+    // 计算关键变量数量
+    m->key_vars_count = 1;
+    for (char *c = vars_str; *c; c++) {
+        if (*c == ',') m->key_vars_count++;
+    }
+    
+    m->key_vars = (char **)calloc(m->key_vars_count, sizeof(char *));
+    if (!m->key_vars) {
+        fclose(f);
+        return false;
+    }
+    
+    // 解析关键变量名
+    char *var = strtok(vars_str, ",");
+    size_t i = 0;
+    
+    while (var && i < m->key_vars_count) {
+        // 去除花括号
+        if (*var == '{') var++;
+        char *end = var + strlen(var) - 1;
+        if (*end == '}') *end = '\0';
+        
+        m->key_vars[i] = strdup(var);
+        i++;
+        var = strtok(NULL, ",");
+    }
+    
+    fclose(f);
+    return true;
+}
+
+// 判断变量是否为关键变量
+bool is_key_variable(my_mutator_t *m, const char *key) {
+    for (size_t i = 0; i < m->key_vars_count; i++) {
+        if (strcmp(m->key_vars[i], key) == 0) {
+            return true;
+        }
+    }
+    return false;
+}
+
+// 解析输入数据中的键值对
+key_value_pair_t *parse_kv_data(my_mutator_t *m, const uint8_t *data, size_t size) {
+    // 创建一个临时字符串存储数据
+    char *tmp_data = (char *)malloc(size + 1);
+    if (!tmp_data) return NULL;
+    
+    memcpy(tmp_data, data, size);
+    tmp_data[size] = '\0';
+    
+    key_value_pair_t *head = NULL;
+    key_value_pair_t *tail = NULL;
+    
+    char *line = strtok(tmp_data, "\n");
+    while (line) {
+        char *key = strtok(line, "=");
+        char *value = strtok(NULL, "\n");
+        
+        if (key && value) {
+            key_value_pair_t *pair = (key_value_pair_t *)malloc(sizeof(key_value_pair_t));
+            if (!pair) {
+                free(tmp_data);
+                free_kv_pairs(head);
+                return NULL;
+            }
+            
+            pair->key = strdup(key);
+            pair->value = strdup(value);
+            pair->is_key_var = is_key_variable(m, key);
+            pair->next = NULL;
+            
+            if (!head) {
+                head = pair;
+                tail = pair;
+            } else {
+                tail->next = pair;
+                tail = pair;
+            }
+        }
+        
+        line = strtok(NULL, "\n");
+    }
+    
+    free(tmp_data);
+    return head;
+}
+
+// 将键值对链表转换回字符串
+size_t kv_pairs_to_string(key_value_pair_t *pairs, uint8_t *out, size_t max_size) {
+    size_t offset = 0;
+    key_value_pair_t *current = pairs;
+    
+    while (current && offset < max_size) {
+        int written = snprintf((char *)out + offset, max_size - offset, 
+                             "%s=%s\n", current->key, current->value);
+        
+        if (written < 0 || written >= (int)(max_size - offset)) {
+            break;
+        }
+        
+        offset += written;
+        current = current->next;
+    }
+    
+    return offset;
+}
+
+/**
+ * 初始化变异器
+ */
+my_mutator_t *afl_custom_init(afl_state_t *afl, unsigned int seed) {
+    my_mutator_t *m = (my_mutator_t *)calloc(1, sizeof(my_mutator_t));
+    if (!m) {
+        perror("custom mutator calloc failed");
+        return NULL;
+    }
+    
+    m->afl = afl;
+    
+    // 初始化缓冲区
+    m->mutated_alloc_size = 4096;
+    m->mutated_out = (uint8_t *)malloc(m->mutated_alloc_size);
+    if (!m->mutated_out) {
+        free(m);
+        perror("mutated_out calloc failed");
+        return NULL;
+    }
+    
+    m->tmp_size = 4096;
+    m->tmp_buf = (uint8_t *)malloc(m->tmp_size);
+    if (!m->tmp_buf) {
+        free(m->mutated_out);
+        free(m);
+        perror("tmp_buf calloc failed");
+        return NULL;
+    }
+        
+    // 加载关键变量配置
+    const char *config_path = getenv("AFL_CUSTOM_MUTATOR_CONFIG");
+    if(!config_path) {
+        fprintf(stderr, "Error: AFL_CUSTOM_MUTATOR_CONFIG not set\n");
+    }
+    else
+    {
+        if (!load_key_vars(m, config_path)) {
+            free(m->mutated_out);
+            free(m->tmp_buf);
+            free(m);
+            return NULL;
+        }
+    }
+    
+    return m;
+}
+
+
+/**
+ * 对输入进行变异
+ */
+size_t afl_custom_fuzz(my_mutator_t *m, uint8_t *buf, size_t buf_size,
+                      uint8_t **out_buf, uint8_t *add_buf,
+                      size_t add_buf_size, size_t max_size) {
+    // 解析输入中的键值对
+    key_value_pair_t *pairs = parse_kv_data(m, buf, buf_size);
+    if (!pairs) {
+        // 如果解析失败，使用原始数据
+        if (buf_size <= max_size) {
+            memcpy(m->mutated_out, buf, buf_size);
+            *out_buf = m->mutated_out;
+            return buf_size;
+        } else {
+            *out_buf = m->mutated_out;
+            return 0;
+        }
+    }
+    
+    // 对关键变量进行变异
+    key_value_pair_t *current = pairs;
+
+    // 将变异后的键值对转换回字符串
+    size_t result_size = kv_pairs_to_string(pairs, m->mutated_out, m->mutated_alloc_size);
+    
+    // 释放键值对链表
+    free_kv_pairs(pairs);
+    
+    // 设置输出缓冲区
+    *out_buf = m->mutated_out;
+    return result_size;
+}
+
+/**
+ * 变异器描述
+ */
+const char *afl_custom_describe(my_mutator_t *m, size_t max_desc_len) {
+    static char desc[128];
+    snprintf(desc, sizeof(desc), "key_value_mutator with %zu key variables", m->key_vars_count);
+    return desc;
+}
+
+/**
+ * 用于测试变异器的函数
+ */
+size_t afl_custom_post_process(my_mutator_t *m, uint8_t *buf, size_t buf_size,
+                              uint8_t **out_buf) {
+    *out_buf = buf;
+    return buf_size;
+}

@@ -1,0 +1,94 @@
+{
+  "program_name": "goahead",
+  "program_path": "/root/FHFuzz/firmware_SaTC/D-Link/D-Link_823G/_DIR823G_V1.0.2B05_20181207.bin.extracted/squashfs-root/bin/goahead",
+  "extract_functions": [
+    {
+      "name": "FUN_0041ebf8",
+      "address": "0x0041ebf8",
+      "callers": [
+        {
+          "name": "FUN_0041f084",
+          "address": "0x0041f084"
+        },
+        {
+          "name": "FUN_0041e6d0",
+          "address": "0x0041e6d0"
+        },
+        {
+          "name": "FUN_00410f3c",
+          "address": "0x00410f3c"
+        },
+        {
+          "name": "FUN_004199f8",
+          "address": "0x004199f8"
+        },
+        {
+          "name": "FUN_00417ff8",
+          "address": "0x00417ff8"
+        },
+        {
+          "name": "FUN_004182fc",
+          "address": "0x004182fc"
+        },
+        {
+          "name": "FUN_0041849c",
+          "address": "0x0041849c"
+        },
+        {
+          "name": "FUN_00418720",
+          "address": "0x00418720"
+        },
+        {
+          "name": "FUN_00418a94",
+          "address": "0x00418a94"
+        },
+        {
+          "name": "FUN_00418d6c",
+          "address": "0x00418d6c"
+        },
+        {
+          "name": "FUN_00418ffc",
+          "address": "0x00418ffc"
+        },
+        {
+          "name": "FUN_00419424",
+          "address": "0x00419424"
+        },
+        {
+          "name": "FUN_00419534",
+          "address": "0x00419534"
+        },
+        {
+          "name": "FUN_0041eca0",
+          "address": "0x0041eca0"
+        }
+      ]
+    }
+  ],
+  "remove_functions": [
+    {
+      "name": "FUN_0041f658",
+      "address": "0x0041f658"
+    },
+    {
+      "name": "FUN_0041fba4",
+      "address": "0x0041fba4"
+    },
+    {
+      "name": "FUN_0040abdc",
+      "address": "0x0040abdc"
+    },
+    {
+      "name": "FUN_0040aacc",
+      "address": "0x0040aacc"
+    },
+    {
+      "name": "FUN_00419644",
+      "address": "0x00419644"
+    },
+    {
+      "name": "FUN_00419684",
+      "address": "0x00419684"
+    }
+  ]
+}

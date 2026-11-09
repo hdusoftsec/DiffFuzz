@@ -1,0 +1,793 @@
+{
+  "test_group": [
+    {
+      "binary": "AC6_httpd",
+      "test_plan": [
+        {
+          "func_name": "fromSetRouteStatic",
+          "address": "0x00491e6c",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formBehaviorManager",
+          "address": "0x004c9a40",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "websSetEnv",
+          "address": "0x0042fba0",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "getRebootStatus",
+          "address": "0x004509f0",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "setWifiGusetBasic",
+          "address": "0x004bff3c",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formDeleteUser",
+          "address": "0x00428a00",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "wl_guest_conf_change",
+          "address": "0x004c05d0",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formDisplayUser",
+          "address": "0x00428c78",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "fromAdvSetLanip",
+          "address": "0x00460a14",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "form_fast_setting_internet_set",
+          "address": "0x004775e4",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formSetWifiWps",
+          "address": "0x004bc20c",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "fromSetWifiGusetBasic",
+          "address": "0x004c097c",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "cloudv2_olupgrade",
+          "address": "0x004d06e8",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "cloudv2_manage",
+          "address": "0x004d1840",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formSetPPTPClient",
+          "address": "0x004dc4b8",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "fromLogsSetting",
+          "address": "0x00493f30",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formDelMacfilterRule",
+          "address": "0x004e8f94",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formSetFirewallCfg",
+          "address": "0x004ce0d8",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formWifiRadioSet",
+          "address": "0x004b67d8",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formBulletinSet",
+          "address": "0x004ac2a0",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "setDnsCheck",
+          "address": "0x004a9390",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "setDhcpConfig",
+          "address": "0x004833f0",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "websRedirectOpCookie",
+          "address": "0x00432d84",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "cloudv2_wansta",
+          "address": "0x004d1b78",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "cgi_set_arp_info",
+          "address": "0x004ca6d0",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formWriteFacMac",
+          "address": "0x004504e4",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formSetSysToolDDNS",
+          "address": "0x00490520",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formNatSet",
+          "address": "0x004903e8",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "fromsetApModeCfg",
+          "address": "0x004c20fc",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "fromSetIpBind",
+          "address": "0x0048e750",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formDeleteAccessLimit",
+          "address": "0x00429c58",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "setPppoeConfig",
+          "address": "0x00483bfc",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formGetWanStatus",
+          "address": "0x00463bc4",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "fromAddressNat",
+          "address": "0x00493860",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formWanInfoSet",
+          "address": "0x00486a40",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "fromGstDhcpSetSer",
+          "address": "0x004a4188",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "fromWanPolicy",
+          "address": "0x004827a0",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "fromSysToolChangePwd",
+          "address": "0x00494310",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formSetMacFilterCfg",
+          "address": "0x004e470c",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "cgi_set_ip_opt",
+          "address": "0x004cca98",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formWifiBeamformingSet",
+          "address": "0x004c72c4",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formLoadUserManagement",
+          "address": "0x0042a3d0",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formSetClientState",
+          "address": "0x00470c84",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "check_param_changed",
+          "address": "0x0048b520",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "addWifiMacFilter",
+          "address": "0x004b42e4",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formSetCfm",
+          "address": "0x0044fbf4",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formAddAccessLimit",
+          "address": "0x004298c0",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formWifiClientListAll",
+          "address": "0x004b35bc",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formSaveUserManagement",
+          "address": "0x0042a224",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formWifiMacFilterSet",
+          "address": "0x004b554c",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formWifiDhcpGuestSet",
+          "address": "0x004b8dd0",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "fromSysStatusHandle",
+          "address": "0x00463eb8",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "fromDhcpSetSer",
+          "address": "0x004a3dd0",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "websRedirect",
+          "address": "0x00430784",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "form_fast_setting_pppoe_set",
+          "address": "0x004773b0",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "setDoublePptpConfig",
+          "address": "0x00484db8",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formWifiBasicSet",
+          "address": "0x004af674",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formWifiStatistic",
+          "address": "0x004b7d1c",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "setaccount",
+          "address": "0x004d140c",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formSetSchedLed",
+          "address": "0x004ab7a0",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "websGetVarWithValidate",
+          "address": "0x004beed4",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formWifiWpsOOB",
+          "address": "0x004bb5ac",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "R7WebsSecurityHandler",
+          "address": "0x00434c80",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "setDoubleL2tpConfig",
+          "address": "0x0048548c",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "cloudv2",
+          "address": "0x004d1db8",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "setStaticConfig",
+          "address": "0x00483794",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "mDMZSetCfg",
+          "address": "0x0048e160",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formSetVirtualSer",
+          "address": "0x0048fa3c",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "add_white_node",
+          "address": "0x004a9aa8",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formGetDeviceDetail",
+          "address": "0x0046f91c",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formsetNotUpgrade",
+          "address": "0x0046c7f8",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formWifiWpsGet",
+          "address": "0x004b9974",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formWifiAntijamSet",
+          "address": "0x004c76f8",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formDeleteGroup",
+          "address": "0x004294ac",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "fromSysToolBaseUser",
+          "address": "0x004946f0",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formWifiClientList",
+          "address": "0x004b320c",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formSetDeviceName",
+          "address": "0x00470a78",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formWifiConfigGet",
+          "address": "0x004b9dfc",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "fromWizardHandle",
+          "address": "0x0045c6c0",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formWifiMultiSsid",
+          "address": "0x004ad228",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "websCompareVar",
+          "address": "0x0043032c",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "fromDhcpListClient",
+          "address": "0x004a49b4",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "cgi_set_ddos_fence",
+          "address": "0x004cb910",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formSetAutoQosInfo",
+          "address": "0x0049ac58",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formSetIptv",
+          "address": "0x004d29a8",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formAddMacfilterRule",
+          "address": "0x004e77ac",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formWifiPowerSet",
+          "address": "0x004b7590",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "form_fast_setting_wifi_set",
+          "address": "0x00477c50",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formexeCommand",
+          "address": "0x00495918",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "fromAdvSetPortVlan",
+          "address": "0x004ac580",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formSetParentControlEnable",
+          "address": "0x004a328c",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "SetWebIpAccess",
+          "address": "0x004825d0",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formSetUpnp",
+          "address": "0x004a3890",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formNotNowUpgrade",
+          "address": "0x004d0218",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formWifiWpsSet",
+          "address": "0x004bb9dc",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "delWifiMacFilter",
+          "address": "0x004b4848",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formSetSpeedWan",
+          "address": "0x004710c8",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "setSmartPowerManagement",
+          "address": "0x004d4ba4",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "setSchedWifi",
+          "address": "0x004aa750",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formSafeDemo",
+          "address": "0x004cd964",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formAddUser",
+          "address": "0x00428600",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "saveParentControlInfo",
+          "address": "0x004a0f0c",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "fromNatStaticSetting",
+          "address": "0x004900e0",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "fromSysToolTime",
+          "address": "0x004a7ec0",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "GetParentControlInfo",
+          "address": "0x0049e944",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formQuickIndex",
+          "address": "0x0045c050",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formSetSafeWanWebMan",
+          "address": "0x0048da70",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formSetRebootTimer",
+          "address": "0x004d35f0",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formAddGroup",
+          "address": "0x00429018",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formWifiMacFilterGet",
+          "address": "0x004b4e0c",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "setbasic",
+          "address": "0x004d0f84",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formSetPPTPServer",
+          "address": "0x004d98dc",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formWanParameterSetting",
+          "address": "0x00487654",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "fromSetIpMacBind",
+          "address": "0x004a76a0",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formStartWifiWps",
+          "address": "0x004bc44c",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formWifiWpsStart",
+          "address": "0x004b9fa4",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "delParentControlOneInfo",
+          "address": "0x004a2540",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formSetPPTPUserList",
+          "address": "0x004da0f8",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "setWanDownrate",
+          "address": "0x00486934",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "formSetQosBand",
+          "address": "0x00472760",
+          "type": "common",
+          "reason": "存在于所有固件中且完全相同"
+        },
+        {
+          "func_name": "fromSetSysTime",
+          "address": "004a8514",
+          "type": "modified",
+          "reason": "修改的函数 - 版本分组: [AC6_httpd,AC9_httpd] [AC12_httpd]，每组测试一个版本即可"
+        },
+        {
+          "func_name": "setDoublePppoeConfig",
+          "address": "004844f0",
+          "type": "modified",
+          "reason": "修改的函数 - 版本分组: [AC6_httpd,AC9_httpd] [AC12_httpd]，每组测试一个版本即可"
+        }
+      ]
+    },
+    {
+      "binary": "AC9_httpd",
+      "test_plan": [
+        {
+          "func_name": "formsetUsbUnload",
+          "address": "0x004c9900",
+          "type": "unique",
+          "reason": "仅存在于 AC9_httpd 中"
+        },
+        {
+          "func_name": "formSetSambaConf",
+          "address": "0x004c8020",
+          "type": "unique",
+          "reason": "仅存在于 AC9_httpd 中"
+        },
+        {
+          "func_name": "formSetUsbPrint",
+          "address": "0x004c7c34",
+          "type": "unique",
+          "reason": "仅存在于 AC9_httpd 中"
+        },
+        {
+          "func_name": "fromSetWirelessRepeat",
+          "address": "004c293c",
+          "type": "modified",
+          "reason": "修改的函数 - 版本分组: [AC12_httpd,AC6_httpd] [AC9_httpd]，每组测试一个版本即可"
+        }
+      ]
+    },
+    {
+      "binary": "AC12_httpd",
+      "test_plan": [
+        {
+          "func_name": "fromSetWirelessRepeat",
+          "address": "004c1ea0",
+          "type": "modified",
+          "reason": "修改的函数 - 版本分组: [AC12_httpd,AC6_httpd] [AC9_httpd]，每组测试一个版本即可"
+        },
+        {
+          "func_name": "fromSetSysTime",
+          "address": "004a7e24",
+          "type": "modified",
+          "reason": "修改的函数 - 版本分组: [AC6_httpd,AC9_httpd] [AC12_httpd]，每组测试一个版本即可"
+        },
+        {
+          "func_name": "setDoublePppoeConfig",
+          "address": "00483fd8",
+          "type": "modified",
+          "reason": "修改的函数 - 版本分组: [AC6_httpd,AC9_httpd] [AC12_httpd]，每组测试一个版本即可"
+        }
+      ]
+    }
+  ]
+}

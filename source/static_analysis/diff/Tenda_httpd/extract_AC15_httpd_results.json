@@ -1,0 +1,555 @@
+{
+  "program_name": "AC15_httpd",
+  "program_path": "/root/FHFuzz/firmware_SaTC/Tenda/AC15/_US_AC15V1.0BR_V15.03.05.19_multi_TD01.bin.extracted/squashfs-root/bin/httpd",
+  "extract_functions": [
+    {
+      "name": "FUN_0002ba8c",
+      "address": "0x0002ba8c",
+      "callers": [
+        {
+          "name": "FUN_0002be4c",
+          "address": "0x0002be4c"
+        },
+        {
+          "name": "R7WebsSecurityHandler",
+          "address": "0x0002f240"
+        },
+        {
+          "name": "FUN_0002da7c",
+          "address": "0x0002da7c"
+        },
+        {
+          "name": "formSetCfm",
+          "address": "0x00044a0c"
+        },
+        {
+          "name": "formWriteFacMac",
+          "address": "0x000451a8"
+        },
+        {
+          "name": "formQuickIndex",
+          "address": "0x0004fef0"
+        },
+        {
+          "name": "fromWizardHandle",
+          "address": "0x000503c4"
+        },
+        {
+          "name": "fromAdvSetLanip",
+          "address": "0x0005317c"
+        },
+        {
+          "name": "formGetWanStatus",
+          "address": "0x0005600c"
+        },
+        {
+          "name": "fromSysStatusHandle",
+          "address": "0x00056238"
+        },
+        {
+          "name": "formsetNotUpgrade",
+          "address": "0x0005d644"
+        },
+        {
+          "name": "formGetDeviceDetail",
+          "address": "0x0006048c"
+        },
+        {
+          "name": "formSetDeviceName",
+          "address": "0x00061174"
+        },
+        {
+          "name": "formSetClientState",
+          "address": "0x0006133c"
+        },
+        {
+          "name": "formSetSpeedWan",
+          "address": "0x000616ac"
+        },
+        {
+          "name": "formSetQosBand",
+          "address": "0x00062a84"
+        },
+        {
+          "name": "form_fast_setting_pppoe_set",
+          "address": "0x000667b4"
+        },
+        {
+          "name": "form_fast_setting_internet_set",
+          "address": "0x0006697c"
+        },
+        {
+          "name": "FUN_0006d55c",
+          "address": "0x0006d55c"
+        },
+        {
+          "name": "FUN_0006d858",
+          "address": "0x0006d858"
+        },
+        {
+          "name": "FUN_0006dbec",
+          "address": "0x0006dbec"
+        },
+        {
+          "name": "FUN_0006e25c",
+          "address": "0x0006e25c"
+        },
+        {
+          "name": "FUN_0006e834",
+          "address": "0x0006e834"
+        },
+        {
+          "name": "FUN_0006ede8",
+          "address": "0x0006ede8"
+        },
+        {
+          "name": "form_fast_setting_wifi_set",
+          "address": "0x00066ee0"
+        },
+        {
+          "name": "SetWebIpAccess",
+          "address": "0x0006ca6c"
+        },
+        {
+          "name": "fromWanPolicy",
+          "address": "0x0006cbcc"
+        },
+        {
+          "name": "formWanParameterSetting",
+          "address": "0x000705e8"
+        },
+        {
+          "name": "FUN_0006fdf0",
+          "address": "0x0006fdf0"
+        },
+        {
+          "name": "FUN_0006fd1c",
+          "address": "0x0006fd1c"
+        },
+        {
+          "name": "FUN_000735e4",
+          "address": "0x000735e4"
+        },
+        {
+          "name": "formSetSafeWanWebMan",
+          "address": "0x00075108"
+        },
+        {
+          "name": "mDMZSetCfg",
+          "address": "0x0007574c"
+        },
+        {
+          "name": "formSetVirtualSer",
+          "address": "0x00076bf4"
+        },
+        {
+          "name": "fromNatStaticSetting",
+          "address": "0x00077124"
+        },
+        {
+          "name": "formNatSet",
+          "address": "0x00077390"
+        },
+        {
+          "name": "formSetSysToolDDNS",
+          "address": "0x0007745c"
+        },
+        {
+          "name": "fromSetRouteStatic",
+          "address": "0x0007892c"
+        },
+        {
+          "name": "fromAddressNat",
+          "address": "0x00079f64"
+        },
+        {
+          "name": "fromLogsSetting",
+          "address": "0x0007a4b0"
+        },
+        {
+          "name": "fromSysToolChangePwd",
+          "address": "0x0007a784"
+        },
+        {
+          "name": "fromSysToolBaseUser",
+          "address": "0x0007ab24"
+        },
+        {
+          "name": "formSetAutoQosInfo",
+          "address": "0x00080308"
+        },
+        {
+          "name": "GetParentControlInfo",
+          "address": "0x00083794"
+        },
+        {
+          "name": "saveParentControlInfo",
+          "address": "0x0008587c"
+        },
+        {
+          "name": "delParentControlOneInfo",
+          "address": "0x00086bc0"
+        },
+        {
+          "name": "formSetParentControlEnable",
+          "address": "0x0008770c"
+        },
+        {
+          "name": "formSetUpnp",
+          "address": "0x00087cd8"
+        },
+        {
+          "name": "fromDhcpSetSer",
+          "address": "0x000880d4"
+        },
+        {
+          "name": "fromDhcpListClient",
+          "address": "0x00088af8"
+        },
+        {
+          "name": "fromSetIpMacBind",
+          "address": "0x0008ae10"
+        },
+        {
+          "name": "fromSysToolTime",
+          "address": "0x0008b4f4"
+        },
+        {
+          "name": "fromSetSysTime",
+          "address": "0x0008b9c8"
+        },
+        {
+          "name": "setDnsCheck",
+          "address": "0x0008c38c"
+        },
+        {
+          "name": "add_white_node",
+          "address": "0x0008c980"
+        },
+        {
+          "name": "setSchedWifi",
+          "address": "0x0008d374"
+        },
+        {
+          "name": "formSetSchedLed",
+          "address": "0x0008e150"
+        },
+        {
+          "name": "formBulletinSet",
+          "address": "0x0008eae8"
+        },
+        {
+          "name": "fromAdvSetPortVlan",
+          "address": "0x0008ed14"
+        },
+        {
+          "name": "formWifiMultiSsid",
+          "address": "0x0008f6a0"
+        },
+        {
+          "name": "formWifiBasicSet",
+          "address": "0x0009135c"
+        },
+        {
+          "name": "formWifiClientList",
+          "address": "0x00094a70"
+        },
+        {
+          "name": "formWifiClientListAll",
+          "address": "0x00094d10"
+        },
+        {
+          "name": "addWifiMacFilter",
+          "address": "0x00095794"
+        },
+        {
+          "name": "delWifiMacFilter",
+          "address": "0x00095bcc"
+        },
+        {
+          "name": "formWifiMacFilterGet",
+          "address": "0x00096004"
+        },
+        {
+          "name": "FUN_0009e384",
+          "address": "0x0009e384"
+        },
+        {
+          "name": "formWifiMacFilterSet",
+          "address": "0x0009659c"
+        },
+        {
+          "name": "formWifiRadioSet",
+          "address": "0x000973a4"
+        },
+        {
+          "name": "formWifiPowerSet",
+          "address": "0x00098218"
+        },
+        {
+          "name": "formWifiStatistic",
+          "address": "0x00098a00"
+        },
+        {
+          "name": "formWifiConfigGet",
+          "address": "0x0009a49c"
+        },
+        {
+          "name": "formWifiWpsStart",
+          "address": "0x0009a5d4"
+        },
+        {
+          "name": "formWifiWpsOOB",
+          "address": "0x0009b940"
+        },
+        {
+          "name": "formSetWifiWps",
+          "address": "0x0009c290"
+        },
+        {
+          "name": "formStartWifiWps",
+          "address": "0x0009c464"
+        },
+        {
+          "name": "fromSetWifiGusetBasic",
+          "address": "0x0009f9e8"
+        },
+        {
+          "name": "FUN_0009f1a8",
+          "address": "0x0009f1a8"
+        },
+        {
+          "name": "FUN_0009f6f4",
+          "address": "0x0009f6f4"
+        },
+        {
+          "name": "fromsetApModeCfg",
+          "address": "0x000a0e54"
+        },
+        {
+          "name": "fromSetWirelessRepeat",
+          "address": "0x000a1400"
+        },
+        {
+          "name": "formWifiBeamformingSet",
+          "address": "0x000a5090"
+        },
+        {
+          "name": "formSetUsbPrint",
+          "address": "0x000a526c"
+        },
+        {
+          "name": "formSetSambaConf",
+          "address": "0x000a5528"
+        },
+        {
+          "name": "formsetUsbUnload",
+          "address": "0x000a6890"
+        },
+        {
+          "name": "formSetFirewallCfg",
+          "address": "0x000ac678"
+        },
+        {
+          "name": "formNotNowUpgrade",
+          "address": "0x000ae354"
+        },
+        {
+          "name": "formSetIptv",
+          "address": "0x000b04d4"
+        },
+        {
+          "name": "formExpandDlnaFile",
+          "address": "0x000b1b2c"
+        },
+        {
+          "name": "formDLNAserver",
+          "address": "0x000b2184"
+        },
+        {
+          "name": "formSetRebootTimer",
+          "address": "0x000b272c"
+        },
+        {
+          "name": "setSmartPowerManagement",
+          "address": "0x000b3918"
+        },
+        {
+          "name": "formSetPPTPServer",
+          "address": "0x000b72e4"
+        },
+        {
+          "name": "formSetPPTPUserList",
+          "address": "0x000b796c"
+        },
+        {
+          "name": "formSetPPTPClient",
+          "address": "0x000b9b30"
+        },
+        {
+          "name": "formSetMacFilterCfg",
+          "address": "0x000c0920"
+        },
+        {
+          "name": "formAddMacfilterRule",
+          "address": "0x000c36f0"
+        },
+        {
+          "name": "formDelMacfilterRule",
+          "address": "0x000c4d90"
+        },
+        {
+          "name": "FUN_0002b578",
+          "address": "0x0002b578"
+        },
+        {
+          "name": "FUN_00025b20",
+          "address": "0x00025b20"
+        },
+        {
+          "name": "FUN_00025e2c",
+          "address": "0x00025e2c"
+        },
+        {
+          "name": "FUN_00025fd4",
+          "address": "0x00025fd4"
+        },
+        {
+          "name": "FUN_00026278",
+          "address": "0x00026278"
+        },
+        {
+          "name": "FUN_00026610",
+          "address": "0x00026610"
+        },
+        {
+          "name": "FUN_000268fc",
+          "address": "0x000268fc"
+        },
+        {
+          "name": "FUN_00026ba0",
+          "address": "0x00026ba0"
+        },
+        {
+          "name": "FUN_0002701c",
+          "address": "0x0002701c"
+        },
+        {
+          "name": "FUN_00027124",
+          "address": "0x00027124"
+        },
+        {
+          "name": "FUN_0002bb28",
+          "address": "0x0002bb28"
+        },
+        {
+          "name": "FUN_00045520",
+          "address": "0x00045520"
+        },
+        {
+          "name": "FUN_00072820",
+          "address": "0x00072820"
+        },
+        {
+          "name": "FUN_00075c70",
+          "address": "0x00075c70"
+        },
+        {
+          "name": "FUN_0007b8e4",
+          "address": "0x0007b8e4"
+        },
+        {
+          "name": "FUN_000883dc",
+          "address": "0x000883dc"
+        },
+        {
+          "name": "FUN_0009bc48",
+          "address": "0x0009bc48"
+        },
+        {
+          "name": "FUN_000a88a4",
+          "address": "0x000a88a4"
+        },
+        {
+          "name": "FUN_000a933c",
+          "address": "0x000a933c"
+        },
+        {
+          "name": "FUN_000aa22c",
+          "address": "0x000aa22c"
+        },
+        {
+          "name": "FUN_000ab29c",
+          "address": "0x000ab29c"
+        },
+        {
+          "name": "FUN_000abf68",
+          "address": "0x000abf68"
+        },
+        {
+          "name": "FUN_000ae6c4",
+          "address": "0x000ae6c4"
+        },
+        {
+          "name": "FUN_000aed28",
+          "address": "0x000aed28"
+        },
+        {
+          "name": "FUN_000af040",
+          "address": "0x000af040"
+        },
+        {
+          "name": "FUN_000af338",
+          "address": "0x000af338"
+        },
+        {
+          "name": "FUN_000af5a4",
+          "address": "0x000af5a4"
+        },
+        {
+          "name": "FUN_000af764",
+          "address": "0x000af764"
+        }
+      ]
+    },
+    {
+      "name": "FUN_0009e384",
+      "address": "0x0009e384",
+      "callers": [
+        {
+          "name": "formWifiMacFilterGet",
+          "address": "0x00096004"
+        },
+        {
+          "name": "formWifiMacFilterSet",
+          "address": "0x0009659c"
+        },
+        {
+          "name": "formWifiDhcpGuestSet",
+          "address": "0x0009981c"
+        },
+        {
+          "name": "formWifiWpsStart",
+          "address": "0x0009a5d4"
+        },
+        {
+          "name": "formWifiWpsOOB",
+          "address": "0x0009b940"
+        },
+        {
+          "name": "fromSetWirelessRepeat",
+          "address": "0x000a1400"
+        },
+        {
+          "name": "FUN_0009a0e8",
+          "address": "0x0009a0e8"
+        },
+        {
+          "name": "FUN_0009bc48",
+          "address": "0x0009bc48"
+        }
+      ]
+    }
+  ],
+  "remove_functions": []
+}
